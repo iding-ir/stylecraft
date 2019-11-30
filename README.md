@@ -23,7 +23,7 @@ import "stylecraft/dist/stylecraft.css"
 
 [Live demo](http://stylecraft.iding.ir)
 
-[Live demo](http://realstate-map.iding.ir) - [Github](https://github.com/iding-ir/realstate-map)
+[Live demo](http://realestate-map.iding.ir) - [Github](https://github.com/iding-ir/realestate-map)
 
 ## Note
 
@@ -37,6 +37,6 @@ Necessity is the mother of invention. Starting from Nov 16th 2019, the Iranian r
 
 During that time, other than my regular work, I was developing [Lazy Poker](https://github.com/iding-ir/lazy-poker) and [Mapcraft](https://github.com/iding-ir/mapcraft), and later decided to test Mapcraft with a new project.
 
-Under the influence of [Finn.no](https://kart.finn.no/?tab=iad&ztr=1&searchKey=search_id_realestate_lettings&PROPERTY_TYPE=6&keyword=bergen) I started to develop [Realstate Map](https://github.com/iding-ir/realstate-map).
+Under the influence of [Finn.no](https://kart.finn.no/?tab=iad&ztr=1&searchKey=search_id_realestate_lettings&PROPERTY_TYPE=6&keyword=bergen) I started to develop [Realestate Map](https://github.com/iding-ir/realestate-map).
 
 The problem was that I wanted to make it with a new css framework, but there was no internet connection, so I thought I create a new one.
