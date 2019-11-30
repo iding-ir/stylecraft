@@ -1,0 +1,90 @@
+.sc-form-radio input,
+.sc-form-checkbox input {
+  display: none;
+}
+
+.sc-form-radio input ~ label,
+.sc-form-checkbox input ~ label {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  cursor: pointer;
+}
+
+.sc-form-radio input:disabled ~ label,
+.sc-form-checkbox input:disabled ~ label {
+  color: var(--fade-grey-lg);
+  cursor: not-allowed;
+}
+
+.sc-form-radio input ~ label span,
+.sc-form-checkbox input ~ label span {
+  line-height: var(--icon-sm);
+  padding: 0 var(--padding-sm);
+}
+
+.sc-form-radio input ~ label i,
+.sc-form-checkbox input ~ label i {
+  flex-shrink: 0;
+  width: var(--icon-sm);
+  height: var(--icon-sm);
+}
+
+.sc-form-radio input ~ label i {
+  border-radius: 50%;
+}
+
+.sc-form-checkbox input ~ label i {
+  border-radius: var(--border-radius);
+}
+
+.sc-form-radio input:not(:disabled) ~ label:hover i,
+.sc-form-checkbox input:not(:disabled) ~ label:hover i {
+  background-color: var(--color-light);
+}
+
+.sc-form-radio input:disabled ~ label i,
+.sc-form-checkbox input:disabled ~ label i {
+  border-color: var(--fade-grey-md);
+}
+
+.sc-form-radio input:disabled ~ label:hover i,
+.sc-form-checkbox input:disabled ~ label:hover i {
+  background-color: var(--color-transparent);
+}
+
+.sc-form-radio input ~ label i::before,
+.sc-form-checkbox input ~ label i::before {
+  background-color: var(--color-transparent);
+}
+
+.sc-form-radio input:not(:disabled) ~ label:hover i::before,
+.sc-form-checkbox input:not(:disabled) ~ label:hover i::before {
+  background-color: var(--fade-grey-md);
+}
+
+.sc-form-radio input:checked ~ label i::before,
+.sc-form-checkbox input:checked ~ label i::before,
+.sc-form-radio input[checked="checked"] ~ label i::before,
+.sc-form-checkbox input[checked="checked"] ~ label i::before {
+  background-color: var(--color-secondary-light);
+}
+
+.sc-form-radio input:checked ~ label:hover i::before,
+.sc-form-checkbox input:checked ~ label:hover i::before,
+.sc-form-radio input[checked="checked"] ~ label:hover i::before,
+.sc-form-checkbox input[checked="checked"] ~ label:hover i::before {
+  background-color: var(--color-secondary-dark);
+}
+
+.sc-form-radio input:disabled ~ label i::before,
+.sc-form-checkbox input:disabled ~ label i::before {
+  background-color: var(--color-transparent);
+}
+
+.sc-form-radio input:disabled:checked ~ label i::before,
+.sc-form-checkbox input:disabled:checked ~ label i::before,
+.sc-form-radio input:disabled[checked="checked"] ~ label i::before,
+.sc-form-checkbox input:disabled[checked="checked"] ~ label i::before {
+  background-color: var(--fade-grey-md);
+}
