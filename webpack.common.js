@@ -6,30 +6,26 @@ const CopyPlugin = require("copy-webpack-plugin");
 module.exports = {
   entry: {
     // vendor: "./src/vendor.js",
-    main: "./src/stylecraft.js"
+    main: "./src/stylecraft.js",
   },
   plugins: [
     new webpack.ProvidePlugin({
       $: "jquery",
-      jQuery: "jquery"
-    })
+      jQuery: "jquery",
+    }),
   ],
   module: {
     rules: [
       {
         test: /\.html$/,
-        use: ["html-loader"]
+        use: ["html-loader"],
       },
       {
-        test: /\.(svg|png|jpg|gif)$/,
+        test: /\.svg/,
         use: {
-          loader: "file-loader",
-          options: {
-            name: "[name].[hash].[ext]",
-            outputPath: "imgs"
-          }
-        }
-      }
-    ]
-  }
+          loader: "svg-url-loader",
+        },
+      },
+    ],
+  },
 };

@@ -43,16 +43,12 @@
   }
 }
 
-.sc-icon-calendar::before {
-  mask-image: var(--icon-calendar);
-}
-
-.sc-icon-radio::before {
-  mask-image: var(--icon-radio);
-}
-
 .sc-icon-bullet::before {
   mask-image: var(--icon-bullet);
+}
+
+.sc-icon-calendar::before {
+  mask-image: var(--icon-calendar);
 }
 
 .sc-icon-checkbox::before {
@@ -63,12 +59,20 @@
   mask-image: var(--icon-close);
 }
 
+.sc-icon-compass::before {
+  mask-image: var(--icon-compass);
+}
+
 .sc-icon-cross::before {
   mask-image: var(--icon-cross);
 }
 
 .sc-icon-direction::before {
   mask-image: var(--icon-direction);
+}
+
+.sc-icon-down::before {
+  mask-image: var(--icon-down);
 }
 
 .sc-icon-false::before {
@@ -99,6 +103,10 @@
   mask-image: var(--icon-info);
 }
 
+.sc-icon-left::before {
+  mask-image: var(--icon-left);
+}
+
 .sc-icon-location::before {
   mask-image: var(--icon-location);
 }
@@ -127,16 +135,12 @@
   mask-image: var(--icon-mode);
 }
 
-.sc-icon-arrow-down::before {
-  mask-image: var(--icon-arrow-down);
+.sc-icon-next::before {
+  mask-image: var(--icon-next);
 }
 
-.sc-icon-arrow-up::before {
-  mask-image: var(--icon-arrow-up);
-}
-
-.sc-icon-arrow-up-down::before {
-  mask-image: var(--icon-arrow-up-down);
+.sc-icon-order::before {
+  mask-image: var(--icon-order);
 }
 
 .sc-icon-order-up::before {
@@ -145,6 +149,34 @@
 
 .sc-icon-order-down::before {
   mask-image: var(--icon-order-down);
+}
+
+.sc-icon-pause::before {
+  mask-image: var(--icon-pause);
+}
+
+.sc-icon-play::before {
+  mask-image: var(--icon-play);
+}
+
+.sc-icon-prev::before {
+  mask-image: var(--icon-prev);
+}
+
+.sc-icon-radio::before {
+  mask-image: var(--icon-radio);
+}
+
+.sc-icon-restart::before {
+  mask-image: var(--icon-restart);
+}
+
+.sc-icon-right::before {
+  mask-image: var(--icon-right);
+}
+
+.sc-icon-route::before {
+  mask-image: var(--icon-route);
 }
 
 .sc-icon-search::before {
@@ -159,12 +191,12 @@
   mask-image: var(--icon-tour);
 }
 
-.sc-icon-route::before {
-  mask-image: var(--icon-route);
-}
-
 .sc-icon-true::before {
   mask-image: var(--icon-true);
+}
+
+.sc-icon-up::before {
+  mask-image: var(--icon-up);
 }
 
 .sc-icon-zoom-in::before {
@@ -173,24 +205,4 @@
 
 .sc-icon-zoom-out::before {
   mask-image: var(--icon-zoom-out);
-}
-
-.sc-icon-compass::before {
-  mask-image: var(--icon-compass);
-}
-
-.sc-icon-prev::before {
-  mask-image: var(--icon-prev);
-}
-
-.sc-icon-next::before {
-  mask-image: var(--icon-next);
-}
-
-.sc-icon-stop::before {
-  mask-image: var(--icon-stop);
-}
-
-.sc-icon-play::before {
-  mask-image: var(--icon-play);
 }
