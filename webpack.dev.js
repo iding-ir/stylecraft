@@ -7,31 +7,26 @@ module.exports = merge(common, {
   mode: "development",
   output: {
     filename: "stylecraft.js",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "dist"),
   },
   devServer: {
     contentBase: path.join(__dirname, "src"),
     // publicPath: '/dist/',
     // compress: true,
-    port: 9000
+    port: 9000,
     // hot: true
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/template.html"
-    })
+      template: "./src/template.html",
+    }),
   ],
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: [
-          "style-loader",
-          "css-loader",
-          "postcss-loader"
-          // "sass-loader"
-        ]
-      }
-    ]
-  }
+        test: /\.s[ac]ss$/i,
+        use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"],
+      },
+    ],
+  },
 });

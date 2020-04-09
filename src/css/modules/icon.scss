@@ -6,41 +6,41 @@
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow-md);
   transition: all var(--transition-sm);
-}
 
-[class*="sc-icon-"].sc-sm {
-  width: var(--icon-sm);
-  height: var(--icon-sm);
-}
+  &.sc-sm {
+    width: var(--icon-sm);
+    height: var(--icon-sm);
+  }
 
-[class*="sc-icon-"].sc-md {
-  width: var(--icon-md);
-  height: var(--icon-md);
-}
+  &.sc-md {
+    width: var(--icon-md);
+    height: var(--icon-md);
+  }
 
-[class*="sc-icon-"].sc-lg {
-  width: var(--icon-lg);
-  height: var(--icon-lg);
-}
+  &.sc-lg {
+    width: var(--icon-lg);
+    height: var(--icon-lg);
+  }
 
-[class*="sc-icon-"]:hover {
-  background-color: var(--color-light);
-}
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 50%;
+    background-color: var(--color-dark);
+    transition: all var(--transition-sm);
+  }
 
-[class*="sc-icon-"]::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: 50%;
-  background-color: var(--color-dark);
-  transition: all var(--transition-sm);
-}
+  &:hover {
+    background-color: var(--color-light);
 
-[class*="sc-icon-"]:hover::before {
-  background-color: var(--color-secondary-dark);
+    &::before {
+      background-color: var(--color-secondary-dark);
+    }
+  }
 }
 
 .sc-icon-calendar::before {

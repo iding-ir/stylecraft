@@ -1,17 +1,5 @@
 @charset "utf-8";
 
-html *,
-html *::after,
-html *::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
 html,
 body {
   padding: 0;
@@ -21,6 +9,18 @@ body {
 
 html {
   font-size: 12px;
+
+  *,
+  *::after,
+  *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -39,9 +39,9 @@ body {
   position: relative;
   color: var(--color-dark);
   background-color: var(--color-lighter);
-}
 
-body * {
-  line-height: 1.5;
-  letter-spacing: 0.5px;
+  * {
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+  }
 }

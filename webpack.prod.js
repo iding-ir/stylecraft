@@ -11,7 +11,7 @@ module.exports = merge(common, {
   mode: "production",
   output: {
     filename: "stylecraft.js",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "dist"),
   },
   optimization: {
     minimizer: [
@@ -22,26 +22,26 @@ module.exports = merge(common, {
         minify: {
           removeAttributeQuotes: true,
           collapseWhitespace: true,
-          removeComments: true
-        }
-      })
-    ]
+          removeComments: true,
+        },
+      }),
+    ],
   },
   plugins: [
     new MiniCssExtractPlugin({ filename: "stylecraft.css" }),
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
   ],
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.s[ac]ss$/i,
         use: [
           MiniCssExtractPlugin.loader,
           "css-loader",
-          "postcss-loader"
-          // "sass-loader"
-        ]
-      }
-    ]
-  }
+          "postcss-loader",
+          "sass-loader",
+        ],
+      },
+    ],
+  },
 });
