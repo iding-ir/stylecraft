@@ -1,0 +1,19 @@
+[class*="sc-flex-"] {
+  display: flex;
+}
+
+.sc-flex-r {
+  flex-direction: row;
+}
+
+.sc-flex-c {
+  flex-direction: column;
+}
+
+.sc-flex-rr {
+  flex-direction: row-reverse;
+}
+
+.sc-flex-cr {
+  flex-direction: column-reverse;
+}
