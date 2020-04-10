@@ -19,7 +19,7 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: 50%;
-      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTAwcHgiIGhlaWdodD0iMTAwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48cGF0aCBpZD0iTGF5ZXIxXzBfMV9TVFJPS0VTIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSIgZD0iTSAyNSA5MEwgNzUgOTBNIDI1IDEwTCA3Ny41IDEwTSA5NSA1MEwgNSA1MCIvPjwvZGVmcz48ZyB0cmFuc2Zvcm09Im1hdHJpeCggMSwgMCwgMCwgMSwgMCwwKSAiPjx1c2UgeGxpbms6aHJlZj0iI0xheWVyMV8wXzFfU1RST0tFUyIvPjwvZz48L3N2Zz4=);
+      background-image: var(--icon-handle-h);
       background-color: var(--color-lighter);
       border: var(--border-thickness) solid var(--color-primary-light);
       border-radius: 50%;
