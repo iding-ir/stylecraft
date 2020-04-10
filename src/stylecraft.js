@@ -18,3 +18,4 @@ import "./scss/modules/table.scss";
 import "./scss/modules/card.scss";
 import "./scss/modules/slide.scss";
 import "./scss/modules/modal.scss";
+import "./scss/modules/divider.scss";
