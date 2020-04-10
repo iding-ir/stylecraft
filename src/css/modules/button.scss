@@ -18,12 +18,6 @@
     cursor: pointer;
     word-break: break-all;
 
-    &.sc-stretched {
-      button {
-        width: 100%;
-      }
-    }
-
     &:disabled {
       color: var(--fade-grey-lg);
       background-color: var(--color-light);
@@ -77,6 +71,12 @@
       &::before {
         background-color: var(--color-primary-dark);
       }
+    }
+  }
+
+  &.sc-stretched {
+    button {
+      width: 100%;
     }
   }
 }
