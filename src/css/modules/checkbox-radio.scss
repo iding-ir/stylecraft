@@ -20,6 +20,10 @@
         height: var(--icon-sm);
         background-color: var(--color-lighter);
 
+        &:hover {
+          background-color: transparent;
+        }
+
         &::before {
           background-color: var(--color-transparent);
         }
