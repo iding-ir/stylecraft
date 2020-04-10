@@ -103,7 +103,7 @@
 
           <label for="checkbox-3">
             <i class="sc-icon-checkbox"></i>
-
+            sc-form-group
             <span>Checkbox 3 checked and disabled</span>
           </label>
         </div>
@@ -200,110 +200,110 @@
           <label for="text-sc-icon-2"><i class="sc-icon-search"></i></label>
         </div>
       </div>
+
+      <h5>Select</h5>
+
+      <div class="sc-form-group sc-grid-2">
+        <div class="sc-form-select">
+          <select name="my-select-1">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+          </select>
+        </div>
+
+        <div class="sc-form-select">
+          <select name="my-select-1" disabled>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+          </select>
+        </div>
+      </div>
+
+      <h5>Range</h5>
+
+      <div class="sc-form-group sc-grid-2">
+        <div class="sc-form-range">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            step="1"
+            name="my-range"
+            id="range-1"
+          />
+
+          <label for="range-2">Range with label</label>
+        </div>
+
+        <div class="sc-form-range">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            step="1"
+            name="my-range"
+            id="range-2"
+            disabled
+          />
+
+          <label for="range-2">Range with label disabled</label>
+        </div>
+      </div>
+
+      <h5>Button</h5>
+
+      <div class="sc-form-group sc-grid-2">
+        <div class="sc-form-button sc-stretched">
+          <button>
+            <i class="sc-icon-search"></i>
+
+            <span>Stretched button with icon</span>
+          </button>
+        </div>
+
+        <div class="sc-form-button sc-stretched">
+          <button disabled>
+            <i class="sc-icon-search"></i>
+
+            <span>Stretched button with icon disabled</span>
+          </button>
+        </div>
+
+        <div class="sc-form-button sc-stretched">
+          <button>Stretched button</button>
+        </div>
+
+        <div class="sc-form-button sc-stretched">
+          <button disabled>Stretched button disabled</button>
+        </div>
+
+        <div class="sc-form-button">
+          <button>
+            <i class="sc-icon-search"></i>
+
+            <span>Button with icon</span>
+          </button>
+        </div>
+
+        <div class="sc-form-button">
+          <button disabled>
+            <i class="sc-icon-search"></i>
+
+            <span>Button with icon disabled</span>
+          </button>
+        </div>
+
+        <div class="sc-form-button">
+          <button>Button</button>
+        </div>
+
+        <div class="sc-form-button">
+          <button disabled>Button disabled</button>
+        </div>
+      </div>
     </form>
-
-    <h5>Select</h5>
-
-    <div class="sc-form-group sc-grid-2">
-      <div class="sc-form-select">
-        <select name="my-select-1">
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-        </select>
-      </div>
-
-      <div class="sc-form-select">
-        <select name="my-select-1" disabled>
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-        </select>
-      </div>
-    </div>
-
-    <h5>Range</h5>
-
-    <div class="sc-form-group sc-grid-2">
-      <div class="sc-form-range">
-        <input
-          type="range"
-          min="1"
-          max="100"
-          step="1"
-          name="my-range"
-          id="range-1"
-        />
-
-        <label for="range-2">Range with label</label>
-      </div>
-
-      <div class="sc-form-range">
-        <input
-          type="range"
-          min="1"
-          max="100"
-          step="1"
-          name="my-range"
-          id="range-2"
-          disabled
-        />
-
-        <label for="range-2">Range with label disabled</label>
-      </div>
-    </div>
-
-    <h5>Button</h5>
-
-    <div class="sc-form-group sc-grid-2">
-      <div class="sc-form-button sc-stretched">
-        <button>
-          <i class="sc-icon-search"></i>
-
-          <span>Stretched button with icon</span>
-        </button>
-      </div>
-
-      <div class="sc-form-button sc-stretched">
-        <button disabled>
-          <i class="sc-icon-search"></i>
-
-          <span>Stretched button with icon disabled</span>
-        </button>
-      </div>
-
-      <div class="sc-form-button sc-stretched">
-        <button>Stretched button</button>
-      </div>
-
-      <div class="sc-form-button sc-stretched">
-        <button disabled>Stretched button disabled</button>
-      </div>
-
-      <div class="sc-form-button">
-        <button>
-          <i class="sc-icon-search"></i>
-
-          <span>Button with icon</span>
-        </button>
-      </div>
-
-      <div class="sc-form-button">
-        <button disabled>
-          <i class="sc-icon-search"></i>
-
-          <span>Button with icon disabled</span>
-        </button>
-      </div>
-
-      <div class="sc-form-button">
-        <button>Button</button>
-      </div>
-
-      <div class="sc-form-button">
-        <button disabled>Button disabled</button>
-      </div>
-    </div>
 
     <h3>Table</h3>
 
@@ -365,7 +365,7 @@
       </div>
 
       <footer class="sc-card-footer">
-        <div class="sc-form-group sc-grid-2">
+        <div class="sc-grid-2">
           <div class="sc-form-button sc-stretched">
             <button>
               <i class="sc-icon-search"></i>
@@ -400,7 +400,7 @@
       </div>
 
       <footer class="sc-card-footer">
-        <div class="sc-form-group sc-grid-2">
+        <div class="sc-grid-2">
           <div class="sc-form-button sc-stretched">
             <button>
               <i class="sc-icon-search"></i>
@@ -435,7 +435,7 @@
       </div>
 
       <footer class="sc-card-footer">
-        <div class="sc-form-group sc-grid-2">
+        <div class="sc-grid-2">
           <div class="sc-form-button sc-stretched">
             <button>
               <i class="sc-icon-search"></i>
@@ -470,7 +470,7 @@
       </div>
 
       <footer class="sc-slide-footer">
-        <div class="sc-form-group sc-grid-2">
+        <div class="sc-grid-2">
           <div class="sc-form-button sc-stretched button">
             <button>
               <i class="sc-icon-search"></i>
@@ -490,19 +490,17 @@
       </footer>
     </div>
 
-    <h5>Modals</h5>
+    <h3>Modal</h3>
 
-    <div>
-      <p><a id="trigger-modal-small">Small</a></p>
+    <h5><a id="trigger-modal-small">Small</a></h5>
 
-      <p><a id="trigger-modal-medium">Medium</a></p>
+    <h5><a id="trigger-modal-medium">Medium</a></h5>
 
-      <p><a id="trigger-modal-large">Large</a></p>
+    <h5><a id="trigger-modal-large">Large</a></h5>
 
-      <p><a id="trigger-modal-stretched">Stretched</a></p>
+    <h5><a id="trigger-modal-stretched">Stretched</a></h5>
 
-      <p><a id="trigger-modal-fullscreen">Fullscreen</a></p>
-    </div>
+    <h5><a id="trigger-modal-fullscreen">Fullscreen</a></h5>
 
     <div class="sc-modal" id="modal-small">
       <div class="sc-card sc-shadowed">
@@ -519,14 +517,12 @@
         </div>
 
         <footer class="sc-card-footer">
-          <div class="sc-form-group sc-grid-2">
-            <div class="sc-form-button">
-              <button>
-                <i class="sc-icon-close"></i>
+          <div class="sc-form-button">
+            <button>
+              <i class="sc-icon-close"></i>
 
-                <span>Close</span>
-              </button>
-            </div>
+              <span>Close</span>
+            </button>
           </div>
         </footer>
       </div>
@@ -547,14 +543,12 @@
         </div>
 
         <footer class="sc-card-footer">
-          <div class="sc-form-group sc-grid-2">
-            <div class="sc-form-button">
-              <button>
-                <i class="sc-icon-close"></i>
+          <div class="sc-form-button">
+            <button>
+              <i class="sc-icon-close"></i>
 
-                <span>Close</span>
-              </button>
-            </div>
+              <span>Close</span>
+            </button>
           </div>
         </footer>
       </div>
@@ -575,14 +569,12 @@
         </div>
 
         <footer class="sc-card-footer">
-          <div class="sc-form-group sc-grid-2">
-            <div class="sc-form-button">
-              <button>
-                <i class="sc-icon-close"></i>
+          <div class="sc-form-button">
+            <button>
+              <i class="sc-icon-close"></i>
 
-                <span>Close</span>
-              </button>
-            </div>
+              <span>Close</span>
+            </button>
           </div>
         </footer>
       </div>
@@ -603,14 +595,12 @@
         </div>
 
         <footer class="sc-card-footer">
-          <div class="sc-form-group sc-grid-2">
-            <div class="sc-form-button">
-              <button>
-                <i class="sc-icon-close"></i>
+          <div class="sc-form-button">
+            <button>
+              <i class="sc-icon-close"></i>
 
-                <span>Close</span>
-              </button>
-            </div>
+              <span>Close</span>
+            </button>
           </div>
         </footer>
       </div>
@@ -631,14 +621,12 @@
         </div>
 
         <footer class="sc-card-footer">
-          <div class="sc-form-group sc-grid-2">
-            <div class="sc-form-button">
-              <button>
-                <i class="sc-icon-close"></i>
+          <div class="sc-form-button">
+            <button>
+              <i class="sc-icon-close"></i>
 
-                <span>Close</span>
-              </button>
-            </div>
+              <span>Close</span>
+            </button>
           </div>
         </footer>
       </div>
