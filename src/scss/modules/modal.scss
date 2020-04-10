@@ -1,0 +1,53 @@
+.sc-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100vw - 2rem);
+  max-height: calc(100vh - 2rem);
+  background-color: var(--color-lighter);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10000;
+
+  &.sc-is-visible {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &.sc-stretched {
+    width: calc(100vw - 2rem);
+    height: calc(100vh - 2rem);
+    max-height: calc(100vh - 2rem);
+  }
+
+  &.sc-fullscreen {
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+  }
+
+  @media only screen and (min-width: 600px) {
+    width: 30rem;
+
+    &.sc-md {
+      width: 36rem;
+    }
+
+    &.sc-lg {
+      width: 42rem;
+    }
+  }
+
+  @media only screen and (min-width: 1280px) {
+    width: 36rem;
+
+    &.sc-md {
+      width: 42rem;
+    }
+
+    &.sc-lg {
+      width: 48rem;
+    }
+  }
+}
