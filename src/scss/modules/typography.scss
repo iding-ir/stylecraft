@@ -53,3 +53,17 @@ h5 {
 h6 {
   font-size: 1.2rem;
 }
+
+a {
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    color: var(--color-primary-dark);
+  }
+
+  &:hover,
+  &:active {
+    color: var(--color-secondary-dark);
+  }
+}
