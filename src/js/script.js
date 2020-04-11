@@ -2,15 +2,15 @@ $(document).ready(() => {
   /* -------- Slide -------- */
 
   $(".sc-slide-open").on("click", () => {
-    $(".sc-slide").addClass("sc-is-open");
+    $(".sc-slide").addClass("sc-is-active");
   });
 
   $(".sc-slide-close").on("click", () => {
-    $(".sc-slide").removeClass("sc-is-open");
+    $(".sc-slide").removeClass("sc-is-active");
   });
 
   $(".sc-slide").on("click", () => {
-    $(".sc-slide").removeClass("sc-is-open");
+    $(".sc-slide").removeClass("sc-is-active");
   });
 
   $(".sc-slide-container").on("click", (event) => {
@@ -22,11 +22,11 @@ $(document).ready(() => {
   $("#trigger-modal").on("click", (event) => {
     event.preventDefault();
 
-    $(".sc-modal").addClass("sc-is-visible");
+    $(".sc-modal").addClass("sc-is-active");
   });
 
   $(".sc-modal").on("click", () => {
-    $(".sc-modal").removeClass("sc-is-visible");
+    $(".sc-modal").removeClass("sc-is-active");
   });
 
   $(".sc-modal-container").on("click", (event) => {
@@ -34,6 +34,6 @@ $(document).ready(() => {
   });
 
   $(".sc-modal button").on("click", () => {
-    $(".sc-modal").removeClass("sc-is-visible");
+    $(".sc-modal").removeClass("sc-is-active");
   });
 });
