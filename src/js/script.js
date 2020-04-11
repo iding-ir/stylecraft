@@ -1,21 +1,27 @@
 $(document).ready(() => {
   /* -------- Slide -------- */
 
-  $(".sc-slide-toggle").on("click", () => {
-    $(".sc-slide").toggleClass("sc-is-open");
-
-    $(".sc-overlay").toggleClass("sc-is-visible");
+  $(".sc-slide-open").on("click", () => {
+    $(".sc-slide").addClass("sc-is-open");
   });
 
-  $(".sc-overlay").on("click", () => {
+  $(".sc-slide-close").on("click", () => {
     $(".sc-slide").removeClass("sc-is-open");
+  });
 
-    $(".sc-overlay").removeClass("sc-is-visible");
+  $(".sc-slide").on("click", () => {
+    $(".sc-slide").removeClass("sc-is-open");
+  });
+
+  $(".sc-slide-container").on("click", (event) => {
+    event.stopPropagation();
   });
 
   /* -------- Modal -------- */
 
-  $("#trigger-modal").on("click", () => {
+  $("#trigger-modal").on("click", (event) => {
+    event.preventDefault();
+
     $(".sc-modal").addClass("sc-is-visible");
   });
 
@@ -23,7 +29,7 @@ $(document).ready(() => {
     $(".sc-modal").removeClass("sc-is-visible");
   });
 
-  $(".sc-modal-container").on("click", function (event) {
+  $(".sc-modal-container").on("click", (event) => {
     event.stopPropagation();
   });
 
