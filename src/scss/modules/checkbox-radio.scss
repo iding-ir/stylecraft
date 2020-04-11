@@ -21,7 +21,7 @@
         background-color: var(--color-lighter);
 
         &:hover {
-          background-color: transparent;
+          background-color: var(--color-transparent);
         }
 
         &::before {
@@ -51,6 +51,12 @@
 
             &::before {
               background-color: var(--color-secondary-light);
+            }
+          }
+
+          &:hover {
+            i {
+              background-color: var(--color-light);
             }
           }
         }

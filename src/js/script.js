@@ -46,7 +46,7 @@ $(document).ready(() => {
 
     setTimeout(() => {
       $(".sc-splash").removeClass("sc-is-active");
-    }, 2000);
+    }, 5000);
   });
 
   /* -------- Loader -------- */
@@ -58,6 +58,6 @@ $(document).ready(() => {
 
     setTimeout(() => {
       $(".sc-loader").removeClass("sc-is-active");
-    }, 2000);
+    }, 5000);
   });
 });

@@ -3,7 +3,6 @@
   top: calc(2 * var(--padding-md));
   width: var(--icon-lg);
   height: var(--icon-lg);
-  cursor: pointer;
 
   &.sc-slide-left {
     left: var(--padding-md);
@@ -20,7 +19,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: var(--fade-dark-md);
+  background-color: var(--fade-silver-md);
   transition: var(--transition-md);
   opacity: 0;
   visibility: hidden;
@@ -61,7 +60,6 @@
         right: 0;
         width: var(--icon-lg);
         height: var(--icon-lg);
-        cursor: pointer;
         transform: translateY(-50%);
       }
     }

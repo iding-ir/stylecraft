@@ -34,11 +34,14 @@
     transition: all var(--transition-sm);
   }
 
-  &:hover {
-    background-color: var(--color-light);
+  &.sc-hover {
+    &:hover {
+      cursor: pointer;
+      background-color: var(--color-light);
 
-    &::before {
-      background-color: var(--color-secondary-dark);
+      &::before {
+        background-color: var(--color-secondary-dark);
+      }
     }
   }
 }
