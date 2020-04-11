@@ -107,6 +107,10 @@
   mask-image: var(--icon-left);
 }
 
+.sc-icon-loader::before {
+  mask-image: var(--icon-loader);
+}
+
 .sc-icon-location::before {
   mask-image: var(--icon-location);
 }
@@ -143,12 +147,12 @@
   mask-image: var(--icon-order);
 }
 
-.sc-icon-order-up::before {
-  mask-image: var(--icon-order-up);
-}
-
 .sc-icon-order-down::before {
   mask-image: var(--icon-order-down);
+}
+
+.sc-icon-order-up::before {
+  mask-image: var(--icon-order-up);
 }
 
 .sc-icon-pause::before {
@@ -185,6 +189,14 @@
 
 .sc-icon-share::before {
   mask-image: var(--icon-share);
+}
+
+.sc-icon-stop::before {
+  mask-image: var(--icon-stop);
+}
+
+.sc-icon-stylecraft::before {
+  mask-image: var(--icon-stylecraft);
 }
 
 .sc-icon-tour::before {

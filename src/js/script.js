@@ -36,4 +36,28 @@ $(document).ready(() => {
   $(".sc-modal button").on("click", () => {
     $(".sc-modal").removeClass("sc-is-active");
   });
+
+  /* -------- Splash -------- */
+
+  $("#trigger-splash").on("click", (event) => {
+    event.preventDefault();
+
+    $(".sc-splash").addClass("sc-is-active");
+
+    setTimeout(() => {
+      $(".sc-splash").removeClass("sc-is-active");
+    }, 2000);
+  });
+
+  /* -------- Loader -------- */
+
+  $("#trigger-loader").on("click", (event) => {
+    event.preventDefault();
+
+    $(".sc-loader").addClass("sc-is-active");
+
+    setTimeout(() => {
+      $(".sc-loader").removeClass("sc-is-active");
+    }, 2000);
+  });
 });
