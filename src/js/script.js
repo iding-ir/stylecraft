@@ -1,29 +1,33 @@
 $(document).ready(() => {
+  /* -------- Slide -------- */
+
   $(".sc-slide-toggle").on("click", () => {
     $(".sc-slide").toggleClass("sc-is-open");
+
+    $(".sc-overlay").toggleClass("sc-is-visible");
   });
 
-  $("#trigger-modal-small").on("click", () => {
-    $("#modal-small").addClass("sc-is-visible");
+  $(".sc-overlay").on("click", () => {
+    $(".sc-slide").removeClass("sc-is-open");
+
+    $(".sc-overlay").removeClass("sc-is-visible");
   });
 
-  $("#trigger-modal-medium").on("click", () => {
-    $("#modal-medium").addClass("sc-is-visible");
+  /* -------- Modal -------- */
+
+  $("#trigger-modal").on("click", () => {
+    $(".sc-modal").addClass("sc-is-visible");
   });
 
-  $("#trigger-modal-large").on("click", () => {
-    $("#modal-large").addClass("sc-is-visible");
+  $(".sc-modal").on("click", () => {
+    $(".sc-modal").removeClass("sc-is-visible");
   });
 
-  $("#trigger-modal-stretched").on("click", () => {
-    $("#modal-stretched").addClass("sc-is-visible");
+  $(".sc-modal-container").on("click", function (event) {
+    event.stopPropagation();
   });
 
-  $("#trigger-modal-fullscreen").on("click", () => {
-    $("#modal-fullscreen").addClass("sc-is-visible");
-  });
-
-  $(".sc-modal button").on("click", function () {
-    $(this).parents(".sc-modal").removeClass("sc-is-visible");
+  $(".sc-modal button").on("click", () => {
+    $(".sc-modal").removeClass("sc-is-visible");
   });
 });

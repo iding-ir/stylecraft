@@ -19,3 +19,4 @@ import "./scss/modules/card.scss";
 import "./scss/modules/slide.scss";
 import "./scss/modules/modal.scss";
 import "./scss/modules/divider.scss";
+import "./scss/modules/overlay.scss";
