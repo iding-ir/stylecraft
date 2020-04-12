@@ -2,7 +2,9 @@ import "./js/script.js";
 
 import "./scss/reset.scss";
 import "./scss/vars.scss";
+import "./scss/fonts.scss";
 import "./scss/icons.scss";
+import "./scss/modules/fonts.scss";
 import "./scss/modules/core.scss";
 import "./scss/modules/typography.scss";
 import "./scss/modules/flex.scss";
