@@ -20,8 +20,16 @@ module.exports = {
         test: /\.html$/,
         use: ["html-loader"],
       },
+      // {
+      //   test: /\.(png|jpg|gif)$/,
+      //   use: ["file-loader"],
+      // },
+      // {
+      //   test: /\.(woff|woff2|eot|ttf|otf)$/,
+      //   use: ["file-loader"],
+      // },
       {
-        test: /\.svg/,
+        test: /\.(svg)$/,
         use: {
           loader: "svg-url-loader",
         },

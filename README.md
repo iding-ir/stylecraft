@@ -23,7 +23,7 @@ import "stylecraft/dist/stylecraft.css"
 
 [Live demo](http://stylecraft.iding.ir)
 
-[Live demo](http://realestate-map.iding.ir) - [Github](https://github.com/iding-ir/realestate-map)
+[Live demo](http://realestate-map-redux.iding.ir) - [Github](https://github.com/iding-ir/realestate-map-redux)
 
 ## Note
 
