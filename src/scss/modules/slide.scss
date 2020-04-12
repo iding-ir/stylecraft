@@ -1,6 +1,6 @@
 .sc-slide-open {
   position: fixed;
-  top: calc(2 * var(--padding-md));
+  top: var(--padding-md);
   width: var(--icon-lg);
   height: var(--icon-lg);
 
@@ -44,12 +44,12 @@
       padding: var(--padding-md) 0;
       border-bottom: var(--border-thickness) solid var(--fade-dark-md);
 
-      .h1,
-      .h2,
-      .h3,
-      .h4,
-      .h5,
-      .h6 {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
         margin: 0;
         line-height: var(--icon-lg);
       }

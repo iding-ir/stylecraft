@@ -1,16 +1,9 @@
 .header {
+  border-bottom: var(--border-thickness) solid var(--color-dark);
+
   h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .sc-icon-stylecraft {
-      margin-right: var(--padding-md);
-    }
-
-    span {
-      color: var(--color-primary-dark);
-    }
+    text-align: center;
+    color: var(--color-dark);
   }
 }
 
