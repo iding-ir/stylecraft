@@ -47,7 +47,7 @@
       &[checked="checked"] {
         ~ label {
           i {
-            background-color: var(--color-lighter);
+            background-color: var(--color-grey-sm);
 
             &::before {
               background-color: var(--color-secondary-light);
@@ -56,7 +56,7 @@
 
           &:hover {
             i {
-              background-color: var(--color-light);
+              background-color: var(--color-grey-md);
             }
           }
         }
