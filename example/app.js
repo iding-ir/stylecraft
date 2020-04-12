@@ -4,7 +4,15 @@ $(document).ready(() => {
   $("#trigger-mode").on("click", (event) => {
     event.preventDefault();
 
-    $("body").toggleClass("sc-dark");
+    $(".sc-splash").addClass("sc-is-active");
+
+    setTimeout(() => {
+      $("body").toggleClass("sc-dark");
+    }, 500);
+
+    setTimeout(() => {
+      $(".sc-splash").removeClass("sc-is-active");
+    }, 1000);
   });
 
   /* -------- Slide -------- */
