@@ -43,8 +43,7 @@
         }
       }
 
-      &:checked,
-      &[checked="checked"] {
+      &:checked {
         ~ label {
           i {
             background-color: var(--color-grey-sm);
@@ -77,8 +76,7 @@
         }
       }
 
-      &:checked,
-      &[checked="checked"] {
+      &:checked {
         ~ label {
           i {
             border-color: var(--fade-grey-md);
