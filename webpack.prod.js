@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
+// const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = merge(common, {
   mode: "production",
@@ -30,12 +30,12 @@ module.exports = merge(common, {
   },
   plugins: [
     new MiniCssExtractPlugin({ filename: "[name].css" }),
-    new CopyPlugin([
-      {
-        from: path.resolve(__dirname, "src/assets/fonts"),
-        to: path.resolve(__dirname, "dist/assets/fonts"),
-      },
-    ]),
+    // new CopyPlugin([
+    //   {
+    //     from: path.resolve(__dirname, "src/assets/fonts"),
+    //     to: path.resolve(__dirname, "dist/assets/fonts"),
+    //   },
+    // ]),
     new CleanWebpackPlugin(),
   ],
   module: {
