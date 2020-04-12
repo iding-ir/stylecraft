@@ -1,4 +1,12 @@
 $(document).ready(() => {
+  /* -------- Mode -------- */
+
+  $("#trigger-mode").on("click", (event) => {
+    event.preventDefault();
+
+    $("body").toggleClass("sc-dark");
+  });
+
   /* -------- Slide -------- */
 
   $(".sc-slide-open").on("click", () => {
