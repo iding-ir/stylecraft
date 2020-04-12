@@ -6,11 +6,12 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = merge(common, {
   mode: "production",
   output: {
-    filename: "stylecraft.js",
+    filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
   },
   optimization: {
@@ -18,7 +19,7 @@ module.exports = merge(common, {
       new OptimizeCssAssetsPlugin(),
       new TerserPlugin(),
       new HtmlWebpackPlugin({
-        template: "./src/template.html",
+        template: "./example/template.html",
         minify: {
           removeAttributeQuotes: true,
           collapseWhitespace: true,
@@ -28,7 +29,13 @@ module.exports = merge(common, {
     ],
   },
   plugins: [
-    new MiniCssExtractPlugin({ filename: "stylecraft.css" }),
+    new MiniCssExtractPlugin({ filename: "[name].css" }),
+    new CopyPlugin([
+      {
+        from: path.resolve(__dirname, "src/assets/fonts"),
+        to: path.resolve(__dirname, "dist/assets/fonts"),
+      },
+    ]),
     new CleanWebpackPlugin(),
   ],
   module: {

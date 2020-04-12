@@ -1,5 +1,3 @@
-import "./js/script.js";
-
 import "./scss/reset.scss";
 import "./scss/vars.scss";
 import "./scss/fonts.scss";
