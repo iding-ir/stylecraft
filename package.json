@@ -46,6 +46,8 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "codemirror": "^5.52.2",
+    "codemirror-formatting": "^1.0.0",
     "jquery": "^3.4.1"
   },
   "postcss": {

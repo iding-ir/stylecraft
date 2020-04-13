@@ -1,6 +1,4 @@
 .header {
-  border-bottom: var(--border-thickness) solid var(--color-dark);
-
   h1 {
     text-align: center;
     color: var(--color-dark);
@@ -9,4 +7,9 @@
 
 .app {
   padding: 2rem;
+}
+
+.CodeMirror {
+  border: 1px solid var(--color-light);
+  height: auto;
 }

@@ -13,18 +13,148 @@
     </header>
 
     <div class="app">
-      <h3>Mode</h3>
+      <ul>
+        <li>
+          <a href="#doc-mode">Mode</a>
+        </li>
+
+        <li>
+          <a href="#doc-form">Form</a>
+
+          <ul>
+            <li>
+              <a href="#doc-form-radio">Radio</a>
+            </li>
+
+            <li>
+              <a href="#doc-form-checkbox">Checkbox</a>
+            </li>
+
+            <li>
+              <a href="#doc-form-text">Text field</a>
+
+              <ul>
+                <li>
+                  <a href="#doc-form-text-basic">Basic</a>
+                </li>
+
+                <li>
+                  <a href="#doc-form-text-lable">With label</a>
+                </li>
+
+                <li>
+                  <a href="#doc-form-text-icon">With icon</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#doc-form-textarea">Textarea</a>
+
+              <ul>
+                <li>
+                  <a href="#doc-form-textarea-basic">Basic</a>
+                </li>
+
+                <li>
+                  <a href="#doc-form-textarea-lable">With label</a>
+                </li>
+
+                <li>
+                  <a href="#doc-form-textarea-icon">With icon</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#doc-form-select">Select</a>
+            </li>
+
+            <li>
+              <a href="#doc-form-range">Range</a>
+            </li>
+
+            <li>
+              <a href="#doc-form-button">Button</a>
+
+              <ul>
+                <li>
+                  <a href="#doc-form-button-basic">Basic</a>
+                </li>
+
+                <li>
+                  <a href="#doc-form-button-basic-icon">Basic with icon</a>
+                </li>
+
+                <li>
+                  <a href="#doc-form-button-stretched">Stretched</a>
+                </li>
+
+                <li>
+                  <a href="#doc-form-button-stretched-icon"
+                    >Stretched with icon</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#doc-table">Table</a>
+        </li>
+
+        <li>
+          <a href="#doc-card">Card</a>
+
+          <ul>
+            <li>
+              <a href="#doc-normal">Normal</a>
+            </li>
+
+            <li>
+              <a href="#doc-borderless">Borderless</a>
+            </li>
+
+            <li>
+              <a href="#doc-shadowed">Shadowed</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#doc-slide">Slide</a>
+        </li>
+
+        <li>
+          <a href="#doc-modal">Modal</a>
+        </li>
+
+        <li>
+          <a href="#doc-splash">Splash</a>
+        </li>
+
+        <li>
+          <a href="#doc-loader">Loader</a>
+        </li>
+
+        <li>
+          <a href="#doc-icon">Icon</a>
+        </li>
+      </ul>
+
+      <h2>Mode</h2>
 
       <a href="#" id="trigger-mode">Change</a>
 
       <hr class="sc-divider" />
 
-      <h3>Form</h3>
+      <h2>Form</h2>
+
+      <h3>Radio</h3>
 
       <form class="sc-form">
-        <h5>Radio</h5>
-
-        <div class="sc-form-group sc-grid-2">
+        <div class="sc-form-group sc-grid-3">
           <div class="sc-form-radio">
             <input type="radio" name="my-radio" id="radio-1" checked />
 
@@ -44,46 +174,61 @@
               <span>Radio 2</span>
             </label>
           </div>
-        </div>
 
-        <h5>Radio disabled</h5>
-
-        <div class="sc-form-group sc-grid-2">
           <div class="sc-form-radio">
-            <input
-              type="radio"
-              name="my-radio-disabled"
-              id="radio-3"
-              checked
-              disabled
-            />
+            <input type="radio" name="my-radio" id="radio-3" disabled />
 
             <label for="radio-3">
               <i class="sc-icon-radio"></i>
 
-              <span>Radio 3 checked and disabled</span>
-            </label>
-          </div>
-
-          <div class="sc-form-radio">
-            <input
-              type="radio"
-              name="my-radio-disabled"
-              id="radio-4"
-              disabled
-            />
-
-            <label for="radio-4">
-              <i class="sc-icon-radio"></i>
-
-              <span>Radio 4 disabled</span>
+              <span>Radio 3 disabled</span>
             </label>
           </div>
         </div>
+      </form>
 
-        <h5>Checkbox</h5>
+      <h5>Code:</h5>
 
-        <div class="sc-form-group sc-grid-2">
+      <textarea class="editor-html">
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-3">
+            <div class="sc-form-radio">
+              <input type="radio" name="my-radio" id="radio-1" checked />
+  
+              <label for="radio-1">
+                <i class="sc-icon-radio"></i>
+  
+                <span>Radio 1</span>
+              </label>
+            </div>
+  
+            <div class="sc-form-radio">
+              <input type="radio" name="my-radio" id="radio-2" />
+  
+              <label for="radio-2">
+                <i class="sc-icon-radio"></i>
+  
+                <span>Radio 2</span>
+              </label>
+            </div>
+  
+            <div class="sc-form-radio">
+              <input type="radio" name="my-radio" id="radio-3" disabled />
+  
+              <label for="radio-3">
+                <i class="sc-icon-radio"></i>
+  
+                <span>Radio 3 disabled</span>
+              </label>
+            </div>
+          </div>
+        </form>
+      </textarea>
+
+      <h3>Checkbox</h3>
+
+      <form class="sc-form">
+        <div class="sc-form-group sc-grid-3">
           <div class="sc-form-checkbox">
             <input type="checkbox" name="my-checkbox" id="checkbox-1" checked />
 
@@ -103,127 +248,310 @@
               <span>Checkbox 2</span>
             </label>
           </div>
-        </div>
 
-        <h5>Checkbox disabled</h5>
-
-        <div class="sc-form-group sc-grid-2">
           <div class="sc-form-checkbox">
             <input
               type="checkbox"
               name="my-checkbox"
               id="checkbox-3"
-              checked
               disabled
             />
 
             <label for="checkbox-3">
               <i class="sc-icon-checkbox"></i>
 
-              <span>Checkbox 3 checked and disabled</span>
-            </label>
-          </div>
-
-          <div class="sc-form-checkbox">
-            <input
-              type="checkbox"
-              name="my-checkbox"
-              id="checkbox-4"
-              disabled
-            />
-
-            <label for="checkbox-4">
-              <i class="sc-icon-checkbox"></i>
-
-              <span>Checkbox 4 disabled</span>
+              <span>Checkbox 3 disabled</span>
             </label>
           </div>
         </div>
+      </form>
 
-        <h5>Text field</h5>
+      <h5>Code:</h5>
 
+      <textarea class="editor-html">
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-3">
+            <div class="sc-form-checkbox">
+              <input type="checkbox" name="my-checkbox" id="checkbox-1" checked />
+  
+              <label for="checkbox-1">
+                <i class="sc-icon-checkbox"></i>
+  
+                <span>Checkbox 1</span>
+              </label>
+            </div>
+  
+            <div class="sc-form-checkbox">
+              <input type="checkbox" name="my-checkbox" id="checkbox-2" />
+  
+              <label for="checkbox-2">
+                <i class="sc-icon-checkbox"></i>
+  
+                <span>Checkbox 2</span>
+              </label>
+            </div>
+  
+            <div class="sc-form-checkbox">
+              <input
+                type="checkbox"
+                name="my-checkbox"
+                id="checkbox-3"
+                disabled
+              />
+  
+              <label for="checkbox-3">
+                <i class="sc-icon-checkbox"></i>
+  
+                <span>Checkbox 3 disabled</span>
+              </label>
+            </div>
+          </div>
+        </form>
+      </textarea>
+
+      <h3>Text field</h3>
+
+      <h4>Basic</h4>
+
+      <form class="sc-form">
         <div class="sc-form-group sc-grid-2">
           <div class="sc-form-text">
-            <input type="text" name="my-text" id="text-1" />
+            <input type="text" name="my-text-1" id="text-1" />
 
             <label for="text-1">Text field with basic label</label>
           </div>
 
           <div class="sc-form-text">
-            <input type="text" name="my-text" id="text-2" disabled />
+            <input type="text" name="my-text-2" id="text-2" disabled />
 
             <label for="text-2">Text field with basic label disabled</label>
           </div>
+        </div>
+      </form>
+
+      <h5>Code:</h5>
+
+      <textarea class="editor-html">
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-2">
+            <div class="sc-form-text">
+              <input type="text" name="my-text-1" id="text-1" />
+  
+              <label for="text-1">Text field with basic label</label>
+            </div>
+  
+            <div class="sc-form-text">
+              <input type="text" name="my-text-2" id="text-2" disabled />
+  
+              <label for="text-2">Text field with basic label disabled</label>
+            </div>
+          </div>
+        </form>
+      </textarea>
+
+      <h4>With lable</h4>
+
+      <form class="sc-form">
+        <div class="sc-form-group sc-grid-2">
+          <div class="sc-form-text sc-has-label">
+            <input type="text" name="my-text-3" id="text-3" />
+
+            <label for="text-3">Text field with stylish label</label>
+          </div>
 
           <div class="sc-form-text sc-has-label">
-            <input type="text" name="my-text" id="text-label-1" />
+            <input type="text" name="my-text-4" id="text-4" disabled />
 
-            <label for="text-label-1">Text field with stylish label</label>
-          </div>
-
-          <div class="sc-form-text sc-has-label">
-            <input type="text" name="my-text" id="text-label-2" disabled />
-
-            <label for="text-label-2"
-              >Text field with stylish label disabled</label
-            >
-          </div>
-
-          <div class="sc-form-text sc-has-icon">
-            <input type="text" name="my-text" id="text-sc-icon-1" />
-
-            <label for="text-sc-icon-1"><i class="sc-icon-search"></i></label>
-          </div>
-
-          <div class="sc-form-text sc-has-icon">
-            <input type="text" name="my-text" id="text-sc-icon-2" disabled />
-
-            <label for="text-sc-icon-2"><i class="sc-icon-search"></i></label>
+            <label for="text-4">Text field with stylish label disabled</label>
           </div>
         </div>
+      </form>
 
-        <h5>Textarea</h5>
+      <h5>Code:</h5>
 
+      <textarea class="editor-html">
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-2">
+            <div class="sc-form-text sc-has-label">
+              <input type="text" name="my-text-3" id="text-3" />
+  
+              <label for="text-3">Text field with stylish label</label>
+            </div>
+  
+            <div class="sc-form-text sc-has-label">
+              <input type="text" name="my-text-4" id="text-4" disabled />
+  
+              <label for="text-4">Text field with stylish label disabled</label>
+            </div>
+          </div>
+        </form>
+      </textarea>
+
+      <h4>With icon</h4>
+
+      <form class="sc-form">
+        <div class="sc-form-group sc-grid-2">
+          <div class="sc-form-text sc-has-icon">
+            <input type="text" name="my-text-5" id="text-5" />
+
+            <label for="text-5"><i class="sc-icon-search"></i></label>
+          </div>
+
+          <div class="sc-form-text sc-has-icon">
+            <input type="text" name="my-text-6" id="text-6" disabled />
+
+            <label for="text-6">
+              <i class="sc-icon-search"></i>
+            </label>
+          </div>
+        </div>
+      </form>
+
+      <h5>Code:</h5>
+
+      <textarea class="editor-html">
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-2">
+            <div class="sc-form-text sc-has-icon">
+              <input type="text" name="my-text-5" id="text-5" />
+  
+              <label for="text-5"><i class="sc-icon-search"></i></label>
+            </div>
+  
+            <div class="sc-form-text sc-has-icon">
+              <input type="text" name="my-text-6" id="text-6" disabled />
+  
+              <label for="text-6">
+                <i class="sc-icon-search"></i>
+              </label>
+            </div>
+          </div>
+        </form>
+      </textarea>
+
+      <h3>Textarea</h3>
+
+      <h4>Basic</h4>
+
+      <form class="sc-form">
         <div class="sc-form-group sc-grid-2">
           <div class="sc-form-textarea">
-            <textarea name="my-textarea" id="textarea-1"></textarea>
+            <textarea name="my-textarea-1" id="textarea-1"></textarea>
 
             <label for="textarea-1">Text field with basic label</label>
           </div>
 
           <div class="sc-form-textarea">
-            <textarea name="my-textarea" id="textarea-2" disabled></textarea>
+            <textarea name="my-textarea-2" id="textarea-2" disabled></textarea>
 
             <label for="textarea-2">Text field with basic label disabled</label>
           </div>
+        </div>
+      </form>
 
+      <h5>Code:</h5>
+
+      <textarea class="editor-html">
+        &#x3C;form class=&#x22;sc-form&#x22;&#x3E;
+          &#x3C;div class=&#x22;sc-form-group sc-grid-2&#x22;&#x3E;
+            &#x3C;div class=&#x22;sc-form-textarea&#x22;&#x3E;
+              &#x3C;textarea name=&#x22;my-textarea-1&#x22; id=&#x22;textarea-1&#x22;&#x3E;&#x3C;/textarea&#x3E;
+    
+              &#x3C;label for=&#x22;textarea-1&#x22;&#x3E;Text field with basic label&#x3C;/label&#x3E;
+            &#x3C;/div&#x3E;
+    
+            &#x3C;div class=&#x22;sc-form-textarea&#x22;&#x3E;
+              &#x3C;textarea name=&#x22;my-textarea-2&#x22; id=&#x22;textarea-2&#x22; disabled&#x3E;&#x3C;/textarea&#x3E;
+    
+              &#x3C;label for=&#x22;textarea-2&#x22;&#x3E;Text field with basic label disabled&#x3C;/label&#x3E;
+            &#x3C;/div&#x3E;
+          &#x3C;/div&#x3E;
+        &#x3C;/form&#x3E;
+      </textarea>
+
+      <h4>With label</h4>
+
+      <form class="sc-form">
+        <div class="sc-form-group sc-grid-2">
           <div class="sc-form-textarea sc-has-label">
-            <textarea name="my-textarea" id="textarea-3"></textarea>
+            <textarea name="my-textarea-3" id="textarea-3"></textarea>
 
             <label for="textarea-3">Text field with stylish label</label>
           </div>
 
           <div class="sc-form-textarea sc-has-label">
-            <textarea name="my-textarea" id="textarea-4" disabled></textarea>
+            <textarea name="my-textarea-4" id="textarea-4" disabled></textarea>
 
             <label for="textarea-4">Text field with stylish label</label>
           </div>
+        </div>
+      </form>
 
+      <h5>Code:</h5>
+
+      <textarea class="editor-html">
+        &#x3C;form class=&#x22;sc-form&#x22;&#x3E;
+        &#x3C;div class=&#x22;sc-form-group sc-grid-2&#x22;&#x3E;
+          &#x3C;div class=&#x22;sc-form-textarea sc-has-label&#x22;&#x3E;
+            &#x3C;textarea name=&#x22;my-textarea-3&#x22; id=&#x22;textarea-3&#x22;&#x3E;&#x3C;/textarea&#x3E;
+
+            &#x3C;label for=&#x22;textarea-3&#x22;&#x3E;Text field with stylish label&#x3C;/label&#x3E;
+          &#x3C;/div&#x3E;
+
+          &#x3C;div class=&#x22;sc-form-textarea sc-has-label&#x22;&#x3E;
+            &#x3C;textarea name=&#x22;my-textarea-4&#x22; id=&#x22;textarea-4&#x22; disabled&#x3E;&#x3C;/textarea&#x3E;
+
+            &#x3C;label for=&#x22;textarea-4&#x22;&#x3E;Text field with stylish label&#x3C;/label&#x3E;
+          &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+      &#x3C;/form&#x3E;
+      </textarea>
+
+      <h4>With icon</h4>
+
+      <form class="sc-form">
+        <div class="sc-form-group sc-grid-2">
           <div class="sc-form-textarea sc-has-icon">
-            <textarea name="my-textarea" id="textarea-5"></textarea>
+            <textarea name="my-textarea-5" id="textarea-5"></textarea>
 
             <label for="text-sc-icon-2"><i class="sc-icon-search"></i></label>
           </div>
 
           <div class="sc-form-textarea sc-has-icon">
-            <textarea name="my-textarea" id="textarea-6" disabled></textarea>
+            <textarea name="my-textarea-6" id="textarea-6" disabled></textarea>
 
-            <label for="text-sc-icon-2"><i class="sc-icon-search"></i></label>
+            <label for="text-sc-icon-2">
+              <i class="sc-icon-search"></i>
+            </label>
           </div>
         </div>
+      </form>
 
-        <h5>Select</h5>
+      <h5>Code:</h5>
 
+      <textarea class="editor-html">
+        &#x3C;form class=&#x22;sc-form&#x22;&#x3E;
+        &#x3C;div class=&#x22;sc-form-group sc-grid-2&#x22;&#x3E;
+          &#x3C;div class=&#x22;sc-form-textarea sc-has-icon&#x22;&#x3E;
+            &#x3C;textarea name=&#x22;my-textarea-5&#x22; id=&#x22;textarea-5&#x22;&#x3E;&#x3C;/textarea&#x3E;
+
+            &#x3C;label for=&#x22;text-sc-icon-2&#x22;&#x3E;&#x3C;i class=&#x22;sc-icon-search&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/label&#x3E;
+          &#x3C;/div&#x3E;
+
+          &#x3C;div class=&#x22;sc-form-textarea sc-has-icon&#x22;&#x3E;
+            &#x3C;textarea name=&#x22;my-textarea-6&#x22; id=&#x22;textarea-6&#x22; disabled&#x3E;&#x3C;/textarea&#x3E;
+
+            &#x3C;label for=&#x22;text-sc-icon-2&#x22;&#x3E;
+              &#x3C;i class=&#x22;sc-icon-search&#x22;&#x3E;&#x3C;/i&#x3E;
+            &#x3C;/label&#x3E;
+          &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+      &#x3C;/form&#x3E;
+      </textarea>
+
+      <h3>Select</h3>
+
+      <form class="sc-form">
         <div class="sc-form-group sc-grid-2">
           <div class="sc-form-select">
             <select name="my-select-1">
@@ -234,16 +562,42 @@
           </div>
 
           <div class="sc-form-select">
-            <select name="my-select-1" disabled>
+            <select name="my-select-2" disabled>
               <option value="">1</option>
               <option value="">2</option>
               <option value="">3</option>
             </select>
           </div>
         </div>
+      </form>
 
-        <h5>Range</h5>
+      <h5>Code:</h5>
 
+      <textarea class="editor-html">
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-2">
+            <div class="sc-form-select">
+              <select name="my-select-1">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+              </select>
+            </div>
+  
+            <div class="sc-form-select">
+              <select name="my-select-2" disabled>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </textarea>
+
+      <h3>Range</h3>
+
+      <form class="sc-form">
         <div class="sc-form-group sc-grid-2">
           <div class="sc-form-range">
             <input
@@ -251,11 +605,11 @@
               min="1"
               max="100"
               step="1"
-              name="my-range"
+              name="my-range-1"
               id="range-1"
             />
 
-            <label for="range-2">Range with label</label>
+            <label for="range-1">Range with label</label>
           </div>
 
           <div class="sc-form-range">
@@ -264,7 +618,7 @@
               min="1"
               max="100"
               step="1"
-              name="my-range"
+              name="my-range-2"
               id="range-2"
               disabled
             />
@@ -272,9 +626,154 @@
             <label for="range-2">Range with label disabled</label>
           </div>
         </div>
+      </form>
 
-        <h5>Button</h5>
+      <h5>Code:</h5>
 
+      <textarea class="editor-html">
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-2">
+            <div class="sc-form-range">
+              <input
+                type="range"
+                min="1"
+                max="100"
+                step="1"
+                name="my-range-1"
+                id="range-1"
+              />
+  
+              <label for="range-1">Range with label</label>
+            </div>
+  
+            <div class="sc-form-range">
+              <input
+                type="range"
+                min="1"
+                max="100"
+                step="1"
+                name="my-range-2"
+                id="range-2"
+                disabled
+              />
+  
+              <label for="range-2">Range with label disabled</label>
+            </div>
+          </div>
+        </form>
+      </textarea>
+
+      <h3>Button</h3>
+
+      <h4>Basic</h4>
+
+      <form class="sc-form">
+        <div class="sc-form-group sc-grid-2">
+          <div class="sc-form-button sc-md">
+            <button type="button">Button</button>
+          </div>
+
+          <div class="sc-form-button sc-md">
+            <button type="button" disabled>Button disabled</button>
+          </div>
+        </div>
+      </form>
+
+      <h5>Code:</h5>
+
+      <textarea class="editor-html">
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-2">
+            <div class="sc-form-button sc-md">
+              <button type="button">Button</button>
+            </div>
+    
+            <div class="sc-form-button sc-md">
+              <button type="button" disabled>Button disabled</button>
+            </div>
+          </div>
+        </form>
+      </textarea>
+
+      <h4>Basic with icon</h4>
+
+      <form class="sc-form">
+        <div class="sc-form-group sc-grid-2">
+          <div class="sc-form-button sc-md">
+            <button type="button">
+              <i class="sc-icon-search"></i>
+
+              <span>Button with icon</span>
+            </button>
+          </div>
+
+          <div class="sc-form-button sc-md">
+            <button type="button" disabled>
+              <i class="sc-icon-search"></i>
+
+              <span>Button with icon disabled</span>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <h5>Code:</h5>
+
+      <textarea class="editor-html">
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-2">
+            <div class="sc-form-button sc-md">
+              <button type="button">
+                <i class="sc-icon-search"></i>
+    
+                <span>Button with icon</span>
+              </button>
+            </div>
+    
+            <div class="sc-form-button sc-md">
+              <button type="button" disabled>
+                <i class="sc-icon-search"></i>
+    
+                <span>Button with icon disabled</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </textarea>
+
+      <h4>Stretched</h4>
+
+      <form class="sc-form">
+        <div class="sc-form-group sc-grid-2">
+          <div class="sc-form-button sc-md sc-stretched">
+            <button type="button">Stretched button</button>
+          </div>
+
+          <div class="sc-form-button sc-md sc-stretched">
+            <button type="button" disabled>Stretched button disabled</button>
+          </div>
+        </div>
+      </form>
+
+      <h5>Code:</h5>
+
+      <textarea class="editor-html">
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-2">
+            <div class="sc-form-button sc-md sc-stretched">
+              <button type="button">Stretched button</button>
+            </div>
+    
+            <div class="sc-form-button sc-md sc-stretched">
+              <button type="button" disabled>Stretched button disabled</button>
+            </div>
+          </div>
+        </form>
+      </textarea>
+
+      <h4>Stretched with icon</h4>
+
+      <form class="sc-form">
         <div class="sc-form-group sc-grid-2">
           <div class="sc-form-button sc-md sc-stretched">
             <button type="button">
@@ -291,205 +790,371 @@
               <span>Stretched button with icon disabled</span>
             </button>
           </div>
-
-          <div class="sc-form-button sc-md sc-stretched">
-            <button type="button">Stretched button</button>
-          </div>
-
-          <div class="sc-form-button sc-md sc-stretched">
-            <button type="button" disabled>Stretched button disabled</button>
-          </div>
-
-          <div class="sc-form-button sc-md">
-            <button type="button">
-              <i class="sc-icon-search"></i>
-
-              <span>Button with icon</span>
-            </button>
-          </div>
-
-          <div class="sc-form-button sc-md">
-            <button type="button" disabled>
-              <i class="sc-icon-search"></i>
-
-              <span>Button with icon disabled</span>
-            </button>
-          </div>
-
-          <div class="sc-form-button sc-md">
-            <button type="button">Button</button>
-          </div>
-
-          <div class="sc-form-button sc-md">
-            <button type="button" disabled>Button disabled</button>
-          </div>
         </div>
       </form>
 
-      <hr class="sc-divider" />
+      <h5>Code:</h5>
 
-      <h3>Table</h3>
-
-      <table class="sc-table">
-        <caption>
-          Orci varius natoque penatibus et magnis dis parturient montes.
-          Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
-          felis.
-        </caption>
-
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Value</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>Lorem</td>
-            <td>Dorem</td>
-          </tr>
-
-          <tr>
-            <td>Ipsum</td>
-            <td>Ripsum</td>
-          </tr>
-
-          <tr>
-            <td>Dolor</td>
-            <td>Solar</td>
-          </tr>
-
-          <tr>
-            <td>Sit</td>
-            <td>Neva</td>
-          </tr>
-
-          <tr>
-            <td>Amet</td>
-            <td>Nani</td>
-          </tr>
-        </tbody>
-      </table>
+      <textarea class="editor-html">
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-2">
+            <div class="sc-form-button sc-md sc-stretched">
+              <button type="button">
+                <i class="sc-icon-search"></i>
+    
+                <span>Stretched button with icon</span>
+              </button>
+            </div>
+    
+            <div class="sc-form-button sc-md sc-stretched">
+              <button type="button" disabled>
+                <i class="sc-icon-search"></i>
+    
+                <span>Stretched button with icon disabled</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </textarea>
 
       <hr class="sc-divider" />
 
-      <h3>Card</h3>
+      <h2>Table</h2>
 
-      <h5>Normal card</h5>
-
-      <div class="sc-card">
-        <header class="sc-card-header">
-          <h5>Lorem ipsum</h5>
-        </header>
-
-        <div class="sc-card-body">
-          <p>
+      <form class="sc-form">
+        <table class="sc-table">
+          <caption>
+            Orci varius natoque penatibus et magnis dis parturient montes.
             Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
-            felis. Orci varius natoque penatibus et magnis dis parturient
-            montes.
-          </p>
-        </div>
+            felis.
+          </caption>
 
-        <footer class="sc-card-footer">
-          <div class="sc-grid-2">
-            <div class="sc-form-button sc-md">
-              <button type="button">
-                <i class="sc-icon-search"></i>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
 
-                <span>Button</span>
-              </button>
-            </div>
+          <tbody>
+            <tr>
+              <td>Lorem</td>
+              <td>Dorem</td>
+            </tr>
 
-            <div class="sc-form-button sc-md sc-flex-rr">
-              <button type="button" disabled>
-                <i class="sc-icon-search"></i>
+            <tr>
+              <td>Ipsum</td>
+              <td>Ripsum</td>
+            </tr>
 
-                <span>Button disabled</span>
-              </button>
-            </div>
-          </div>
-        </footer>
-      </div>
+            <tr>
+              <td>Dolor</td>
+              <td>Solar</td>
+            </tr>
 
-      <h5>Borderless card</h5>
+            <tr>
+              <td>Sit</td>
+              <td>Neva</td>
+            </tr>
 
-      <div class="sc-card sc-borderless">
-        <header class="sc-card-header">
-          <h5>Lorem ipsum</h5>
-        </header>
+            <tr>
+              <td>Amet</td>
+              <td>Nani</td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
 
-        <div class="sc-card-body">
-          <p>
+      <h5>Code:</h5>
+
+      <textarea class="editor-html">
+        <table class="sc-table">
+          <caption>
+            Orci varius natoque penatibus et magnis dis parturient montes.
             Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
-            felis. Orci varius natoque penatibus et magnis dis parturient
-            montes.
-          </p>
-        </div>
+            felis.
+          </caption>
+  
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <tr>
+              <td>Lorem</td>
+              <td>Dorem</td>
+            </tr>
+  
+            <tr>
+              <td>Ipsum</td>
+              <td>Ripsum</td>
+            </tr>
+  
+            <tr>
+              <td>Dolor</td>
+              <td>Solar</td>
+            </tr>
+  
+            <tr>
+              <td>Sit</td>
+              <td>Neva</td>
+            </tr>
+  
+            <tr>
+              <td>Amet</td>
+              <td>Nani</td>
+            </tr>
+          </tbody>
+        </table>
+      </textarea>
 
-        <footer class="sc-card-footer">
-          <div class="sc-grid-2">
-            <div class="sc-form-button sc-md">
-              <button type="button">
-                <i class="sc-icon-search"></i>
+      <hr class="sc-divider" />
 
-                <span>Button</span>
-              </button>
-            </div>
+      <h2>Card</h2>
 
-            <div class="sc-form-button sc-md sc-flex-rr">
-              <button type="button" disabled>
-                <i class="sc-icon-search"></i>
+      <h3>Normal card</h3>
 
-                <span>Button disabled</span>
-              </button>
-            </div>
+      <form class="sc-form">
+        <div class="sc-card">
+          <header class="sc-card-header">
+            <h3>Lorem ipsum</h3>
+          </header>
+
+          <div class="sc-card-body">
+            <p>
+              Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
+              felis. Orci varius natoque penatibus et magnis dis parturient
+              montes.
+            </p>
           </div>
-        </footer>
-      </div>
 
-      <h5>Shadowed card</h5>
+          <footer class="sc-card-footer">
+            <div class="sc-grid-2">
+              <div class="sc-form-button sc-md">
+                <button type="button">
+                  <i class="sc-icon-search"></i>
 
-      <div class="sc-card sc-shadowed">
-        <header class="sc-card-header">
-          <h5>Lorem ipsum</h5>
-        </header>
+                  <span>Button</span>
+                </button>
+              </div>
 
-        <div class="sc-card-body">
-          <p>
-            Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
-            felis. Orci varius natoque penatibus et magnis dis parturient
-            montes.
-          </p>
+              <div class="sc-form-button sc-md sc-flex-rr">
+                <button type="button" disabled>
+                  <i class="sc-icon-search"></i>
+
+                  <span>Button disabled</span>
+                </button>
+              </div>
+            </div>
+          </footer>
         </div>
+      </form>
 
-        <footer class="sc-card-footer">
-          <div class="sc-grid-2">
-            <div class="sc-form-button sc-md">
-              <button type="button">
-                <i class="sc-icon-search"></i>
+      <h5>Code:</h5>
 
-                <span>Button</span>
-              </button>
-            </div>
-
-            <div class="sc-form-button sc-md sc-flex-rr">
-              <button type="button" disabled>
-                <i class="sc-icon-search"></i>
-
-                <span>Button disabled</span>
-              </button>
-            </div>
+      <textarea class="editor-html">
+        <div class="sc-card">
+          <header class="sc-card-header">
+            <h3>Lorem ipsum</h3>
+          </header>
+  
+          <div class="sc-card-body">
+            <p>
+              Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
+              felis. Orci varius natoque penatibus et magnis dis parturient
+              montes.
+            </p>
           </div>
-        </footer>
-      </div>
+  
+          <footer class="sc-card-footer">
+            <div class="sc-grid-2">
+              <div class="sc-form-button sc-md">
+                <button type="button">
+                  <i class="sc-icon-search"></i>
+  
+                  <span>Button</span>
+                </button>
+              </div>
+  
+              <div class="sc-form-button sc-md sc-flex-rr">
+                <button type="button" disabled>
+                  <i class="sc-icon-search"></i>
+  
+                  <span>Button disabled</span>
+                </button>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </textarea>
+
+      <h3>Borderless card</h3>
+
+      <form class="sc-form">
+        <div class="sc-card sc-borderless">
+          <header class="sc-card-header">
+            <h3>Lorem ipsum</h3>
+          </header>
+
+          <div class="sc-card-body">
+            <p>
+              Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
+              felis. Orci varius natoque penatibus et magnis dis parturient
+              montes.
+            </p>
+          </div>
+
+          <footer class="sc-card-footer">
+            <div class="sc-grid-2">
+              <div class="sc-form-button sc-md">
+                <button type="button">
+                  <i class="sc-icon-search"></i>
+
+                  <span>Button</span>
+                </button>
+              </div>
+
+              <div class="sc-form-button sc-md sc-flex-rr">
+                <button type="button" disabled>
+                  <i class="sc-icon-search"></i>
+
+                  <span>Button disabled</span>
+                </button>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </form>
+
+      <h5>Code:</h5>
+
+      <textarea class="editor-html">
+        <div class="sc-card sc-borderless">
+          <header class="sc-card-header">
+            <h3>Lorem ipsum</h3>
+          </header>
+  
+          <div class="sc-card-body">
+            <p>
+              Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
+              felis. Orci varius natoque penatibus et magnis dis parturient
+              montes.
+            </p>
+          </div>
+  
+          <footer class="sc-card-footer">
+            <div class="sc-grid-2">
+              <div class="sc-form-button sc-md">
+                <button type="button">
+                  <i class="sc-icon-search"></i>
+  
+                  <span>Button</span>
+                </button>
+              </div>
+  
+              <div class="sc-form-button sc-md sc-flex-rr">
+                <button type="button" disabled>
+                  <i class="sc-icon-search"></i>
+  
+                  <span>Button disabled</span>
+                </button>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </textarea>
+
+      <h3>Shadowed card</h3>
+
+      <form class="sc-form">
+        <div class="sc-card sc-shadowed">
+          <header class="sc-card-header">
+            <h3>Lorem ipsum</h3>
+          </header>
+
+          <div class="sc-card-body">
+            <p>
+              Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
+              felis. Orci varius natoque penatibus et magnis dis parturient
+              montes.
+            </p>
+          </div>
+
+          <footer class="sc-card-footer">
+            <div class="sc-grid-2">
+              <div class="sc-form-button sc-md">
+                <button type="button">
+                  <i class="sc-icon-search"></i>
+
+                  <span>Button</span>
+                </button>
+              </div>
+
+              <div class="sc-form-button sc-md sc-flex-rr">
+                <button type="button" disabled>
+                  <i class="sc-icon-search"></i>
+
+                  <span>Button disabled</span>
+                </button>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </form>
+
+      <h5>Code:</h5>
+
+      <textarea class="editor-html">
+        <div class="sc-card sc-shadowed">
+          <header class="sc-card-header">
+            <h3>Lorem ipsum</h3>
+          </header>
+  
+          <div class="sc-card-body">
+            <p>
+              Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
+              felis. Orci varius natoque penatibus et magnis dis parturient
+              montes.
+            </p>
+          </div>
+  
+          <footer class="sc-card-footer">
+            <div class="sc-grid-2">
+              <div class="sc-form-button sc-md">
+                <button type="button">
+                  <i class="sc-icon-search"></i>
+  
+                  <span>Button</span>
+                </button>
+              </div>
+  
+              <div class="sc-form-button sc-md sc-flex-rr">
+                <button type="button" disabled>
+                  <i class="sc-icon-search"></i>
+  
+                  <span>Button disabled</span>
+                </button>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </textarea>
+
+      <hr class="sc-divider" />
+
+      <h2>Slide</h2>
+
+      <a href="#" id="trigger-slide">Open</a>
 
       <i class="sc-icon-menu sc-slide-open sc-hover sc-slide-left"></i>
 
       <div class="sc-slide sc-slide-left">
         <div class="sc-slide-container">
           <header class="sc-slide-header">
-            <h5>Lorem ipsum</h5>
+            <h3>Lorem ipsum</h3>
 
             <i class="sc-icon-close sc-slide-close sc-hover"></i>
           </header>
@@ -524,9 +1189,53 @@
         </div>
       </div>
 
+      <h5>Code:</h5>
+
+      <textarea class="editor-html">
+        <i class="sc-icon-menu sc-slide-open sc-hover sc-slide-left"></i>
+
+        <div class="sc-slide sc-slide-left">
+          <div class="sc-slide-container">
+            <header class="sc-slide-header">
+              <h3>Lorem ipsum</h3>
+
+              <i class="sc-icon-close sc-slide-close sc-hover"></i>
+            </header>
+
+            <div class="sc-slide-body">
+              <p>
+                Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
+                felis. Orci varius natoque penatibus et magnis dis parturient
+                montes.
+              </p>
+            </div>
+
+            <footer class="sc-slide-footer">
+              <div class="sc-grid-2">
+                <div class="sc-form-button sc-md sc-stretched">
+                  <button type="button">
+                    <i class="sc-icon-search"></i>
+
+                    <span>Button</span>
+                  </button>
+                </div>
+
+                <div class="sc-form-button sc-md sc-stretched">
+                  <button type="button" disabled>
+                    <i class="sc-icon-search"></i>
+
+                    <span>Button disabled</span>
+                  </button>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </textarea>
+
       <hr class="sc-divider" />
 
-      <h3>Modal</h3>
+      <h2>Modal</h2>
 
       <a href="#" id="trigger-modal">Open</a>
 
@@ -534,7 +1243,7 @@
         <div class="sc-modal-container">
           <div class="sc-card sc-shadowed">
             <header class="sc-card-header">
-              <h5>Lorem ipsum</h5>
+              <h3>Lorem ipsum</h3>
             </header>
 
             <div class="sc-card-body">
@@ -556,9 +1265,39 @@
         </div>
       </div>
 
+      <h5>Code:</h5>
+
+      <textarea class="editor-html">
+        <div class="sc-modal">
+          <div class="sc-modal-container">
+            <div class="sc-card sc-shadowed">
+              <header class="sc-card-header">
+                <h3>Lorem ipsum</h3>
+              </header>
+  
+              <div class="sc-card-body">
+                <p>
+                  Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
+                  felis. Orci varius natoque penatibus et magnis dis parturient
+                  montes.
+                </p>
+              </div>
+  
+              <footer class="sc-card-footer">
+                <div class="sc-form-button sc-md sc-flex-rr">
+                  <button type="button">
+                    <span>Close</span>
+                  </button>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </textarea>
+
       <hr class="sc-divider" />
 
-      <h3>Splash</h3>
+      <h2>Splash</h2>
 
       <a href="#" id="trigger-splash">Open</a>
 
@@ -576,9 +1315,27 @@
         </div>
       </div>
 
+      <h5>Code:</h5>
+
+      <textarea class="editor-html">
+        <div class="sc-splash">
+          <div class="sc-splash-container">
+            <div class="sc-splash-icon">
+              <i></i>
+            </div>
+  
+            <h2>Stylecraft</h2>
+  
+            <p>A pure css framework.</p>
+  
+            <em>v0.1.0</em>
+          </div>
+        </div>
+      </textarea>
+
       <hr class="sc-divider" />
 
-      <h3>Loader</h3>
+      <h2>Loader</h2>
 
       <a href="#" id="trigger-loader">Open</a>
 
@@ -596,9 +1353,27 @@
         </div>
       </div>
 
+      <h5>Code:</h5>
+
+      <textarea class="editor-html">
+        <div class="sc-loader">
+          <div class="sc-loader-container">
+            <div class="sc-loader-icon">
+              <i></i>
+            </div>
+  
+            <h2>Loading</h2>
+  
+            <p>Please wait...</p>
+  
+            <em>v0.1.0</em>
+          </div>
+        </div>
+      </textarea>
+
       <hr class="sc-divider" />
 
-      <h3>Icons</h3>
+      <h2>Icons</h2>
 
       <i class="sc-icon-bullet sc-lg"></i>
 

@@ -1,4 +1,41 @@
+import CodeMirror from "codemirror";
+import "codemirror/mode/htmlmixed/htmlmixed.js";
+
 $(document).ready(() => {
+  $(".editor-html").each((index, item) => {
+    let editor = CodeMirror.fromTextArea(item, {
+      mode: "htmlmixed",
+      readOnly: true,
+      htmlMode: true,
+      lineNumbers: true,
+      theme: "material",
+      lineWrapping: true,
+      scrollbarStyle: null,
+    });
+
+    editor.save();
+
+    editor.setSelection(
+      {
+        line: editor.firstLine(),
+        ch: 0,
+        sticky: null,
+      },
+      {
+        line: editor.lastLine(),
+        ch: 0,
+        sticky: null,
+      },
+      { scroll: false }
+    );
+
+    editor.indentSelection("smart");
+
+    $(".CodeMirror-code").trigger("mousedown");
+
+    editor.setCursor(1);
+  });
+
   /* -------- Mode -------- */
 
   $("#trigger-mode").on("click", (event) => {
@@ -16,6 +53,12 @@ $(document).ready(() => {
   });
 
   /* -------- Slide -------- */
+
+  $("#trigger-slide").on("click", (event) => {
+    event.preventDefault();
+
+    $(".sc-slide").addClass("sc-is-active");
+  });
 
   $(".sc-slide-open").on("click", () => {
     $(".sc-slide").addClass("sc-is-active");
