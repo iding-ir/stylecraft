@@ -21,3 +21,4 @@ import "./scss/modules/modal.scss";
 import "./scss/modules/divider.scss";
 import "./scss/modules/overlay.scss";
 import "./scss/modules/splash-loader.scss";
+import "./scss/modules/list.scss";

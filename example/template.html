@@ -8,12 +8,12 @@
   </head>
 
   <body class="sc-font">
-    <header class="header">
+    <header class="header" id="top">
       <h1>Stylecraft</h1>
     </header>
 
     <div class="app">
-      <ul>
+      <ul class="sc-list" id="list">
         <li>
           <a href="#doc-mode">Mode</a>
         </li>
@@ -21,7 +21,7 @@
         <li>
           <a href="#doc-form">Form</a>
 
-          <ul>
+          <ul class="sc-list">
             <li>
               <a href="#doc-form-radio">Radio</a>
             </li>
@@ -33,13 +33,13 @@
             <li>
               <a href="#doc-form-text">Text field</a>
 
-              <ul>
+              <ul class="sc-list">
                 <li>
                   <a href="#doc-form-text-basic">Basic</a>
                 </li>
 
                 <li>
-                  <a href="#doc-form-text-lable">With label</a>
+                  <a href="#doc-form-text-label">With label</a>
                 </li>
 
                 <li>
@@ -51,13 +51,13 @@
             <li>
               <a href="#doc-form-textarea">Textarea</a>
 
-              <ul>
+              <ul class="sc-list">
                 <li>
                   <a href="#doc-form-textarea-basic">Basic</a>
                 </li>
 
                 <li>
-                  <a href="#doc-form-textarea-lable">With label</a>
+                  <a href="#doc-form-textarea-label">With label</a>
                 </li>
 
                 <li>
@@ -77,7 +77,7 @@
             <li>
               <a href="#doc-form-button">Button</a>
 
-              <ul>
+              <ul class="sc-list">
                 <li>
                   <a href="#doc-form-button-basic">Basic</a>
                 </li>
@@ -107,17 +107,17 @@
         <li>
           <a href="#doc-card">Card</a>
 
-          <ul>
+          <ul class="sc-list">
             <li>
-              <a href="#doc-normal">Normal</a>
+              <a href="#doc-card-normal">Normal</a>
             </li>
 
             <li>
-              <a href="#doc-borderless">Borderless</a>
+              <a href="#doc-card-borderless">Borderless</a>
             </li>
 
             <li>
-              <a href="#doc-shadowed">Shadowed</a>
+              <a href="#doc-card-shadowed">Shadowed</a>
             </li>
           </ul>
         </li>
@@ -143,15 +143,15 @@
         </li>
       </ul>
 
-      <h2>Mode</h2>
+      <h2 id="doc-mode">Mode</h2>
 
       <a href="#" id="trigger-mode">Change</a>
 
       <hr class="sc-divider" />
 
-      <h2>Form</h2>
+      <h2 id="doc-form">Form</h2>
 
-      <h3>Radio</h3>
+      <h3 id="doc-form-radio">Radio</h3>
 
       <form class="sc-form">
         <div class="sc-form-group sc-grid-3">
@@ -225,7 +225,7 @@
         </form>
       </textarea>
 
-      <h3>Checkbox</h3>
+      <h3 id="doc-form-checkbox">Checkbox</h3>
 
       <form class="sc-form">
         <div class="sc-form-group sc-grid-3">
@@ -309,9 +309,9 @@
         </form>
       </textarea>
 
-      <h3>Text field</h3>
+      <h3 id="doc-form-text">Text field</h3>
 
-      <h4>Basic</h4>
+      <h4 id="doc-form-text-basic">Basic</h4>
 
       <form class="sc-form">
         <div class="sc-form-group sc-grid-2">
@@ -349,7 +349,7 @@
         </form>
       </textarea>
 
-      <h4>With lable</h4>
+      <h4 id="doc-form-text-label">With label</h4>
 
       <form class="sc-form">
         <div class="sc-form-group sc-grid-2">
@@ -387,7 +387,7 @@
         </form>
       </textarea>
 
-      <h4>With icon</h4>
+      <h4 id="doc-form-text-icon">With icon</h4>
 
       <form class="sc-form">
         <div class="sc-form-group sc-grid-2">
@@ -429,9 +429,9 @@
         </form>
       </textarea>
 
-      <h3>Textarea</h3>
+      <h3 id="doc-form-textarea">Textarea</h3>
 
-      <h4>Basic</h4>
+      <h4 id="doc-form-textarea-basic">Basic</h4>
 
       <form class="sc-form">
         <div class="sc-form-group sc-grid-2">
@@ -469,7 +469,7 @@
         &#x3C;/form&#x3E;
       </textarea>
 
-      <h4>With label</h4>
+      <h4 id="doc-form-textarea-label">With label</h4>
 
       <form class="sc-form">
         <div class="sc-form-group sc-grid-2">
@@ -507,7 +507,7 @@
       &#x3C;/form&#x3E;
       </textarea>
 
-      <h4>With icon</h4>
+      <h4 id="doc-form-textarea-icon">With icon</h4>
 
       <form class="sc-form">
         <div class="sc-form-group sc-grid-2">
@@ -549,7 +549,7 @@
       &#x3C;/form&#x3E;
       </textarea>
 
-      <h3>Select</h3>
+      <h3 id="doc-form-select">Select</h3>
 
       <form class="sc-form">
         <div class="sc-form-group sc-grid-2">
@@ -595,7 +595,7 @@
         </form>
       </textarea>
 
-      <h3>Range</h3>
+      <h3 id="doc-form-range">Range</h3>
 
       <form class="sc-form">
         <div class="sc-form-group sc-grid-2">
@@ -663,9 +663,9 @@
         </form>
       </textarea>
 
-      <h3>Button</h3>
+      <h3 id="doc-form-button">Button</h3>
 
-      <h4>Basic</h4>
+      <h4 id="doc-form-button-basic">Basic</h4>
 
       <form class="sc-form">
         <div class="sc-form-group sc-grid-2">
@@ -695,7 +695,7 @@
         </form>
       </textarea>
 
-      <h4>Basic with icon</h4>
+      <h4 id="doc-form-button-basic-icon">Basic with icon</h4>
 
       <form class="sc-form">
         <div class="sc-form-group sc-grid-2">
@@ -741,7 +741,7 @@
         </form>
       </textarea>
 
-      <h4>Stretched</h4>
+      <h4 id="doc-form-button-stretched">Stretched</h4>
 
       <form class="sc-form">
         <div class="sc-form-group sc-grid-2">
@@ -771,7 +771,7 @@
         </form>
       </textarea>
 
-      <h4>Stretched with icon</h4>
+      <h4 id="doc-form-button-stretched-icon">Stretched with icon</h4>
 
       <form class="sc-form">
         <div class="sc-form-group sc-grid-2">
@@ -819,7 +819,7 @@
 
       <hr class="sc-divider" />
 
-      <h2>Table</h2>
+      <h2 id="doc-table">Table</h2>
 
       <form class="sc-form">
         <table class="sc-table">
@@ -913,9 +913,9 @@
 
       <hr class="sc-divider" />
 
-      <h2>Card</h2>
+      <h2 id="doc-card">Card</h2>
 
-      <h3>Normal card</h3>
+      <h3 id="doc-card-normal">Normal</h3>
 
       <form class="sc-form">
         <div class="sc-card">
@@ -991,7 +991,7 @@
         </div>
       </textarea>
 
-      <h3>Borderless card</h3>
+      <h3 id="doc-card-borderless">Borderless</h3>
 
       <form class="sc-form">
         <div class="sc-card sc-borderless">
@@ -1067,7 +1067,7 @@
         </div>
       </textarea>
 
-      <h3>Shadowed card</h3>
+      <h3 id="doc-card-shadowed">Shadowed</h3>
 
       <form class="sc-form">
         <div class="sc-card sc-shadowed">
@@ -1145,7 +1145,7 @@
 
       <hr class="sc-divider" />
 
-      <h2>Slide</h2>
+      <h2 id="doc-slide">Slide</h2>
 
       <a href="#" id="trigger-slide">Open</a>
 
@@ -1235,7 +1235,7 @@
 
       <hr class="sc-divider" />
 
-      <h2>Modal</h2>
+      <h2 id="doc-modal">Modal</h2>
 
       <a href="#" id="trigger-modal">Open</a>
 
@@ -1297,7 +1297,7 @@
 
       <hr class="sc-divider" />
 
-      <h2>Splash</h2>
+      <h2 id="doc-splash">Splash</h2>
 
       <a href="#" id="trigger-splash">Open</a>
 
@@ -1335,7 +1335,7 @@
 
       <hr class="sc-divider" />
 
-      <h2>Loader</h2>
+      <h2 id="doc-loader">Loader</h2>
 
       <a href="#" id="trigger-loader">Open</a>
 
@@ -1373,7 +1373,7 @@
 
       <hr class="sc-divider" />
 
-      <h2>Icons</h2>
+      <h2 id="doc-icon">Icon</h2>
 
       <i class="sc-icon-bullet sc-lg"></i>
 
@@ -1463,5 +1463,9 @@
 
       <i class="sc-icon-zoom-out sc-lg"></i>
     </div>
+
+    <a href="#" class="top">
+      <i class="sc-icon-up sc-lg"></i>
+    </a>
   </body>
 </html>
