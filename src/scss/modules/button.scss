@@ -7,8 +7,6 @@
     color: var(--color-dark);
     font-size: 1.1rem;
     font-weight: 400 !important;
-    line-height: var(--icon-lg);
-    height: var(--icon-lg);
     background-color: var(--color-light);
     border: var(--border-thickness) solid var(--color-primary-light);
     border-radius: var(--border-radius);
@@ -46,7 +44,6 @@
 
     span {
       flex-grow: 10;
-      line-height: var(--icon-lg);
       text-align: left;
     }
 
@@ -54,8 +51,6 @@
       flex-shrink: 0;
       position: relative;
       left: calc(-1 * var(--padding-md));
-      width: var(--icon-lg);
-      height: var(--icon-lg);
       background-color: var(--color-transparent);
       border: none;
       border-radius: 0;
@@ -77,6 +72,54 @@
   &.sc-stretched {
     button {
       width: 100%;
+    }
+  }
+
+  &.sc-sm {
+    button {
+      line-height: var(--icon-sm);
+      height: var(--icon-sm);
+
+      span {
+        line-height: var(--icon-sm);
+      }
+
+      i {
+        width: var(--icon-sm);
+        height: var(--icon-sm);
+      }
+    }
+  }
+
+  &.sc-md {
+    button {
+      line-height: var(--icon-md);
+      height: var(--icon-md);
+
+      span {
+        line-height: var(--icon-md);
+      }
+
+      i {
+        width: var(--icon-md);
+        height: var(--icon-md);
+      }
+    }
+  }
+
+  &.sc-lg {
+    button {
+      line-height: var(--icon-lg);
+      height: var(--icon-lg);
+
+      span {
+        line-height: var(--icon-lg);
+      }
+
+      i {
+        width: var(--icon-lg);
+        height: var(--icon-lg);
+      }
     }
   }
 }
