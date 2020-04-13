@@ -3,6 +3,7 @@
   top: var(--padding-md);
   width: var(--icon-lg);
   height: var(--icon-lg);
+  z-index: 10000;
 
   &.sc-slide-left {
     left: var(--padding-md);
