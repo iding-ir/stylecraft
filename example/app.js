@@ -41,7 +41,7 @@ $(document).ready(() => {
 
     $(".CodeMirror-code").trigger("mousedown");
 
-    editor.setCursor(1);
+    editor.setCursor(1, 0, { scroll: false });
   });
 
   /* -------- Mode -------- */

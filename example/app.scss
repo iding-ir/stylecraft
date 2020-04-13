@@ -18,8 +18,8 @@ body {
 }
 
 .CodeMirror {
-  border: 1px solid var(--color-light);
-  height: auto;
+  border: 1px solid var(--color-light) !important;
+  height: auto !important;
 }
 
 .top {
