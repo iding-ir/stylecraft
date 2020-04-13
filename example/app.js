@@ -2,6 +2,14 @@ import CodeMirror from "codemirror";
 import "codemirror/mode/htmlmixed/htmlmixed.js";
 
 $(document).ready(() => {
+  /* -------- Docs -------- */
+
+  setTimeout(() => {
+    $("body").css({ opacity: 1 });
+  }, 1000);
+
+  /* -------- Codemirror -------- */
+
   $(".editor-html").each((index, item) => {
     let editor = CodeMirror.fromTextArea(item, {
       mode: "htmlmixed",

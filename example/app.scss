@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  transition: var(--transition-md);
+}
+
 .header {
   h1 {
     text-align: center;

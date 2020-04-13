@@ -1,9 +1,14 @@
 ## Index
 
+- [Intro](#intro)
 - [Installation](#installation)
 - [Examples](#examples)
 - [Note](#note)
 - [About Stylecraft](#about-stylecraft)
+
+## Intro
+
+This is a pure CSS framework. Depending on your use case you're going to need to use your Javascript framework of choice to manipulate class names in DOM to get the desired effects.
 
 ## Installation
 
@@ -27,9 +32,9 @@ import "stylecraft/dist/stylecraft.css"
 
 ## Note
 
-This framework is in pre-alpha state. Not remotely completed. I cretaed it for personal use, made it reusable and decided to make it public. I will keep using it in my future projects and will improve it over time.
+This framework is in alpha state. Not remotely completed. I cretaed it for personal use, made it reusable and decided to make it public. I will keep using it in my future projects and will improve it over time.
 
-I decided to use native css features such as CSS Variables and Mask instead of using css preprocessor and font icons for the advantages that I believe they give, but I might also create a LESS version or completely migrate from raw CSS to LESS in the future.
+When I started the project, I decided to use native css features such as CSS Variables and Mask instead of using css preprocessor and font icons for the advantages that I believe they prodive. Since v0.2 I started using SCSS, but used both CSS and SASS variables for different purposes.
 
 ## About Stylecraft
 

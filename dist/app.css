@@ -1,1 +1,1 @@
-.header{border-bottom:var(--border-thickness) solid var(--color-dark)}.header h1{text-align:center;color:var(--color-dark)}.app{padding:2rem}
+html{scroll-behavior:smooth}body{transition:var(--transition-md)}.header h1{text-align:center;color:var(--color-dark)}.app{padding:2rem}.CodeMirror{border:1px solid var(--color-light);height:auto}.top{position:fixed;right:var(--padding-md);bottom:var(--padding-md);z-index:10000}
