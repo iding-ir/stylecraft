@@ -22,3 +22,4 @@ import "./scss/modules/divider.scss";
 import "./scss/modules/overlay.scss";
 import "./scss/modules/splash-loader.scss";
 import "./scss/modules/list.scss";
+import "./scss/modules/scrollbar.scss";
