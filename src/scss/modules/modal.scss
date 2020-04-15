@@ -1,64 +1,54 @@
 .sc-modal {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--fade-silver-md);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100vw - 2rem);
+  max-height: calc(100vh - 2rem);
+  background-color: var(--color-lighter);
   opacity: 0;
   visibility: hidden;
-  transition: var(--transition-sm);
+  transition: var(--transition-md);
   z-index: 10300;
-  cursor: pointer;
+
+  @media only screen and (min-width: 600px) {
+    width: 30rem;
+
+    &.sc-md {
+      width: 36rem;
+    }
+
+    &.sc-lg {
+      width: 42rem;
+    }
+  }
+
+  @media only screen and (min-width: 1280px) {
+    width: 36rem;
+
+    &.sc-md {
+      width: 42rem;
+    }
+
+    &.sc-lg {
+      width: 48rem;
+    }
+  }
+
+  &.sc-stretched {
+    width: calc(100vw - 2rem);
+    height: calc(100vh - 2rem);
+    max-height: calc(100vh - 2rem);
+  }
+
+  &.sc-fullscreen {
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+  }
 
   &.sc-is-active {
     opacity: 1;
     visibility: visible;
-  }
-  .sc-modal-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: calc(100vw - 2rem);
-    max-height: calc(100vh - 2rem);
-    background-color: var(--color-lighter);
-    cursor: default;
-
-    &.sc-stretched {
-      width: calc(100vw - 2rem);
-      height: calc(100vh - 2rem);
-      max-height: calc(100vh - 2rem);
-    }
-
-    &.sc-fullscreen {
-      width: 100vw;
-      height: 100vh;
-      max-height: 100vh;
-    }
-
-    @media only screen and (min-width: 600px) {
-      width: 30rem;
-
-      &.sc-md {
-        width: 36rem;
-      }
-
-      &.sc-lg {
-        width: 42rem;
-      }
-    }
-
-    @media only screen and (min-width: 1280px) {
-      width: 36rem;
-
-      &.sc-md {
-        width: 42rem;
-      }
-
-      &.sc-lg {
-        width: 48rem;
-      }
-    }
   }
 }

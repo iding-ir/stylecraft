@@ -62,26 +62,18 @@ $(document).ready(() => {
 
   /* -------- Slide -------- */
 
-  $("#trigger-slide").on("click", (event) => {
+  $(".sc-slide-open, #trigger-slide").on("click", (event) => {
     event.preventDefault();
 
     $(".sc-slide").addClass("sc-is-active");
+
+    $(".sc-slide ~ .sc-overlay").addClass("sc-is-active");
   });
 
-  $(".sc-slide-open").on("click", () => {
-    $(".sc-slide").addClass("sc-is-active");
-  });
-
-  $(".sc-slide-close").on("click", () => {
+  $(".sc-slide-close, .sc-slide ~ .sc-overlay").on("click", () => {
     $(".sc-slide").removeClass("sc-is-active");
-  });
 
-  $(".sc-slide").on("click", () => {
-    $(".sc-slide").removeClass("sc-is-active");
-  });
-
-  $(".sc-slide-container").on("click", (event) => {
-    event.stopPropagation();
+    $(".sc-slide ~ .sc-overlay").removeClass("sc-is-active");
   });
 
   /* -------- Modal -------- */
@@ -90,18 +82,14 @@ $(document).ready(() => {
     event.preventDefault();
 
     $(".sc-modal").addClass("sc-is-active");
+
+    $(".sc-modal ~ .sc-overlay").addClass("sc-is-active");
   });
 
-  $(".sc-modal").on("click", () => {
+  $(".sc-modal button, .sc-modal ~ .sc-overlay").on("click", () => {
     $(".sc-modal").removeClass("sc-is-active");
-  });
 
-  $(".sc-modal-container").on("click", (event) => {
-    event.stopPropagation();
-  });
-
-  $(".sc-modal button").on("click", () => {
-    $(".sc-modal").removeClass("sc-is-active");
+    $(".sc-modal ~ .sc-overlay").removeClass("sc-is-active");
   });
 
   /* -------- Splash -------- */
