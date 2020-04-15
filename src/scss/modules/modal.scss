@@ -10,7 +10,7 @@
   opacity: 0;
   visibility: hidden;
   transition: var(--transition-md);
-  z-index: 10300;
+  z-index: 10400;
 
   @media only screen and (min-width: 600px) {
     width: 30rem;
@@ -51,5 +51,9 @@
   &.sc-is-active {
     opacity: 1;
     visibility: visible;
+  }
+
+  ~ .sc-overlay {
+    z-index: 10300;
   }
 }
