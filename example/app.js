@@ -67,13 +67,13 @@ $(document).ready(() => {
 
     $(".sc-slide").addClass("sc-is-active");
 
-    $(".sc-slide ~ .sc-overlay").addClass("sc-is-active");
+    $(".sc-slide + .sc-overlay").addClass("sc-is-active");
   });
 
-  $(".sc-slide-close, .sc-slide ~ .sc-overlay").on("click", () => {
+  $(".sc-slide-close, .sc-slide + .sc-overlay").on("click", () => {
     $(".sc-slide").removeClass("sc-is-active");
 
-    $(".sc-slide ~ .sc-overlay").removeClass("sc-is-active");
+    $(".sc-slide + .sc-overlay").removeClass("sc-is-active");
   });
 
   /* -------- Modal -------- */
@@ -83,13 +83,13 @@ $(document).ready(() => {
 
     $(".sc-modal").addClass("sc-is-active");
 
-    $(".sc-modal ~ .sc-overlay").addClass("sc-is-active");
+    $(".sc-modal + .sc-overlay").addClass("sc-is-active");
   });
 
-  $(".sc-modal button, .sc-modal ~ .sc-overlay").on("click", () => {
+  $(".sc-modal button, .sc-modal + .sc-overlay").on("click", () => {
     $(".sc-modal").removeClass("sc-is-active");
 
-    $(".sc-modal ~ .sc-overlay").removeClass("sc-is-active");
+    $(".sc-modal + .sc-overlay").removeClass("sc-is-active");
   });
 
   /* -------- Splash -------- */

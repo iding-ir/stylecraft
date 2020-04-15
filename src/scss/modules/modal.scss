@@ -53,7 +53,7 @@
     visibility: visible;
   }
 
-  ~ .sc-overlay {
+  + .sc-overlay {
     z-index: 10300;
   }
 }

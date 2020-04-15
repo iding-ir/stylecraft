@@ -81,7 +81,7 @@
     border-top: var(--border-thickness) solid var(--fade-dark-md);
   }
 
-  ~ .sc-overlay {
+  + .sc-overlay {
     z-index: 10100;
   }
 }
