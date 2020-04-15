@@ -1,6 +1,6 @@
 @import "config";
 
-body {
+:root {
   --color-primary-light: #{$color-primary-light};
   --color-primary-dark: #{$color-primary-dark};
   --color-secondary-light: #{$color-secondary-light};
@@ -60,7 +60,7 @@ body {
   --fade-light-lg: rgba(#{$light}, #{$light}, #{$light}, 0.6);
 }
 
-body.sc-dark {
+:root .sc-dark {
   --color-primary-light: #{$color-primary-dark};
   --color-primary-dark: #{$color-primary-light};
   --color-secondary-light: #{$color-secondary-dark};
