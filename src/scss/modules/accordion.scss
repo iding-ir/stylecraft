@@ -54,8 +54,8 @@
 
       &:checked {
         + label {
-          &::after {
-            transform: rotate(90deg);
+          &::before {
+            transform: rotate(90deg) !important;
           }
         }
 
