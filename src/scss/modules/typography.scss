@@ -69,7 +69,7 @@ a {
 }
 
 .sc-highlight {
-  padding: var(--padding-sm);
+  padding: calc(var(--padding-sm) / 2) var(--padding-sm);
   color: var(--color-primary-dark);
   background-color: var(--fade-dark-sm);
   border-radius: var(--border-radius);

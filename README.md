@@ -2,6 +2,7 @@
 
 - [Intro](#intro)
 - [Installation](#installation)
+- [Documentation](#documentation)
 - [Examples](#examples)
 - [Note](#note)
 - [About Stylecraft](#about-stylecraft)
@@ -24,9 +25,11 @@ Later in your project:
 import "stylecraft/dist/stylecraft.css"
 ```
 
-## Examples
+## Documentation
 
-[Live demo](http://stylecraft.iding.ir)
+[Documentation](http://stylecraft.iding.ir)
+
+## Examples
 
 [Live demo](http://realestate-map-redux.iding.ir) - [Github](https://github.com/iding-ir/realestate-map-redux)
 

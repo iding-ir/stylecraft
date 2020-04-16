@@ -5,7 +5,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: {
-    app: "./example/index.js",
+    app: "./documentation/index.js",
     stylecraft: "./src/index.js",
   },
   plugins: [

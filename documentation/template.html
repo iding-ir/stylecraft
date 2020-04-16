@@ -7,13 +7,27 @@
     <title>Stylecraft</title>
   </head>
 
-  <body class="sc-font" style="opacity: 0;">
+  <body class="sc-font sc-dark" style="opacity: 0;">
     <header class="header" id="top">
       <h1>Stylecraft</h1>
     </header>
 
     <div class="app">
+      <h2 id="doc-contents">Contents</h2>
+
       <ul class="sc-list" id="list">
+        <li>
+          <a href="#doc-contents">Contents</a>
+        </li>
+
+        <li>
+          <a href="#doc-intro">Intro</a>
+        </li>
+
+        <li>
+          <a href="#doc-installation">Installation</a>
+        </li>
+
         <li>
           <a href="#doc-mode">Mode</a>
         </li>
@@ -157,15 +171,35 @@
         </li>
       </ul>
 
-      <hr class="sc-divider" />
+      <h2 id="doc-intro">Intro</h2>
+
+      <p>
+        This is a pure CSS framework. Depending on your use case you're going to
+        need to use your Javascript framework of choice to manipulate class
+        names in DOM to get the desired effects.
+      </p>
+
+      <h2 id="doc-installation">Installation</h2>
+
+      <pre>npm install stylecraft --save</pre>
+
+      <p>Later in your project:</p>
+
+      <pre>import "stylecraft/dist/stylecraft.css"</pre>
 
       <h2 id="doc-mode">Mode</h2>
 
+      <p>
+        Use Javascript to add/remove
+        <span class="sc-highlight">.sc-dark</span> class to/from document body
+        in order to toggle between dark/light modes.
+      </p>
+
       <a href="#" id="trigger-mode">Change</a>
 
-      <hr class="sc-divider" />
-
       <h2 id="doc-form">Form</h2>
+
+      <p>Form elements don't require Javascript.</p>
 
       <h3 id="doc-form-radio">Radio</h3>
 
@@ -689,6 +723,15 @@
 
       <h3 id="doc-form-button">Button</h3>
 
+      <p>
+        Three sizes are available for buttons:
+        <span class="sc-highlight">.sc-sm</span>,
+        <span class="sc-highlight">.sc-md</span> and
+        <span class="sc-highlight">.sc-lg</span>. Combine them together with
+        <span class="sc-highlight">.sc-stretched</span> and icons to get
+        different buttons.
+      </p>
+
       <h4 id="doc-form-button-basic">Basic</h4>
 
       <form class="sc-form">
@@ -841,9 +884,12 @@
         </form>
       </textarea>
 
-      <hr class="sc-divider" />
-
       <h2 id="doc-table">Table</h2>
+
+      <p>
+        Add <span class="sc-highlight">.sc-table</span> class to table tags to
+        style them.
+      </p>
 
       <form class="sc-form">
         <table class="sc-table">
@@ -935,9 +981,13 @@
         </table>
       </textarea>
 
-      <hr class="sc-divider" />
-
       <h2 id="doc-card">Card</h2>
+
+      <p>
+        You can use <span class="sc-highlight">.sc-shadowed</span> and
+        <span class="sc-highlight">.sc-borderless</span> classes to get
+        additional card variations.
+      </p>
 
       <h3 id="doc-card-normal">Normal</h3>
 
@@ -1167,9 +1217,20 @@
         </div>
       </textarea>
 
-      <hr class="sc-divider" />
-
       <h2 id="doc-slide">Slide</h2>
+
+      <p>
+        Use Javascript to add/remove
+        <span class="sc-highlight">.sc-is-active</span> to/from
+        <span class="sc-highlight">.sc-slide</span> in order to show/hide
+        slides.
+      </p>
+
+      <p>
+        Use <span class="sc-highlight">.sc-slide-right</span> instead of
+        <span class="sc-highlight">.sc-slide-left</span> to open slides from the
+        right side.
+      </p>
 
       <a href="#" id="trigger-slide">Open</a>
 
@@ -1257,9 +1318,24 @@
         <div class="sc-overlay"></div>
       </textarea>
 
-      <hr class="sc-divider" />
-
       <h2 id="doc-modal">Modal</h2>
+
+      <p>
+        Use Javascript to add/remove
+        <span class="sc-highlight">.sc-is-active</span> to/from
+        <span class="sc-highlight">.sc-modal</span> in order to show/hide
+        modals.
+      </p>
+
+      <p>
+        Add <span class="sc-highlight">.sc-sm</span>,
+        <span class="sc-highlight">.sc-md</span>,
+        <span class="sc-highlight">.sc-lg</span>,
+        <span class="sc-highlight">.sc-stretched</span> and
+        <span class="sc-highlight">.sc-fullscreen</span> classes to
+        <span class="sc-highlight">.sc-modal</span> to create different size
+        modals.
+      </p>
 
       <a href="#" id="trigger-modal">Open</a>
 
@@ -1319,9 +1395,14 @@
         <div class="sc-overlay"></div>
       </textarea>
 
-      <hr class="sc-divider" />
-
       <h2 id="doc-splash">Splash</h2>
+
+      <p>
+        Use Javascript to add/remove
+        <span class="sc-highlight">.sc-is-active</span> to/from
+        <span class="sc-highlight">.sc-splash</span> in order to show/hide a
+        splash screen.
+      </p>
 
       <a href="#" id="trigger-splash">Open</a>
 
@@ -1357,9 +1438,14 @@
         </div>
       </textarea>
 
-      <hr class="sc-divider" />
-
       <h2 id="doc-loader">Loader</h2>
+
+      <p>
+        Use Javascript to add/remove
+        <span class="sc-highlight">.sc-is-active</span> to/from
+        <span class="sc-highlight">.sc-loader</span> in order to show/hide a
+        loader screen.
+      </p>
 
       <a href="#" id="trigger-loader">Open</a>
 
@@ -1395,11 +1481,16 @@
         </div>
       </textarea>
 
-      <hr class="sc-divider" />
-
       <h2 id="doc-accordion">Accordion</h2>
 
+      <p>
+        Accordions do not require Javascript. You can create them either with
+        checkbox or radio inputs to draw different functionalities.
+      </p>
+
       <h3 id="doc-accordion-multiple">Multiple</h3>
+
+      <p>Multiple items can be open at a time.</p>
 
       <div class="sc-accordion">
         <div class="sc-accordion-item">
@@ -1458,6 +1549,11 @@
       </textarea>
 
       <h3 id="doc-accordion-single">Single</h3>
+
+      <p>
+        Only one item can be open at a time. Opening a new item will
+        automatically collapse the previous item.
+      </p>
 
       <div class="sc-accordion">
         <div class="sc-accordion-item">
@@ -1527,97 +1623,121 @@
         </div>
       </textarea>
 
-      <hr class="sc-divider" />
-
       <h2 id="doc-icon">Icon</h2>
 
-      <i class="sc-icon-bullet sc-lg"></i>
+      <p>
+        Icons are prefixed with <span class="sc-highlight">.sc-icon-</span>.
+      </p>
 
-      <i class="sc-icon-calendar sc-lg"></i>
+      <p>
+        One of the size classes of <span class="sc-highlight">.sc-sm</span>,
+        <span class="sc-highlight">.sc-md</span> or
+        <span class="sc-highlight">.sc-lg</span> should be used together with
+        the icon class for an icon to display properly.
+      </p>
 
-      <i class="sc-icon-checkbox sc-lg"></i>
+      <p>
+        You can use them together with
+        <span class="sc-highlight">.sc-hover</span> to get the hover effect.
+      </p>
 
-      <i class="sc-icon-close sc-lg"></i>
+      <i class="sc-icon-search sc-lg sc-hover"></i>
 
-      <i class="sc-icon-compass sc-lg"></i>
+      <h5>Code:</h5>
 
-      <i class="sc-icon-cross sc-lg"></i>
+      <textarea class="editor-html">
+        <i class="sc-icon-search sc-lg sc-hover"></i>
+      </textarea>
 
-      <i class="sc-icon-direction sc-lg"></i>
+      <h5>More icons:</h5>
 
-      <i class="sc-icon-down sc-lg"></i>
+      <i class="sc-icon-bullet sc-lg" title=".sc-icon-bullet"></i>
 
-      <i class="sc-icon-false sc-lg"></i>
+      <i class="sc-icon-calendar sc-lg" title=".sc-icon-calendar"></i>
 
-      <i class="sc-icon-fullscreen sc-lg"></i>
+      <i class="sc-icon-checkbox sc-lg" title=".sc-icon-checkbox"></i>
 
-      <i class="sc-icon-geolocation sc-lg"></i>
+      <i class="sc-icon-close sc-lg" title=".sc-icon-close"></i>
 
-      <i class="sc-icon-handle-v sc-lg"></i>
+      <i class="sc-icon-compass sc-lg" title=".sc-icon-compass"></i>
 
-      <i class="sc-icon-handle-h sc-lg"></i>
+      <i class="sc-icon-cross sc-lg" title=".sc-icon-cross"></i>
 
-      <i class="sc-icon-help sc-lg"></i>
+      <i class="sc-icon-direction sc-lg" title=".sc-icon-direction"></i>
 
-      <i class="sc-icon-info sc-lg"></i>
+      <i class="sc-icon-down sc-lg" title=".sc-icon-down"></i>
 
-      <i class="sc-icon-left sc-lg"></i>
+      <i class="sc-icon-false sc-lg" title=".sc-icon-false"></i>
 
-      <i class="sc-icon-loader sc-lg"></i>
+      <i class="sc-icon-fullscreen sc-lg" title=".sc-icon-fullscreen"></i>
 
-      <i class="sc-icon-location sc-lg"></i>
+      <i class="sc-icon-geolocation sc-lg" title=".sc-icon-geolocation"></i>
 
-      <i class="sc-icon-login sc-lg"></i>
+      <i class="sc-icon-handle-v sc-lg" title=".sc-icon-handle-v"></i>
 
-      <i class="sc-icon-logout sc-lg"></i>
+      <i class="sc-icon-handle-h sc-lg" title=".sc-icon-handle-h"></i>
 
-      <i class="sc-icon-maximize sc-lg"></i>
+      <i class="sc-icon-help sc-lg" title=".sc-icon-help"></i>
 
-      <i class="sc-icon-menu sc-lg"></i>
+      <i class="sc-icon-info sc-lg" title=".sc-icon-info"></i>
 
-      <i class="sc-icon-minimize sc-lg"></i>
+      <i class="sc-icon-left sc-lg" title=".sc-icon-left"></i>
 
-      <i class="sc-icon-mode sc-lg"></i>
+      <i class="sc-icon-loader sc-lg" title=".sc-icon-loader"></i>
 
-      <i class="sc-icon-next sc-lg"></i>
+      <i class="sc-icon-location sc-lg" title=".sc-icon-location"></i>
 
-      <i class="sc-icon-order sc-lg"></i>
+      <i class="sc-icon-login sc-lg" title=".sc-icon-login"></i>
 
-      <i class="sc-icon-order-down sc-lg"></i>
+      <i class="sc-icon-logout sc-lg" title=".sc-icon-logout"></i>
 
-      <i class="sc-icon-order-up sc-lg"></i>
+      <i class="sc-icon-maximize sc-lg" title=".sc-icon-maximize"></i>
 
-      <i class="sc-icon-pause sc-lg"></i>
+      <i class="sc-icon-menu sc-lg" title=".sc-icon-menu"></i>
 
-      <i class="sc-icon-play sc-lg"></i>
+      <i class="sc-icon-minimize sc-lg" title=".sc-icon-minimize"></i>
 
-      <i class="sc-icon-prev sc-lg"></i>
+      <i class="sc-icon-mode sc-lg" title=".sc-icon-mode"></i>
 
-      <i class="sc-icon-radio sc-lg"></i>
+      <i class="sc-icon-next sc-lg" title=".sc-icon-next"></i>
 
-      <i class="sc-icon-restart sc-lg"></i>
+      <i class="sc-icon-order sc-lg" title=".sc-icon-order"></i>
 
-      <i class="sc-icon-right sc-lg"></i>
+      <i class="sc-icon-order-down sc-lg" title=".sc-icon-order-down"></i>
 
-      <i class="sc-icon-route sc-lg"></i>
+      <i class="sc-icon-order-up sc-lg" title=".sc-icon-order-up"></i>
 
-      <i class="sc-icon-search sc-lg"></i>
+      <i class="sc-icon-pause sc-lg" title=".sc-icon-pause"></i>
 
-      <i class="sc-icon-share sc-lg"></i>
+      <i class="sc-icon-play sc-lg" title=".sc-icon-play"></i>
 
-      <i class="sc-icon-stop sc-lg"></i>
+      <i class="sc-icon-prev sc-lg" title=".sc-icon-prev"></i>
 
-      <i class="sc-icon-stylecraft sc-lg"></i>
+      <i class="sc-icon-radio sc-lg" title=".sc-icon-radio"></i>
 
-      <i class="sc-icon-tour sc-lg"></i>
+      <i class="sc-icon-restart sc-lg" title=".sc-icon-restart"></i>
 
-      <i class="sc-icon-true sc-lg"></i>
+      <i class="sc-icon-right sc-lg" title=".sc-icon-right"></i>
 
-      <i class="sc-icon-up sc-lg"></i>
+      <i class="sc-icon-route sc-lg" title=".sc-icon-route"></i>
 
-      <i class="sc-icon-zoom-in sc-lg"></i>
+      <i class="sc-icon-search sc-lg" title=".sc-icon-search"></i>
 
-      <i class="sc-icon-zoom-out sc-lg"></i>
+      <i class="sc-icon-share sc-lg" title=".sc-icon-share"></i>
+
+      <i class="sc-icon-stop sc-lg" title=".sc-icon-stop"></i>
+
+      <i class="sc-icon-stylecraft sc-lg" title=".sc-icon-stylecraft"></i>
+
+      <i class="sc-icon-tour sc-lg" title=".sc-icon-tour"></i>
+
+      <i class="sc-icon-true sc-lg" title=".sc-icon-true"></i>
+
+      <i class="sc-icon-up sc-lg" title=".sc-icon-up"></i>
+
+      <i class="sc-icon-zoom-in sc-lg" title=".sc-icon-zoom-in"></i>
+
+      <i class="sc-icon-zoom-out sc-lg" title=".sc-icon-zoom-out"></i>
     </div>
 
     <a href="#top" class="top">
