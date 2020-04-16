@@ -68,10 +68,20 @@ a {
   }
 }
 
-.sc-highlight {
-  padding: calc(var(--padding-sm) / 2) var(--padding-sm);
+@mixin highlight {
+  user-select: all;
   color: var(--color-primary-dark);
   background-color: var(--fade-dark-sm);
   border-radius: var(--border-radius);
   border: 1px solid var(--fade-dark-md);
+}
+
+pre {
+  padding: var(--padding-sm) var(--padding-md);
+  @include highlight;
+}
+
+.sc-highlight {
+  padding: calc(var(--padding-sm) / 2) var(--padding-sm);
+  @include highlight;
 }
