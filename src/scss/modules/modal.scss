@@ -6,7 +6,6 @@
   width: calc(100vw - 2 * var(--padding-md));
   max-height: calc(100vh - 2 * var(--padding-md));
   overflow: auto;
-  background-color: var(--color-lighter);
   opacity: 0;
   visibility: hidden;
   transition: var(--transition-md);
