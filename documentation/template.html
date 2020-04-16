@@ -8,238 +8,81 @@
   </head>
 
   <body class="sc-font sc-dark" style="opacity: 0;">
-    <header class="header" id="top">
-      <h1>Stylecraft</h1>
-    </header>
-
     <div class="app">
-      <h2 id="doc-contents">Contents</h2>
+      <header class="header" id="top">
+        <h1>Stylecraft</h1>
+      </header>
 
-      <ul class="sc-list" id="list">
-        <li>
-          <a href="#doc-contents">Contents</a>
-        </li>
+      <div class="contents">
+        <h2 id="doc-intro">Intro</h2>
 
-        <li>
-          <a href="#doc-intro">Intro</a>
-        </li>
+        <p>
+          This is a pure CSS framework. Depending on your use case you're going
+          to need to use your Javascript framework of choice to manipulate class
+          names in DOM to get the desired effects.
+        </p>
 
-        <li>
-          <a href="#doc-installation">Installation</a>
-        </li>
+        <h2 id="doc-installation">Installation</h2>
 
-        <li>
-          <a href="#doc-mode">Mode</a>
-        </li>
+        <pre>npm install stylecraft --save</pre>
 
-        <li>
-          <a href="#doc-form">Form</a>
+        <p>Later in your project:</p>
 
-          <ul class="sc-list">
-            <li>
-              <a href="#doc-form-radio">Radio</a>
-            </li>
+        <pre>import "stylecraft/dist/stylecraft.css"</pre>
 
-            <li>
-              <a href="#doc-form-checkbox">Checkbox</a>
-            </li>
+        <h2 id="doc-mode">Mode</h2>
 
-            <li>
-              <a href="#doc-form-text">Text field</a>
+        <p>
+          Use Javascript to add/remove
+          <span class="sc-highlight">.sc-dark</span> class to/from document body
+          in order to toggle between dark/light modes.
+        </p>
 
-              <ul class="sc-list">
-                <li>
-                  <a href="#doc-form-text-basic">Basic</a>
-                </li>
+        <a href="#" id="trigger-mode">Change</a>
 
-                <li>
-                  <a href="#doc-form-text-label">With label</a>
-                </li>
+        <h2 id="doc-form">Form</h2>
 
-                <li>
-                  <a href="#doc-form-text-icon">With icon</a>
-                </li>
-              </ul>
-            </li>
+        <p>Form elements don't require Javascript.</p>
 
-            <li>
-              <a href="#doc-form-textarea">Textarea</a>
+        <h3 id="doc-form-radio">Radio</h3>
 
-              <ul class="sc-list">
-                <li>
-                  <a href="#doc-form-textarea-basic">Basic</a>
-                </li>
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-3">
+            <div class="sc-form-radio">
+              <input type="radio" name="my-radio" id="radio-1" checked />
 
-                <li>
-                  <a href="#doc-form-textarea-label">With label</a>
-                </li>
+              <label for="radio-1">
+                <i class="sc-icon-radio"></i>
 
-                <li>
-                  <a href="#doc-form-textarea-icon">With icon</a>
-                </li>
-              </ul>
-            </li>
+                <span>Radio 1</span>
+              </label>
+            </div>
 
-            <li>
-              <a href="#doc-form-select">Select</a>
-            </li>
+            <div class="sc-form-radio">
+              <input type="radio" name="my-radio" id="radio-2" />
 
-            <li>
-              <a href="#doc-form-range">Range</a>
-            </li>
+              <label for="radio-2">
+                <i class="sc-icon-radio"></i>
 
-            <li>
-              <a href="#doc-form-button">Button</a>
+                <span>Radio 2</span>
+              </label>
+            </div>
 
-              <ul class="sc-list">
-                <li>
-                  <a href="#doc-form-button-basic">Basic</a>
-                </li>
+            <div class="sc-form-radio">
+              <input type="radio" name="my-radio" id="radio-3" disabled />
 
-                <li>
-                  <a href="#doc-form-button-basic-icon">Basic with icon</a>
-                </li>
+              <label for="radio-3">
+                <i class="sc-icon-radio"></i>
 
-                <li>
-                  <a href="#doc-form-button-stretched">Stretched</a>
-                </li>
-
-                <li>
-                  <a href="#doc-form-button-stretched-icon"
-                    >Stretched with icon</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-
-        <li>
-          <a href="#doc-table">Table</a>
-        </li>
-
-        <li>
-          <a href="#doc-card">Card</a>
-
-          <ul class="sc-list">
-            <li>
-              <a href="#doc-card-normal">Normal</a>
-            </li>
-
-            <li>
-              <a href="#doc-card-borderless">Borderless</a>
-            </li>
-
-            <li>
-              <a href="#doc-card-shadowed">Shadowed</a>
-            </li>
-          </ul>
-        </li>
-
-        <li>
-          <a href="#doc-slide">Slide</a>
-        </li>
-
-        <li>
-          <a href="#doc-modal">Modal</a>
-        </li>
-
-        <li>
-          <a href="#doc-splash">Splash</a>
-        </li>
-
-        <li>
-          <a href="#doc-loader">Loader</a>
-        </li>
-
-        <li>
-          <a href="#doc-accordion">Accordion</a>
-
-          <ul class="sc-list">
-            <li>
-              <a href="#doc-accordion-multiple">Multiple</a>
-            </li>
-
-            <li>
-              <a href="#doc-accordion-single">Single</a>
-            </li>
-          </ul>
-        </li>
-
-        <li>
-          <a href="#doc-icon">Icon</a>
-        </li>
-      </ul>
-
-      <h2 id="doc-intro">Intro</h2>
-
-      <p>
-        This is a pure CSS framework. Depending on your use case you're going to
-        need to use your Javascript framework of choice to manipulate class
-        names in DOM to get the desired effects.
-      </p>
-
-      <h2 id="doc-installation">Installation</h2>
-
-      <pre>npm install stylecraft --save</pre>
-
-      <p>Later in your project:</p>
-
-      <pre>import "stylecraft/dist/stylecraft.css"</pre>
-
-      <h2 id="doc-mode">Mode</h2>
-
-      <p>
-        Use Javascript to add/remove
-        <span class="sc-highlight">.sc-dark</span> class to/from document body
-        in order to toggle between dark/light modes.
-      </p>
-
-      <a href="#" id="trigger-mode">Change</a>
-
-      <h2 id="doc-form">Form</h2>
-
-      <p>Form elements don't require Javascript.</p>
-
-      <h3 id="doc-form-radio">Radio</h3>
-
-      <form class="sc-form">
-        <div class="sc-form-group sc-grid-3">
-          <div class="sc-form-radio">
-            <input type="radio" name="my-radio" id="radio-1" checked />
-
-            <label for="radio-1">
-              <i class="sc-icon-radio"></i>
-
-              <span>Radio 1</span>
-            </label>
+                <span>Radio 3 disabled</span>
+              </label>
+            </div>
           </div>
+        </form>
 
-          <div class="sc-form-radio">
-            <input type="radio" name="my-radio" id="radio-2" />
+        <h5>Code:</h5>
 
-            <label for="radio-2">
-              <i class="sc-icon-radio"></i>
-
-              <span>Radio 2</span>
-            </label>
-          </div>
-
-          <div class="sc-form-radio">
-            <input type="radio" name="my-radio" id="radio-3" disabled />
-
-            <label for="radio-3">
-              <i class="sc-icon-radio"></i>
-
-              <span>Radio 3 disabled</span>
-            </label>
-          </div>
-        </div>
-      </form>
-
-      <h5>Code:</h5>
-
-      <textarea class="editor-html">
+        <textarea class="editor-html">
         <form class="sc-form">
           <div class="sc-form-group sc-grid-3">
             <div class="sc-form-radio">
@@ -273,52 +116,58 @@
             </div>
           </div>
         </form>
-      </textarea>
+      </textarea
+        >
 
-      <h3 id="doc-form-checkbox">Checkbox</h3>
+        <h3 id="doc-form-checkbox">Checkbox</h3>
 
-      <form class="sc-form">
-        <div class="sc-form-group sc-grid-3">
-          <div class="sc-form-checkbox">
-            <input type="checkbox" name="my-checkbox" id="checkbox-1" checked />
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-3">
+            <div class="sc-form-checkbox">
+              <input
+                type="checkbox"
+                name="my-checkbox"
+                id="checkbox-1"
+                checked
+              />
 
-            <label for="checkbox-1">
-              <i class="sc-icon-checkbox"></i>
+              <label for="checkbox-1">
+                <i class="sc-icon-checkbox"></i>
 
-              <span>Checkbox 1</span>
-            </label>
+                <span>Checkbox 1</span>
+              </label>
+            </div>
+
+            <div class="sc-form-checkbox">
+              <input type="checkbox" name="my-checkbox" id="checkbox-2" />
+
+              <label for="checkbox-2">
+                <i class="sc-icon-checkbox"></i>
+
+                <span>Checkbox 2</span>
+              </label>
+            </div>
+
+            <div class="sc-form-checkbox">
+              <input
+                type="checkbox"
+                name="my-checkbox"
+                id="checkbox-3"
+                disabled
+              />
+
+              <label for="checkbox-3">
+                <i class="sc-icon-checkbox"></i>
+
+                <span>Checkbox 3 disabled</span>
+              </label>
+            </div>
           </div>
+        </form>
 
-          <div class="sc-form-checkbox">
-            <input type="checkbox" name="my-checkbox" id="checkbox-2" />
+        <h5>Code:</h5>
 
-            <label for="checkbox-2">
-              <i class="sc-icon-checkbox"></i>
-
-              <span>Checkbox 2</span>
-            </label>
-          </div>
-
-          <div class="sc-form-checkbox">
-            <input
-              type="checkbox"
-              name="my-checkbox"
-              id="checkbox-3"
-              disabled
-            />
-
-            <label for="checkbox-3">
-              <i class="sc-icon-checkbox"></i>
-
-              <span>Checkbox 3 disabled</span>
-            </label>
-          </div>
-        </div>
-      </form>
-
-      <h5>Code:</h5>
-
-      <textarea class="editor-html">
+        <textarea class="editor-html">
         <form class="sc-form">
           <div class="sc-form-group sc-grid-3">
             <div class="sc-form-checkbox">
@@ -357,31 +206,32 @@
             </div>
           </div>
         </form>
-      </textarea>
+      </textarea
+        >
 
-      <h3 id="doc-form-text">Text field</h3>
+        <h3 id="doc-form-text">Text field</h3>
 
-      <h4 id="doc-form-text-basic">Basic</h4>
+        <h4 id="doc-form-text-basic">Basic</h4>
 
-      <form class="sc-form">
-        <div class="sc-form-group sc-grid-2">
-          <div class="sc-form-text">
-            <input type="text" name="my-text-1" id="text-1" />
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-2">
+            <div class="sc-form-text">
+              <input type="text" name="my-text-1" id="text-1" />
 
-            <label for="text-1">Text field with basic label</label>
+              <label for="text-1">Text field with basic label</label>
+            </div>
+
+            <div class="sc-form-text">
+              <input type="text" name="my-text-2" id="text-2" disabled />
+
+              <label for="text-2">Text field with basic label disabled</label>
+            </div>
           </div>
+        </form>
 
-          <div class="sc-form-text">
-            <input type="text" name="my-text-2" id="text-2" disabled />
+        <h5>Code:</h5>
 
-            <label for="text-2">Text field with basic label disabled</label>
-          </div>
-        </div>
-      </form>
-
-      <h5>Code:</h5>
-
-      <textarea class="editor-html">
+        <textarea class="editor-html">
         <form class="sc-form">
           <div class="sc-form-group sc-grid-2">
             <div class="sc-form-text">
@@ -397,29 +247,30 @@
             </div>
           </div>
         </form>
-      </textarea>
+      </textarea
+        >
 
-      <h4 id="doc-form-text-label">With label</h4>
+        <h4 id="doc-form-text-label">With label</h4>
 
-      <form class="sc-form">
-        <div class="sc-form-group sc-grid-2">
-          <div class="sc-form-text sc-has-label">
-            <input type="text" name="my-text-3" id="text-3" />
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-2">
+            <div class="sc-form-text sc-has-label">
+              <input type="text" name="my-text-3" id="text-3" />
 
-            <label for="text-3">Text field with stylish label</label>
+              <label for="text-3">Text field with stylish label</label>
+            </div>
+
+            <div class="sc-form-text sc-has-label">
+              <input type="text" name="my-text-4" id="text-4" disabled />
+
+              <label for="text-4">Text field with stylish label disabled</label>
+            </div>
           </div>
+        </form>
 
-          <div class="sc-form-text sc-has-label">
-            <input type="text" name="my-text-4" id="text-4" disabled />
+        <h5>Code:</h5>
 
-            <label for="text-4">Text field with stylish label disabled</label>
-          </div>
-        </div>
-      </form>
-
-      <h5>Code:</h5>
-
-      <textarea class="editor-html">
+        <textarea class="editor-html">
         <form class="sc-form">
           <div class="sc-form-group sc-grid-2">
             <div class="sc-form-text sc-has-label">
@@ -435,33 +286,34 @@
             </div>
           </div>
         </form>
-      </textarea>
+      </textarea
+        >
 
-      <h4 id="doc-form-text-icon">With icon</h4>
+        <h4 id="doc-form-text-icon">With icon</h4>
 
-      <form class="sc-form">
-        <div class="sc-form-group sc-grid-2">
-          <div class="sc-form-text sc-has-icon">
-            <input type="text" name="my-text-5" id="text-5" />
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-2">
+            <div class="sc-form-text sc-has-icon">
+              <input type="text" name="my-text-5" id="text-5" />
 
-            <label for="text-5">
-              <i class="sc-icon-search"></i>
-            </label>
+              <label for="text-5">
+                <i class="sc-icon-search"></i>
+              </label>
+            </div>
+
+            <div class="sc-form-text sc-has-icon">
+              <input type="text" name="my-text-6" id="text-6" disabled />
+
+              <label for="text-6">
+                <i class="sc-icon-search"></i>
+              </label>
+            </div>
           </div>
+        </form>
 
-          <div class="sc-form-text sc-has-icon">
-            <input type="text" name="my-text-6" id="text-6" disabled />
+        <h5>Code:</h5>
 
-            <label for="text-6">
-              <i class="sc-icon-search"></i>
-            </label>
-          </div>
-        </div>
-      </form>
-
-      <h5>Code:</h5>
-
-      <textarea class="editor-html">
+        <textarea class="editor-html">
         <form class="sc-form">
           <div class="sc-form-group sc-grid-2">
             <div class="sc-form-text sc-has-icon">
@@ -481,31 +333,38 @@
             </div>
           </div>
         </form>
-      </textarea>
+      </textarea
+        >
 
-      <h3 id="doc-form-textarea">Textarea</h3>
+        <h3 id="doc-form-textarea">Textarea</h3>
 
-      <h4 id="doc-form-textarea-basic">Basic</h4>
+        <h4 id="doc-form-textarea-basic">Basic</h4>
 
-      <form class="sc-form">
-        <div class="sc-form-group sc-grid-2">
-          <div class="sc-form-textarea">
-            <textarea name="my-textarea-1" id="textarea-1"></textarea>
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-2">
+            <div class="sc-form-textarea">
+              <textarea name="my-textarea-1" id="textarea-1"></textarea>
 
-            <label for="textarea-1">Text field with basic label</label>
+              <label for="textarea-1">Text field with basic label</label>
+            </div>
+
+            <div class="sc-form-textarea">
+              <textarea
+                name="my-textarea-2"
+                id="textarea-2"
+                disabled
+              ></textarea>
+
+              <label for="textarea-2"
+                >Text field with basic label disabled</label
+              >
+            </div>
           </div>
+        </form>
 
-          <div class="sc-form-textarea">
-            <textarea name="my-textarea-2" id="textarea-2" disabled></textarea>
+        <h5>Code:</h5>
 
-            <label for="textarea-2">Text field with basic label disabled</label>
-          </div>
-        </div>
-      </form>
-
-      <h5>Code:</h5>
-
-      <textarea class="editor-html">
+        <textarea class="editor-html">
         &#x3C;form class=&#x22;sc-form&#x22;&#x3E;
           &#x3C;div class=&#x22;sc-form-group sc-grid-2&#x22;&#x3E;
             &#x3C;div class=&#x22;sc-form-textarea&#x22;&#x3E;
@@ -521,29 +380,34 @@
             &#x3C;/div&#x3E;
           &#x3C;/div&#x3E;
         &#x3C;/form&#x3E;
-      </textarea>
+      </textarea
+        >
 
-      <h4 id="doc-form-textarea-label">With label</h4>
+        <h4 id="doc-form-textarea-label">With label</h4>
 
-      <form class="sc-form">
-        <div class="sc-form-group sc-grid-2">
-          <div class="sc-form-textarea sc-has-label">
-            <textarea name="my-textarea-3" id="textarea-3"></textarea>
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-2">
+            <div class="sc-form-textarea sc-has-label">
+              <textarea name="my-textarea-3" id="textarea-3"></textarea>
 
-            <label for="textarea-3">Text field with stylish label</label>
+              <label for="textarea-3">Text field with stylish label</label>
+            </div>
+
+            <div class="sc-form-textarea sc-has-label">
+              <textarea
+                name="my-textarea-4"
+                id="textarea-4"
+                disabled
+              ></textarea>
+
+              <label for="textarea-4">Text field with stylish label</label>
+            </div>
           </div>
+        </form>
 
-          <div class="sc-form-textarea sc-has-label">
-            <textarea name="my-textarea-4" id="textarea-4" disabled></textarea>
+        <h5>Code:</h5>
 
-            <label for="textarea-4">Text field with stylish label</label>
-          </div>
-        </div>
-      </form>
-
-      <h5>Code:</h5>
-
-      <textarea class="editor-html">
+        <textarea class="editor-html">
         &#x3C;form class=&#x22;sc-form&#x22;&#x3E;
         &#x3C;div class=&#x22;sc-form-group sc-grid-2&#x22;&#x3E;
           &#x3C;div class=&#x22;sc-form-textarea sc-has-label&#x22;&#x3E;
@@ -559,33 +423,38 @@
           &#x3C;/div&#x3E;
         &#x3C;/div&#x3E;
       &#x3C;/form&#x3E;
-      </textarea>
+      </textarea
+        >
 
-      <h4 id="doc-form-textarea-icon">With icon</h4>
+        <h4 id="doc-form-textarea-icon">With icon</h4>
 
-      <form class="sc-form">
-        <div class="sc-form-group sc-grid-2">
-          <div class="sc-form-textarea sc-has-icon">
-            <textarea name="my-textarea-5" id="textarea-5"></textarea>
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-2">
+            <div class="sc-form-textarea sc-has-icon">
+              <textarea name="my-textarea-5" id="textarea-5"></textarea>
 
-            <label for="textarea-5">
-              <i class="sc-icon-search"></i>
-            </label>
+              <label for="textarea-5">
+                <i class="sc-icon-search"></i>
+              </label>
+            </div>
+
+            <div class="sc-form-textarea sc-has-icon">
+              <textarea
+                name="my-textarea-6"
+                id="textarea-6"
+                disabled
+              ></textarea>
+
+              <label for="textarea-6">
+                <i class="sc-icon-search"></i>
+              </label>
+            </div>
           </div>
+        </form>
 
-          <div class="sc-form-textarea sc-has-icon">
-            <textarea name="my-textarea-6" id="textarea-6" disabled></textarea>
+        <h5>Code:</h5>
 
-            <label for="textarea-6">
-              <i class="sc-icon-search"></i>
-            </label>
-          </div>
-        </div>
-      </form>
-
-      <h5>Code:</h5>
-
-      <textarea class="editor-html">
+        <textarea class="editor-html">
         &#x3C;form class=&#x22;sc-form&#x22;&#x3E;
         &#x3C;div class=&#x22;sc-form-group sc-grid-2&#x22;&#x3E;
           &#x3C;div class=&#x22;sc-form-textarea sc-has-icon&#x22;&#x3E;
@@ -605,33 +474,34 @@
           &#x3C;/div&#x3E;
         &#x3C;/div&#x3E;
       &#x3C;/form&#x3E;
-      </textarea>
+      </textarea
+        >
 
-      <h3 id="doc-form-select">Select</h3>
+        <h3 id="doc-form-select">Select</h3>
 
-      <form class="sc-form">
-        <div class="sc-form-group sc-grid-2">
-          <div class="sc-form-select">
-            <select name="my-select-1">
-              <option value="">1</option>
-              <option value="">2</option>
-              <option value="">3</option>
-            </select>
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-2">
+            <div class="sc-form-select">
+              <select name="my-select-1">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+              </select>
+            </div>
+
+            <div class="sc-form-select">
+              <select name="my-select-2" disabled>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+              </select>
+            </div>
           </div>
+        </form>
 
-          <div class="sc-form-select">
-            <select name="my-select-2" disabled>
-              <option value="">1</option>
-              <option value="">2</option>
-              <option value="">3</option>
-            </select>
-          </div>
-        </div>
-      </form>
+        <h5>Code:</h5>
 
-      <h5>Code:</h5>
-
-      <textarea class="editor-html">
+        <textarea class="editor-html">
         <form class="sc-form">
           <div class="sc-form-group sc-grid-2">
             <div class="sc-form-select">
@@ -651,44 +521,45 @@
             </div>
           </div>
         </form>
-      </textarea>
+      </textarea
+        >
 
-      <h3 id="doc-form-range">Range</h3>
+        <h3 id="doc-form-range">Range</h3>
 
-      <form class="sc-form">
-        <div class="sc-form-group sc-grid-2">
-          <div class="sc-form-range">
-            <input
-              type="range"
-              min="1"
-              max="100"
-              step="1"
-              name="my-range-1"
-              id="range-1"
-            />
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-2">
+            <div class="sc-form-range">
+              <input
+                type="range"
+                min="1"
+                max="100"
+                step="1"
+                name="my-range-1"
+                id="range-1"
+              />
 
-            <label for="range-1">Range with label</label>
+              <label for="range-1">Range with label</label>
+            </div>
+
+            <div class="sc-form-range">
+              <input
+                type="range"
+                min="1"
+                max="100"
+                step="1"
+                name="my-range-2"
+                id="range-2"
+                disabled
+              />
+
+              <label for="range-2">Range with label disabled</label>
+            </div>
           </div>
+        </form>
 
-          <div class="sc-form-range">
-            <input
-              type="range"
-              min="1"
-              max="100"
-              step="1"
-              name="my-range-2"
-              id="range-2"
-              disabled
-            />
+        <h5>Code:</h5>
 
-            <label for="range-2">Range with label disabled</label>
-          </div>
-        </div>
-      </form>
-
-      <h5>Code:</h5>
-
-      <textarea class="editor-html">
+        <textarea class="editor-html">
         <form class="sc-form">
           <div class="sc-form-group sc-grid-2">
             <div class="sc-form-range">
@@ -719,36 +590,37 @@
             </div>
           </div>
         </form>
-      </textarea>
+      </textarea
+        >
 
-      <h3 id="doc-form-button">Button</h3>
+        <h3 id="doc-form-button">Button</h3>
 
-      <p>
-        Three sizes are available for buttons:
-        <span class="sc-highlight">.sc-sm</span>,
-        <span class="sc-highlight">.sc-md</span> and
-        <span class="sc-highlight">.sc-lg</span>. Combine them together with
-        <span class="sc-highlight">.sc-stretched</span> and icons to get
-        different buttons.
-      </p>
+        <p>
+          Three sizes are available for buttons:
+          <span class="sc-highlight">.sc-sm</span>,
+          <span class="sc-highlight">.sc-md</span> and
+          <span class="sc-highlight">.sc-lg</span>. Combine them together with
+          <span class="sc-highlight">.sc-stretched</span> and icons to get
+          different buttons.
+        </p>
 
-      <h4 id="doc-form-button-basic">Basic</h4>
+        <h4 id="doc-form-button-basic">Basic</h4>
 
-      <form class="sc-form">
-        <div class="sc-form-group sc-grid-2">
-          <div class="sc-form-button sc-md">
-            <button type="button">Button</button>
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-2">
+            <div class="sc-form-button sc-md">
+              <button type="button">Button</button>
+            </div>
+
+            <div class="sc-form-button sc-md">
+              <button type="button" disabled>Button disabled</button>
+            </div>
           </div>
+        </form>
 
-          <div class="sc-form-button sc-md">
-            <button type="button" disabled>Button disabled</button>
-          </div>
-        </div>
-      </form>
+        <h5>Code:</h5>
 
-      <h5>Code:</h5>
-
-      <textarea class="editor-html">
+        <textarea class="editor-html">
         <form class="sc-form">
           <div class="sc-form-group sc-grid-2">
             <div class="sc-form-button sc-md">
@@ -760,33 +632,34 @@
             </div>
           </div>
         </form>
-      </textarea>
+      </textarea
+        >
 
-      <h4 id="doc-form-button-basic-icon">Basic with icon</h4>
+        <h4 id="doc-form-button-basic-icon">Basic with icon</h4>
 
-      <form class="sc-form">
-        <div class="sc-form-group sc-grid-2">
-          <div class="sc-form-button sc-md">
-            <button type="button">
-              <i class="sc-icon-search"></i>
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-2">
+            <div class="sc-form-button sc-md">
+              <button type="button">
+                <i class="sc-icon-search"></i>
 
-              <span>Button with icon</span>
-            </button>
+                <span>Button with icon</span>
+              </button>
+            </div>
+
+            <div class="sc-form-button sc-md">
+              <button type="button" disabled>
+                <i class="sc-icon-search"></i>
+
+                <span>Button with icon disabled</span>
+              </button>
+            </div>
           </div>
+        </form>
 
-          <div class="sc-form-button sc-md">
-            <button type="button" disabled>
-              <i class="sc-icon-search"></i>
+        <h5>Code:</h5>
 
-              <span>Button with icon disabled</span>
-            </button>
-          </div>
-        </div>
-      </form>
-
-      <h5>Code:</h5>
-
-      <textarea class="editor-html">
+        <textarea class="editor-html">
         <form class="sc-form">
           <div class="sc-form-group sc-grid-2">
             <div class="sc-form-button sc-md">
@@ -806,25 +679,26 @@
             </div>
           </div>
         </form>
-      </textarea>
+      </textarea
+        >
 
-      <h4 id="doc-form-button-stretched">Stretched</h4>
+        <h4 id="doc-form-button-stretched">Stretched</h4>
 
-      <form class="sc-form">
-        <div class="sc-form-group sc-grid-2">
-          <div class="sc-form-button sc-md sc-stretched">
-            <button type="button">Stretched button</button>
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-2">
+            <div class="sc-form-button sc-md sc-stretched">
+              <button type="button">Stretched button</button>
+            </div>
+
+            <div class="sc-form-button sc-md sc-stretched">
+              <button type="button" disabled>Stretched button disabled</button>
+            </div>
           </div>
+        </form>
 
-          <div class="sc-form-button sc-md sc-stretched">
-            <button type="button" disabled>Stretched button disabled</button>
-          </div>
-        </div>
-      </form>
+        <h5>Code:</h5>
 
-      <h5>Code:</h5>
-
-      <textarea class="editor-html">
+        <textarea class="editor-html">
         <form class="sc-form">
           <div class="sc-form-group sc-grid-2">
             <div class="sc-form-button sc-md sc-stretched">
@@ -836,33 +710,34 @@
             </div>
           </div>
         </form>
-      </textarea>
+      </textarea
+        >
 
-      <h4 id="doc-form-button-stretched-icon">Stretched with icon</h4>
+        <h4 id="doc-form-button-stretched-icon">Stretched with icon</h4>
 
-      <form class="sc-form">
-        <div class="sc-form-group sc-grid-2">
-          <div class="sc-form-button sc-md sc-stretched">
-            <button type="button">
-              <i class="sc-icon-search"></i>
+        <form class="sc-form">
+          <div class="sc-form-group sc-grid-2">
+            <div class="sc-form-button sc-md sc-stretched">
+              <button type="button">
+                <i class="sc-icon-search"></i>
 
-              <span>Stretched button with icon</span>
-            </button>
+                <span>Stretched button with icon</span>
+              </button>
+            </div>
+
+            <div class="sc-form-button sc-md sc-stretched">
+              <button type="button" disabled>
+                <i class="sc-icon-search"></i>
+
+                <span>Stretched button with icon disabled</span>
+              </button>
+            </div>
           </div>
+        </form>
 
-          <div class="sc-form-button sc-md sc-stretched">
-            <button type="button" disabled>
-              <i class="sc-icon-search"></i>
+        <h5>Code:</h5>
 
-              <span>Stretched button with icon disabled</span>
-            </button>
-          </div>
-        </div>
-      </form>
-
-      <h5>Code:</h5>
-
-      <textarea class="editor-html">
+        <textarea class="editor-html">
         <form class="sc-form">
           <div class="sc-form-group sc-grid-2">
             <div class="sc-form-button sc-md sc-stretched">
@@ -882,68 +757,69 @@
             </div>
           </div>
         </form>
-      </textarea>
+      </textarea
+        >
 
-      <h2 id="doc-table">Table</h2>
+        <h2 id="doc-table">Table</h2>
 
-      <p>
-        Add <span class="sc-highlight">.sc-table</span> class to table tags to
-        style them.
-      </p>
+        <p>
+          Add <span class="sc-highlight">.sc-table</span> class to table tags to
+          style them.
+        </p>
 
-      <form class="sc-form">
+        <form class="sc-form">
+          <table class="sc-table">
+            <caption>
+              Orci varius natoque penatibus et magnis dis parturient montes.
+              Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
+              felis.
+            </caption>
+
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Lorem</td>
+                <td>Dorem</td>
+              </tr>
+
+              <tr>
+                <td>Ipsum</td>
+                <td>Ripsum</td>
+              </tr>
+
+              <tr>
+                <td>Dolor</td>
+                <td>Solar</td>
+              </tr>
+
+              <tr>
+                <td>Sit</td>
+                <td>Neva</td>
+              </tr>
+
+              <tr>
+                <td>Amet</td>
+                <td>Nani</td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+
+        <h5>Code:</h5>
+
+        <textarea class="editor-html">
         <table class="sc-table">
           <caption>
             Orci varius natoque penatibus et magnis dis parturient montes.
             Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
             felis.
           </caption>
-
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Value</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td>Lorem</td>
-              <td>Dorem</td>
-            </tr>
-
-            <tr>
-              <td>Ipsum</td>
-              <td>Ripsum</td>
-            </tr>
-
-            <tr>
-              <td>Dolor</td>
-              <td>Solar</td>
-            </tr>
-
-            <tr>
-              <td>Sit</td>
-              <td>Neva</td>
-            </tr>
-
-            <tr>
-              <td>Amet</td>
-              <td>Nani</td>
-            </tr>
-          </tbody>
-        </table>
-      </form>
-
-      <h5>Code:</h5>
-
-      <textarea class="editor-html">
-        <table class="sc-table">
-          <caption>
-            Orci varius natoque penatibus et magnis dis parturient montes.
-            Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
-            felis.
-          </caption>
   
           <thead>
             <tr>
@@ -979,61 +855,62 @@
             </tr>
           </tbody>
         </table>
-      </textarea>
+      </textarea
+        >
 
-      <h2 id="doc-card">Card</h2>
+        <h2 id="doc-card">Card</h2>
 
-      <p>
-        You can use <span class="sc-highlight">.sc-shadowed</span> and
-        <span class="sc-highlight">.sc-borderless</span> classes to get
-        additional card variations.
-      </p>
+        <p>
+          You can use <span class="sc-highlight">.sc-shadowed</span> and
+          <span class="sc-highlight">.sc-borderless</span> classes to get
+          additional card variations.
+        </p>
 
-      <h3 id="doc-card-normal">Normal</h3>
+        <h3 id="doc-card-normal">Normal</h3>
 
-      <form class="sc-form">
+        <form class="sc-form">
+          <div class="sc-card">
+            <header class="sc-card-header">
+              <h3>Lorem ipsum</h3>
+            </header>
+
+            <div class="sc-card-body">
+              <p>
+                Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
+                felis. Orci varius natoque penatibus et magnis dis parturient
+                montes.
+              </p>
+            </div>
+
+            <footer class="sc-card-footer">
+              <div class="sc-grid-2">
+                <div class="sc-form-button sc-md">
+                  <button type="button">
+                    <i class="sc-icon-search"></i>
+
+                    <span>Button</span>
+                  </button>
+                </div>
+
+                <div class="sc-form-button sc-md sc-flex-rr">
+                  <button type="button" disabled>
+                    <i class="sc-icon-search"></i>
+
+                    <span>Button disabled</span>
+                  </button>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </form>
+
+        <h5>Code:</h5>
+
+        <textarea class="editor-html">
         <div class="sc-card">
           <header class="sc-card-header">
             <h3>Lorem ipsum</h3>
           </header>
-
-          <div class="sc-card-body">
-            <p>
-              Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
-              felis. Orci varius natoque penatibus et magnis dis parturient
-              montes.
-            </p>
-          </div>
-
-          <footer class="sc-card-footer">
-            <div class="sc-grid-2">
-              <div class="sc-form-button sc-md">
-                <button type="button">
-                  <i class="sc-icon-search"></i>
-
-                  <span>Button</span>
-                </button>
-              </div>
-
-              <div class="sc-form-button sc-md sc-flex-rr">
-                <button type="button" disabled>
-                  <i class="sc-icon-search"></i>
-
-                  <span>Button disabled</span>
-                </button>
-              </div>
-            </div>
-          </footer>
-        </div>
-      </form>
-
-      <h5>Code:</h5>
-
-      <textarea class="editor-html">
-        <div class="sc-card">
-          <header class="sc-card-header">
-            <h3>Lorem ipsum</h3>
-          </header>
   
           <div class="sc-card-body">
             <p>
@@ -1063,49 +940,50 @@
             </div>
           </footer>
         </div>
-      </textarea>
+      </textarea
+        >
 
-      <h3 id="doc-card-borderless">Borderless</h3>
+        <h3 id="doc-card-borderless">Borderless</h3>
 
-      <form class="sc-form">
-        <div class="sc-card sc-borderless">
-          <header class="sc-card-header">
-            <h3>Lorem ipsum</h3>
-          </header>
+        <form class="sc-form">
+          <div class="sc-card sc-borderless">
+            <header class="sc-card-header">
+              <h3>Lorem ipsum</h3>
+            </header>
 
-          <div class="sc-card-body">
-            <p>
-              Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
-              felis. Orci varius natoque penatibus et magnis dis parturient
-              montes.
-            </p>
-          </div>
-
-          <footer class="sc-card-footer">
-            <div class="sc-grid-2">
-              <div class="sc-form-button sc-md">
-                <button type="button">
-                  <i class="sc-icon-search"></i>
-
-                  <span>Button</span>
-                </button>
-              </div>
-
-              <div class="sc-form-button sc-md sc-flex-rr">
-                <button type="button" disabled>
-                  <i class="sc-icon-search"></i>
-
-                  <span>Button disabled</span>
-                </button>
-              </div>
+            <div class="sc-card-body">
+              <p>
+                Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
+                felis. Orci varius natoque penatibus et magnis dis parturient
+                montes.
+              </p>
             </div>
-          </footer>
-        </div>
-      </form>
 
-      <h5>Code:</h5>
+            <footer class="sc-card-footer">
+              <div class="sc-grid-2">
+                <div class="sc-form-button sc-md">
+                  <button type="button">
+                    <i class="sc-icon-search"></i>
 
-      <textarea class="editor-html">
+                    <span>Button</span>
+                  </button>
+                </div>
+
+                <div class="sc-form-button sc-md sc-flex-rr">
+                  <button type="button" disabled>
+                    <i class="sc-icon-search"></i>
+
+                    <span>Button disabled</span>
+                  </button>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </form>
+
+        <h5>Code:</h5>
+
+        <textarea class="editor-html">
         <div class="sc-card sc-borderless">
           <header class="sc-card-header">
             <h3>Lorem ipsum</h3>
@@ -1139,16 +1017,55 @@
             </div>
           </footer>
         </div>
-      </textarea>
+      </textarea
+        >
 
-      <h3 id="doc-card-shadowed">Shadowed</h3>
+        <h3 id="doc-card-shadowed">Shadowed</h3>
 
-      <form class="sc-form">
+        <form class="sc-form">
+          <div class="sc-card sc-shadowed">
+            <header class="sc-card-header">
+              <h3>Lorem ipsum</h3>
+            </header>
+
+            <div class="sc-card-body">
+              <p>
+                Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
+                felis. Orci varius natoque penatibus et magnis dis parturient
+                montes.
+              </p>
+            </div>
+
+            <footer class="sc-card-footer">
+              <div class="sc-grid-2">
+                <div class="sc-form-button sc-md">
+                  <button type="button">
+                    <i class="sc-icon-search"></i>
+
+                    <span>Button</span>
+                  </button>
+                </div>
+
+                <div class="sc-form-button sc-md sc-flex-rr">
+                  <button type="button" disabled>
+                    <i class="sc-icon-search"></i>
+
+                    <span>Button disabled</span>
+                  </button>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </form>
+
+        <h5>Code:</h5>
+
+        <textarea class="editor-html">
         <div class="sc-card sc-shadowed">
           <header class="sc-card-header">
             <h3>Lorem ipsum</h3>
           </header>
-
+  
           <div class="sc-card-body">
             <p>
               Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
@@ -1156,44 +1073,6 @@
               montes.
             </p>
           </div>
-
-          <footer class="sc-card-footer">
-            <div class="sc-grid-2">
-              <div class="sc-form-button sc-md">
-                <button type="button">
-                  <i class="sc-icon-search"></i>
-
-                  <span>Button</span>
-                </button>
-              </div>
-
-              <div class="sc-form-button sc-md sc-flex-rr">
-                <button type="button" disabled>
-                  <i class="sc-icon-search"></i>
-
-                  <span>Button disabled</span>
-                </button>
-              </div>
-            </div>
-          </footer>
-        </div>
-      </form>
-
-      <h5>Code:</h5>
-
-      <textarea class="editor-html">
-        <div class="sc-card sc-shadowed">
-          <header class="sc-card-header">
-            <h3>Lorem ipsum</h3>
-          </header>
-  
-          <div class="sc-card-body">
-            <p>
-              Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
-              felis. Orci varius natoque penatibus et magnis dis parturient
-              montes.
-            </p>
-          </div>
   
           <footer class="sc-card-footer">
             <div class="sc-grid-2">
@@ -1215,71 +1094,29 @@
             </div>
           </footer>
         </div>
-      </textarea>
+      </textarea
+        >
 
-      <h2 id="doc-slide">Slide</h2>
+        <h2 id="doc-slide">Slide</h2>
 
-      <p>
-        Use Javascript to add/remove
-        <span class="sc-highlight">.sc-is-active</span> to/from
-        <span class="sc-highlight">.sc-slide</span> in order to show/hide
-        slides.
-      </p>
+        <p>
+          Use Javascript to add/remove
+          <span class="sc-highlight">.sc-is-active</span> to/from
+          <span class="sc-highlight">.sc-slide</span> in order to show/hide
+          slides.
+        </p>
 
-      <p>
-        Use <span class="sc-highlight">.sc-slide-right</span> instead of
-        <span class="sc-highlight">.sc-slide-left</span> to open slides from the
-        right side.
-      </p>
+        <p>
+          Use <span class="sc-highlight">.sc-slide-left</span> instead of
+          <span class="sc-highlight">.sc-slide-right</span> to open slides from
+          the right side.
+        </p>
 
-      <a href="#" id="trigger-slide">Open</a>
+        <a href="#" id="trigger-slide">Open</a>
 
-      <i class="sc-icon-menu sc-slide-open sc-hover sc-slide-left"></i>
+        <i class="sc-icon-menu sc-slide-open sc-hover sc-slide-right"></i>
 
-      <div class="sc-slide sc-slide-left">
-        <header class="sc-slide-header">
-          <h3>Lorem ipsum</h3>
-
-          <i class="sc-icon-close sc-slide-close sc-hover"></i>
-        </header>
-
-        <div class="sc-slide-body">
-          <p>
-            Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
-            felis. Orci varius natoque penatibus et magnis dis parturient
-            montes.
-          </p>
-        </div>
-
-        <footer class="sc-slide-footer">
-          <div class="sc-grid-2">
-            <div class="sc-form-button sc-md sc-stretched">
-              <button type="button">
-                <i class="sc-icon-search"></i>
-
-                <span>Button</span>
-              </button>
-            </div>
-
-            <div class="sc-form-button sc-md sc-stretched">
-              <button type="button" disabled>
-                <i class="sc-icon-search"></i>
-
-                <span>Button disabled</span>
-              </button>
-            </div>
-          </div>
-        </footer>
-      </div>
-
-      <div class="sc-overlay"></div>
-
-      <h5>Code:</h5>
-
-      <textarea class="editor-html">
-        <i class="sc-icon-menu sc-slide-open sc-hover sc-slide-left"></i>
-
-        <div class="sc-slide sc-slide-left">
+        <div class="sc-slide sc-slide-right">
           <header class="sc-slide-header">
             <h3>Lorem ipsum</h3>
 
@@ -1316,36 +1153,20 @@
         </div>
 
         <div class="sc-overlay"></div>
-      </textarea>
 
-      <h2 id="doc-modal">Modal</h2>
+        <h5>Code:</h5>
 
-      <p>
-        Use Javascript to add/remove
-        <span class="sc-highlight">.sc-is-active</span> to/from
-        <span class="sc-highlight">.sc-modal</span> in order to show/hide
-        modals.
-      </p>
+        <textarea class="editor-html">
+        <i class="sc-icon-menu sc-slide-open sc-hover sc-slide-right"></i>
 
-      <p>
-        Add <span class="sc-highlight">.sc-sm</span>,
-        <span class="sc-highlight">.sc-md</span>,
-        <span class="sc-highlight">.sc-lg</span>,
-        <span class="sc-highlight">.sc-stretched</span> and
-        <span class="sc-highlight">.sc-fullscreen</span> classes to
-        <span class="sc-highlight">.sc-modal</span> to create different size
-        modals.
-      </p>
-
-      <a href="#" id="trigger-modal">Open</a>
-
-      <div class="sc-modal">
-        <div class="sc-card">
-          <header class="sc-card-header">
+        <div class="sc-slide sc-slide-right">
+          <header class="sc-slide-header">
             <h3>Lorem ipsum</h3>
+
+            <i class="sc-icon-close sc-slide-close sc-hover"></i>
           </header>
 
-          <div class="sc-card-body">
+          <div class="sc-slide-body">
             <p>
               Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
               felis. Orci varius natoque penatibus et magnis dis parturient
@@ -1353,21 +1174,81 @@
             </p>
           </div>
 
-          <footer class="sc-card-footer">
-            <div class="sc-form-button sc-md sc-flex-rr">
-              <button type="button">
-                <span>Close</span>
-              </button>
+          <footer class="sc-slide-footer">
+            <div class="sc-grid-2">
+              <div class="sc-form-button sc-md sc-stretched">
+                <button type="button">
+                  <i class="sc-icon-search"></i>
+
+                  <span>Button</span>
+                </button>
+              </div>
+
+              <div class="sc-form-button sc-md sc-stretched">
+                <button type="button" disabled>
+                  <i class="sc-icon-search"></i>
+
+                  <span>Button disabled</span>
+                </button>
+              </div>
             </div>
           </footer>
         </div>
-      </div>
 
-      <div class="sc-overlay"></div>
+        <div class="sc-overlay"></div>
+      </textarea
+        >
 
-      <h5>Code:</h5>
+        <h2 id="doc-modal">Modal</h2>
 
-      <textarea class="editor-html">
+        <p>
+          Use Javascript to add/remove
+          <span class="sc-highlight">.sc-is-active</span> to/from
+          <span class="sc-highlight">.sc-modal</span> in order to show/hide
+          modals.
+        </p>
+
+        <p>
+          Add <span class="sc-highlight">.sc-sm</span>,
+          <span class="sc-highlight">.sc-md</span>,
+          <span class="sc-highlight">.sc-lg</span>,
+          <span class="sc-highlight">.sc-stretched</span> and
+          <span class="sc-highlight">.sc-fullscreen</span> classes to
+          <span class="sc-highlight">.sc-modal</span> to create different size
+          modals.
+        </p>
+
+        <a href="#" id="trigger-modal">Open</a>
+
+        <div class="sc-modal">
+          <div class="sc-card">
+            <header class="sc-card-header">
+              <h3>Lorem ipsum</h3>
+            </header>
+
+            <div class="sc-card-body">
+              <p>
+                Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
+                felis. Orci varius natoque penatibus et magnis dis parturient
+                montes.
+              </p>
+            </div>
+
+            <footer class="sc-card-footer">
+              <div class="sc-form-button sc-md sc-flex-rr">
+                <button type="button">
+                  <span>Close</span>
+                </button>
+              </div>
+            </footer>
+          </div>
+        </div>
+
+        <div class="sc-overlay"></div>
+
+        <h5>Code:</h5>
+
+        <textarea class="editor-html">
         <div class="sc-modal">
           <div class="sc-card">
             <header class="sc-card-header">
@@ -1393,36 +1274,37 @@
         </div>
   
         <div class="sc-overlay"></div>
-      </textarea>
+      </textarea
+        >
 
-      <h2 id="doc-splash">Splash</h2>
+        <h2 id="doc-splash">Splash</h2>
 
-      <p>
-        Use Javascript to add/remove
-        <span class="sc-highlight">.sc-is-active</span> to/from
-        <span class="sc-highlight">.sc-splash</span> in order to show/hide a
-        splash screen.
-      </p>
+        <p>
+          Use Javascript to add/remove
+          <span class="sc-highlight">.sc-is-active</span> to/from
+          <span class="sc-highlight">.sc-splash</span> in order to show/hide a
+          splash screen.
+        </p>
 
-      <a href="#" id="trigger-splash">Open</a>
+        <a href="#" id="trigger-splash">Open</a>
 
-      <div class="sc-splash">
-        <div class="sc-splash-container">
-          <div class="sc-splash-icon">
-            <i></i>
+        <div class="sc-splash">
+          <div class="sc-splash-container">
+            <div class="sc-splash-icon">
+              <i></i>
+            </div>
+
+            <h2>Stylecraft</h2>
+
+            <p>A pure css framework.</p>
+
+            <em>2019 - 2020</em>
           </div>
-
-          <h2>Stylecraft</h2>
-
-          <p>A pure css framework.</p>
-
-          <em>2019 - 2020</em>
         </div>
-      </div>
 
-      <h5>Code:</h5>
+        <h5>Code:</h5>
 
-      <textarea class="editor-html">
+        <textarea class="editor-html">
         <div class="sc-splash">
           <div class="sc-splash-container">
             <div class="sc-splash-icon">
@@ -1436,36 +1318,37 @@
             <em>2019 - 2020</em>
           </div>
         </div>
-      </textarea>
+      </textarea
+        >
 
-      <h2 id="doc-loader">Loader</h2>
+        <h2 id="doc-loader">Loader</h2>
 
-      <p>
-        Use Javascript to add/remove
-        <span class="sc-highlight">.sc-is-active</span> to/from
-        <span class="sc-highlight">.sc-loader</span> in order to show/hide a
-        loader screen.
-      </p>
+        <p>
+          Use Javascript to add/remove
+          <span class="sc-highlight">.sc-is-active</span> to/from
+          <span class="sc-highlight">.sc-loader</span> in order to show/hide a
+          loader screen.
+        </p>
 
-      <a href="#" id="trigger-loader">Open</a>
+        <a href="#" id="trigger-loader">Open</a>
 
-      <div class="sc-loader">
-        <div class="sc-loader-container">
-          <div class="sc-loader-icon">
-            <i></i>
+        <div class="sc-loader">
+          <div class="sc-loader-container">
+            <div class="sc-loader-icon">
+              <i></i>
+            </div>
+
+            <h2>Loading</h2>
+
+            <p>Please wait...</p>
+
+            <em>2019 - 2020</em>
           </div>
-
-          <h2>Loading</h2>
-
-          <p>Please wait...</p>
-
-          <em>2019 - 2020</em>
         </div>
-      </div>
 
-      <h5>Code:</h5>
+        <h5>Code:</h5>
 
-      <textarea class="editor-html">
+        <textarea class="editor-html">
         <div class="sc-loader">
           <div class="sc-loader-container">
             <div class="sc-loader-icon">
@@ -1479,48 +1362,49 @@
             <em>2019 - 2020</em>
           </div>
         </div>
-      </textarea>
+      </textarea
+        >
 
-      <h2 id="doc-accordion">Accordion</h2>
+        <h2 id="doc-accordion">Accordion</h2>
 
-      <p>
-        Accordions do not require Javascript. You can create them either with
-        checkbox or radio inputs to draw different functionalities.
-      </p>
+        <p>
+          Accordions do not require Javascript. You can create them either with
+          checkbox or radio inputs to draw different functionalities.
+        </p>
 
-      <h3 id="doc-accordion-multiple">Multiple</h3>
+        <h3 id="doc-accordion-multiple">Multiple</h3>
 
-      <p>Multiple items can be open at a time.</p>
+        <p>Multiple items can be open at a time.</p>
 
-      <div class="sc-accordion">
-        <div class="sc-accordion-item">
-          <input type="checkbox" id="accordion-item-1" />
+        <div class="sc-accordion">
+          <div class="sc-accordion-item">
+            <input type="checkbox" id="accordion-item-1" />
 
-          <label for="accordion-item-1">Item 1</label>
+            <label for="accordion-item-1">Item 1</label>
 
-          <div>
-            Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
-            felis. Orci varius natoque penatibus et magnis dis parturient
-            montes.
+            <div>
+              Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
+              felis. Orci varius natoque penatibus et magnis dis parturient
+              montes.
+            </div>
+          </div>
+
+          <div class="sc-accordion-item">
+            <input type="checkbox" id="accordion-item-2" />
+
+            <label for="accordion-item-2">Item 2</label>
+
+            <div>
+              Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
+              felis. Orci varius natoque penatibus et magnis dis parturient
+              montes.
+            </div>
           </div>
         </div>
 
-        <div class="sc-accordion-item">
-          <input type="checkbox" id="accordion-item-2" />
+        <h5>Code:</h5>
 
-          <label for="accordion-item-2">Item 2</label>
-
-          <div>
-            Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
-            felis. Orci varius natoque penatibus et magnis dis parturient
-            montes.
-          </div>
-        </div>
-      </div>
-
-      <h5>Code:</h5>
-
-      <textarea class="editor-html">
+        <textarea class="editor-html">
         <div class="sc-accordion">
           <div class="sc-accordion-item">
             <input type="checkbox" id="accordion-item-1" />
@@ -1546,50 +1430,51 @@
             </div>
           </div>
         </div>
-      </textarea>
+      </textarea
+        >
 
-      <h3 id="doc-accordion-single">Single</h3>
+        <h3 id="doc-accordion-single">Single</h3>
 
-      <p>
-        Only one item can be open at a time. Opening a new item will
-        automatically collapse the previous item.
-      </p>
+        <p>
+          Only one item can be open at a time. Opening a new item will
+          automatically collapse the previous item.
+        </p>
 
-      <div class="sc-accordion">
-        <div class="sc-accordion-item">
-          <input type="radio" name="my-accordion" id="accordion-item-3" />
+        <div class="sc-accordion">
+          <div class="sc-accordion-item">
+            <input type="radio" name="my-accordion" id="accordion-item-3" />
 
-          <label for="accordion-item-3">Item 1</label>
+            <label for="accordion-item-3">Item 1</label>
 
-          <div>
-            Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
-            felis. Orci varius natoque penatibus et magnis dis parturient
-            montes.
+            <div>
+              Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
+              felis. Orci varius natoque penatibus et magnis dis parturient
+              montes.
+            </div>
+          </div>
+
+          <div class="sc-accordion-item">
+            <input type="radio" name="my-accordion" id="accordion-item-4" />
+
+            <label for="accordion-item-4">Item 2</label>
+
+            <div>
+              Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
+              felis. Orci varius natoque penatibus et magnis dis parturient
+              montes.
+            </div>
+          </div>
+
+          <div class="sc-accordion-item sc-accordion-collapse">
+            <input type="radio" name="my-accordion" id="accordion-item-5" />
+
+            <label for="accordion-item-5">Collapse</label>
           </div>
         </div>
 
-        <div class="sc-accordion-item">
-          <input type="radio" name="my-accordion" id="accordion-item-4" />
+        <h5>Code:</h5>
 
-          <label for="accordion-item-4">Item 2</label>
-
-          <div>
-            Suspendisse gravida turpis sed tempor cursus. Donec nec ultrices
-            felis. Orci varius natoque penatibus et magnis dis parturient
-            montes.
-          </div>
-        </div>
-
-        <div class="sc-accordion-item sc-accordion-collapse">
-          <input type="radio" name="my-accordion" id="accordion-item-5" />
-
-          <label for="accordion-item-5">Collapse</label>
-        </div>
-      </div>
-
-      <h5>Code:</h5>
-
-      <textarea class="editor-html">
+        <textarea class="editor-html">
         <div class="sc-accordion">
           <div class="sc-accordion-item">
             <input type="radio" name="my-accordion" id="accordion-item-3" />
@@ -1621,123 +1506,280 @@
             <label for="accordion-item-5">Collapse</label>
           </div>
         </div>
-      </textarea>
+      </textarea
+        >
 
-      <h2 id="doc-icon">Icon</h2>
+        <h2 id="doc-icon">Icon</h2>
 
-      <p>
-        Icons are prefixed with <span class="sc-highlight">.sc-icon-</span>.
-      </p>
+        <p>
+          Icons are prefixed with <span class="sc-highlight">.sc-icon-</span>.
+        </p>
 
-      <p>
-        One of the size classes of <span class="sc-highlight">.sc-sm</span>,
-        <span class="sc-highlight">.sc-md</span> or
-        <span class="sc-highlight">.sc-lg</span> should be used together with
-        the icon class for an icon to display properly.
-      </p>
+        <p>
+          One of the size classes of <span class="sc-highlight">.sc-sm</span>,
+          <span class="sc-highlight">.sc-md</span> or
+          <span class="sc-highlight">.sc-lg</span> should be used together with
+          the icon class for an icon to display properly.
+        </p>
 
-      <p>
-        You can use them together with
-        <span class="sc-highlight">.sc-hover</span> to get the hover effect.
-      </p>
+        <p>
+          You can use them together with
+          <span class="sc-highlight">.sc-hover</span> to get the hover effect.
+        </p>
 
-      <i class="sc-icon-search sc-lg sc-hover"></i>
-
-      <h5>Code:</h5>
-
-      <textarea class="editor-html">
         <i class="sc-icon-search sc-lg sc-hover"></i>
-      </textarea>
 
-      <h5>More icons:</h5>
+        <h5>Code:</h5>
 
-      <i class="sc-icon-bullet sc-lg" title=".sc-icon-bullet"></i>
+        <textarea class="editor-html">
+        <i class="sc-icon-search sc-lg sc-hover"></i>
+      </textarea
+        >
 
-      <i class="sc-icon-calendar sc-lg" title=".sc-icon-calendar"></i>
+        <h5>More icons:</h5>
 
-      <i class="sc-icon-checkbox sc-lg" title=".sc-icon-checkbox"></i>
+        <i class="sc-icon-bullet sc-lg" title=".sc-icon-bullet"></i>
 
-      <i class="sc-icon-close sc-lg" title=".sc-icon-close"></i>
+        <i class="sc-icon-calendar sc-lg" title=".sc-icon-calendar"></i>
 
-      <i class="sc-icon-compass sc-lg" title=".sc-icon-compass"></i>
+        <i class="sc-icon-checkbox sc-lg" title=".sc-icon-checkbox"></i>
 
-      <i class="sc-icon-cross sc-lg" title=".sc-icon-cross"></i>
+        <i class="sc-icon-close sc-lg" title=".sc-icon-close"></i>
 
-      <i class="sc-icon-direction sc-lg" title=".sc-icon-direction"></i>
+        <i class="sc-icon-compass sc-lg" title=".sc-icon-compass"></i>
 
-      <i class="sc-icon-down sc-lg" title=".sc-icon-down"></i>
+        <i class="sc-icon-cross sc-lg" title=".sc-icon-cross"></i>
 
-      <i class="sc-icon-false sc-lg" title=".sc-icon-false"></i>
+        <i class="sc-icon-direction sc-lg" title=".sc-icon-direction"></i>
 
-      <i class="sc-icon-fullscreen sc-lg" title=".sc-icon-fullscreen"></i>
+        <i class="sc-icon-down sc-lg" title=".sc-icon-down"></i>
 
-      <i class="sc-icon-geolocation sc-lg" title=".sc-icon-geolocation"></i>
+        <i class="sc-icon-false sc-lg" title=".sc-icon-false"></i>
 
-      <i class="sc-icon-handle-v sc-lg" title=".sc-icon-handle-v"></i>
+        <i class="sc-icon-fullscreen sc-lg" title=".sc-icon-fullscreen"></i>
 
-      <i class="sc-icon-handle-h sc-lg" title=".sc-icon-handle-h"></i>
+        <i class="sc-icon-geolocation sc-lg" title=".sc-icon-geolocation"></i>
 
-      <i class="sc-icon-help sc-lg" title=".sc-icon-help"></i>
+        <i class="sc-icon-handle-v sc-lg" title=".sc-icon-handle-v"></i>
 
-      <i class="sc-icon-info sc-lg" title=".sc-icon-info"></i>
+        <i class="sc-icon-handle-h sc-lg" title=".sc-icon-handle-h"></i>
 
-      <i class="sc-icon-left sc-lg" title=".sc-icon-left"></i>
+        <i class="sc-icon-help sc-lg" title=".sc-icon-help"></i>
 
-      <i class="sc-icon-loader sc-lg" title=".sc-icon-loader"></i>
+        <i class="sc-icon-info sc-lg" title=".sc-icon-info"></i>
 
-      <i class="sc-icon-location sc-lg" title=".sc-icon-location"></i>
+        <i class="sc-icon-left sc-lg" title=".sc-icon-left"></i>
 
-      <i class="sc-icon-login sc-lg" title=".sc-icon-login"></i>
+        <i class="sc-icon-loader sc-lg" title=".sc-icon-loader"></i>
 
-      <i class="sc-icon-logout sc-lg" title=".sc-icon-logout"></i>
+        <i class="sc-icon-location sc-lg" title=".sc-icon-location"></i>
 
-      <i class="sc-icon-maximize sc-lg" title=".sc-icon-maximize"></i>
+        <i class="sc-icon-login sc-lg" title=".sc-icon-login"></i>
 
-      <i class="sc-icon-menu sc-lg" title=".sc-icon-menu"></i>
+        <i class="sc-icon-logout sc-lg" title=".sc-icon-logout"></i>
 
-      <i class="sc-icon-minimize sc-lg" title=".sc-icon-minimize"></i>
+        <i class="sc-icon-maximize sc-lg" title=".sc-icon-maximize"></i>
 
-      <i class="sc-icon-mode sc-lg" title=".sc-icon-mode"></i>
+        <i class="sc-icon-menu sc-lg" title=".sc-icon-menu"></i>
 
-      <i class="sc-icon-next sc-lg" title=".sc-icon-next"></i>
+        <i class="sc-icon-minimize sc-lg" title=".sc-icon-minimize"></i>
 
-      <i class="sc-icon-order sc-lg" title=".sc-icon-order"></i>
+        <i class="sc-icon-mode sc-lg" title=".sc-icon-mode"></i>
 
-      <i class="sc-icon-order-down sc-lg" title=".sc-icon-order-down"></i>
+        <i class="sc-icon-next sc-lg" title=".sc-icon-next"></i>
 
-      <i class="sc-icon-order-up sc-lg" title=".sc-icon-order-up"></i>
+        <i class="sc-icon-order sc-lg" title=".sc-icon-order"></i>
 
-      <i class="sc-icon-pause sc-lg" title=".sc-icon-pause"></i>
+        <i class="sc-icon-order-down sc-lg" title=".sc-icon-order-down"></i>
 
-      <i class="sc-icon-play sc-lg" title=".sc-icon-play"></i>
+        <i class="sc-icon-order-up sc-lg" title=".sc-icon-order-up"></i>
 
-      <i class="sc-icon-prev sc-lg" title=".sc-icon-prev"></i>
+        <i class="sc-icon-pause sc-lg" title=".sc-icon-pause"></i>
 
-      <i class="sc-icon-radio sc-lg" title=".sc-icon-radio"></i>
+        <i class="sc-icon-play sc-lg" title=".sc-icon-play"></i>
 
-      <i class="sc-icon-restart sc-lg" title=".sc-icon-restart"></i>
+        <i class="sc-icon-prev sc-lg" title=".sc-icon-prev"></i>
 
-      <i class="sc-icon-right sc-lg" title=".sc-icon-right"></i>
+        <i class="sc-icon-radio sc-lg" title=".sc-icon-radio"></i>
 
-      <i class="sc-icon-route sc-lg" title=".sc-icon-route"></i>
+        <i class="sc-icon-restart sc-lg" title=".sc-icon-restart"></i>
 
-      <i class="sc-icon-search sc-lg" title=".sc-icon-search"></i>
+        <i class="sc-icon-right sc-lg" title=".sc-icon-right"></i>
 
-      <i class="sc-icon-share sc-lg" title=".sc-icon-share"></i>
+        <i class="sc-icon-route sc-lg" title=".sc-icon-route"></i>
 
-      <i class="sc-icon-stop sc-lg" title=".sc-icon-stop"></i>
+        <i class="sc-icon-search sc-lg" title=".sc-icon-search"></i>
 
-      <i class="sc-icon-stylecraft sc-lg" title=".sc-icon-stylecraft"></i>
+        <i class="sc-icon-share sc-lg" title=".sc-icon-share"></i>
 
-      <i class="sc-icon-tour sc-lg" title=".sc-icon-tour"></i>
+        <i class="sc-icon-stop sc-lg" title=".sc-icon-stop"></i>
 
-      <i class="sc-icon-true sc-lg" title=".sc-icon-true"></i>
+        <i class="sc-icon-stylecraft sc-lg" title=".sc-icon-stylecraft"></i>
 
-      <i class="sc-icon-up sc-lg" title=".sc-icon-up"></i>
+        <i class="sc-icon-tour sc-lg" title=".sc-icon-tour"></i>
 
-      <i class="sc-icon-zoom-in sc-lg" title=".sc-icon-zoom-in"></i>
+        <i class="sc-icon-true sc-lg" title=".sc-icon-true"></i>
 
-      <i class="sc-icon-zoom-out sc-lg" title=".sc-icon-zoom-out"></i>
+        <i class="sc-icon-up sc-lg" title=".sc-icon-up"></i>
+
+        <i class="sc-icon-zoom-in sc-lg" title=".sc-icon-zoom-in"></i>
+
+        <i class="sc-icon-zoom-out sc-lg" title=".sc-icon-zoom-out"></i>
+      </div>
+
+      <div class="list">
+        <ul class="sc-list" id="list">
+          <li>
+            <a href="#doc-intro">Intro</a>
+          </li>
+
+          <li>
+            <a href="#doc-installation">Installation</a>
+          </li>
+
+          <li>
+            <a href="#doc-mode">Mode</a>
+          </li>
+
+          <li>
+            <a href="#doc-form">Form</a>
+
+            <ul class="sc-list">
+              <li>
+                <a href="#doc-form-radio">Radio</a>
+              </li>
+
+              <li>
+                <a href="#doc-form-checkbox">Checkbox</a>
+              </li>
+
+              <li>
+                <a href="#doc-form-text">Text field</a>
+
+                <ul class="sc-list">
+                  <li>
+                    <a href="#doc-form-text-basic">Basic</a>
+                  </li>
+
+                  <li>
+                    <a href="#doc-form-text-label">With label</a>
+                  </li>
+
+                  <li>
+                    <a href="#doc-form-text-icon">With icon</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#doc-form-textarea">Textarea</a>
+
+                <ul class="sc-list">
+                  <li>
+                    <a href="#doc-form-textarea-basic">Basic</a>
+                  </li>
+
+                  <li>
+                    <a href="#doc-form-textarea-label">With label</a>
+                  </li>
+
+                  <li>
+                    <a href="#doc-form-textarea-icon">With icon</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#doc-form-select">Select</a>
+              </li>
+
+              <li>
+                <a href="#doc-form-range">Range</a>
+              </li>
+
+              <li>
+                <a href="#doc-form-button">Button</a>
+
+                <ul class="sc-list">
+                  <li>
+                    <a href="#doc-form-button-basic">Basic</a>
+                  </li>
+
+                  <li>
+                    <a href="#doc-form-button-basic-icon">Basic with icon</a>
+                  </li>
+
+                  <li>
+                    <a href="#doc-form-button-stretched">Stretched</a>
+                  </li>
+
+                  <li>
+                    <a href="#doc-form-button-stretched-icon"
+                      >Stretched with icon</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#doc-table">Table</a>
+          </li>
+
+          <li>
+            <a href="#doc-card">Card</a>
+
+            <ul class="sc-list">
+              <li>
+                <a href="#doc-card-normal">Normal</a>
+              </li>
+
+              <li>
+                <a href="#doc-card-borderless">Borderless</a>
+              </li>
+
+              <li>
+                <a href="#doc-card-shadowed">Shadowed</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#doc-slide">Slide</a>
+          </li>
+
+          <li>
+            <a href="#doc-modal">Modal</a>
+          </li>
+
+          <li>
+            <a href="#doc-splash">Splash</a>
+          </li>
+
+          <li>
+            <a href="#doc-loader">Loader</a>
+          </li>
+
+          <li>
+            <a href="#doc-accordion">Accordion</a>
+
+            <ul class="sc-list">
+              <li>
+                <a href="#doc-accordion-multiple">Multiple</a>
+              </li>
+
+              <li>
+                <a href="#doc-accordion-single">Single</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#doc-icon">Icon</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <a href="#top" class="top">
