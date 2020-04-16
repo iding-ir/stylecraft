@@ -67,3 +67,11 @@ a {
     color: var(--color-secondary-dark);
   }
 }
+
+.sc-highlight {
+  padding: var(--padding-sm);
+  color: var(--color-primary-dark);
+  background-color: var(--fade-dark-sm);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--fade-dark-md);
+}
