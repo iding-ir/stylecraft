@@ -23,3 +23,4 @@ import "./scss/modules/overlay.scss";
 import "./scss/modules/splash-loader.scss";
 import "./scss/modules/list.scss";
 import "./scss/modules/scrollbar.scss";
+import "./scss/modules/accordion.scss";

@@ -13,7 +13,7 @@ module.exports = merge(common, {
     contentBase: path.join(__dirname, "src"),
     // publicPath: '/dist/',
     // compress: true,
-    port: 9000,
+    port: 9001,
     // hot: true
   },
   plugins: [
