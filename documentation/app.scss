@@ -14,11 +14,20 @@ html {
     padding: var(--padding-md);
     order: 1;
 
-    h1 {
+    .sticky {
       position: sticky;
       top: 0;
       padding: var(--padding-md) 0;
-      margin: 0;
+    }
+
+    .logo {
+      width: 5rem;
+      height: 5rem;
+      mask-size: 100%;
+      mask-repeat: repeat;
+      mask-position: center;
+      mask-image: var(--icon-stylecraft);
+      background-color: var(--color-primary-dark);
     }
   }
 
