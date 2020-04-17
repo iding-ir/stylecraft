@@ -2,10 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  transition: var(--transition-md);
-}
-
 .app {
   display: flex;
   flex-direction: column;
@@ -14,21 +10,13 @@ body {
     flex-direction: row;
   }
 
-  ::-webkit-scrollbar {
-    display: none;
-  }
-
   .header {
-    position: relative;
-    width: 15rem;
     padding: var(--padding-md);
     order: 1;
 
     h1 {
       position: sticky;
       top: 0;
-      left: 0;
-      text-align: left;
       padding: var(--padding-md) 0;
       margin: 0;
     }
@@ -36,24 +24,20 @@ body {
 
   .contents {
     padding: var(--padding-md);
-    width: 100%;
     order: 3;
 
     @media only screen and (min-width: 1280px) {
-      width: calc(100% - 15rem - 25rem);
       flex-grow: 10;
       order: 2;
     }
   }
 
   .list {
-    position: relative;
     padding: var(--padding-md);
-    width: 100%;
     order: 2;
 
     @media only screen and (min-width: 1280px) {
-      width: 25rem;
+      width: 35rem;
       order: 3;
 
       > ul {
