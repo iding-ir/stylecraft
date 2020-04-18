@@ -70,3 +70,9 @@ html {
   bottom: var(--padding-md);
   z-index: 10000;
 }
+
+.item {
+  padding: var(--padding-sm);
+  // margin: var(--padding-sm);
+  background-color: var(--fade-dark-md);
+}
