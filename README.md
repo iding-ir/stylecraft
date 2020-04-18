@@ -4,7 +4,7 @@
 - [Installation](#installation)
 - [Documentation](#documentation)
 - [Examples](#examples)
-- [Note](#note)
+- [Notes](#notes)
 - [About Stylecraft](#about-stylecraft)
 
 ## Intro
@@ -33,11 +33,11 @@ import "stylecraft/dist/stylecraft.css"
 
 [Live demo](http://realestate-map-redux.iding.ir) - [Github](https://github.com/iding-ir/realestate-map-redux)
 
-## Note
+## Notes
 
-This framework is in alpha state. Not remotely completed. I cretaed it for personal use, made it reusable and decided to make it public. I will keep using it in my future projects and will improve it over time.
+This project was created for personal use. I made it reusable and decided to make it public as a framework. I will keep using it in my future projects and will improve it over time.
 
-When I started the project, I decided to use native css features such as CSS Variables and Mask instead of using css preprocessor and font icons for the advantages that I believe they prodive. Since v0.2 I started using SCSS, but used both CSS and SASS variables for different purposes.
+Starting form v0.2 Stylecraft began to use SCSS.
 
 ## About Stylecraft
 
