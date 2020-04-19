@@ -2,21 +2,21 @@
   scrollbar-color: var(--color-primary-light) var(--color-light);
   scrollbar-width: thin;
 
-  &::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     width: var(--padding-sm);
   }
 
-  &::-webkit-scrollbar-track {
+  ::-webkit-scrollbar-track {
     background: var(--color-light);
   }
 
-  &::-webkit-scrollbar-thumb {
+  ::-webkit-scrollbar-thumb {
     border-radius: var(--border-radius);
     background: var(--color-primary-light);
     transition: var(--transition-md);
   }
 
-  &::-webkit-scrollbar-thumb:hover {
+  ::-webkit-scrollbar-thumb:hover {
     background: var(--color-primary-dark);
   }
 }
