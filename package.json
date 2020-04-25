@@ -1,16 +1,7 @@
 {
   "name": "stylecraft",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "A pure css framework.",
-  "main": "src/index.js",
-  "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js --open",
-    "build": "webpack --config webpack.prod.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iding-ir/stylecraft.git"
-  },
   "keywords": [
     "css",
     "framework"
@@ -21,13 +12,22 @@
     "url": "http://iding.ir"
   },
   "license": "ISC",
+  "main": "documentation/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iding-ir/stylecraft.git"
+  },
   "bugs": {
     "url": "https://github.com/iding-ir/stylecraft/issues"
   },
   "homepage": "https://github.com/iding-ir/stylecraft#readme",
   "devDependencies": {
     "autoprefixer": "^9.7.2",
-    "clean-webpack-plugin": "^2.0.0",
+    "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^2.1.0",
     "file-loader": "^6.0.0",

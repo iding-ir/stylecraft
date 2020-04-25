@@ -1,14 +1,20 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
-const CopyPlugin = require("copy-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
-    app: "./documentation/index.js",
+    documentation: "./documentation/index.js",
     stylecraft: "./src/index.js",
   },
+  output: {
+    filename: "[name].js",
+    path: path.resolve(__dirname, "dist"),
+  },
   plugins: [
+    new HtmlWebpackPlugin({
+      template: "./public/index.html",
+    }),
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
@@ -20,14 +26,6 @@ module.exports = {
         test: /\.html$/,
         use: ["html-loader"],
       },
-      // {
-      //   test: /\.(png|jpg|gif)$/,
-      //   use: ["file-loader"],
-      // },
-      // {
-      //   test: /\.(woff|woff2|eot|ttf|otf)$/,
-      //   use: ["file-loader"],
-      // },
       {
         test: /\.(svg)$/,
         use: {
