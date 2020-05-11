@@ -1,16 +1,27 @@
 .sc-form-select {
   display: flex;
   flex-direction: row;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--icon-md);
+    height: var(--icon-md);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 1rem;
+    mask-image: var(--icon-down);
+    background-color: var(--fade-grey-md);
+  }
 
   select {
     color: var(--color-darker);
     width: 100%;
     height: var(--icon-md);
     padding: 0 var(--icon-md) 0 var(--padding-md);
-    background-repeat: no-repeat;
-    background-position: right var(--padding-sm) center;
-    background-size: 1rem;
-    background-image: var(--icon-down);
     background-color: var(--color-lighter);
     border: var(--border-thickness) solid var(--color-primary-light);
     border-radius: var(--border-radius);
