@@ -22,8 +22,8 @@
   --padding-lg: 2rem;
 
   --icon-sm: 1.6rem;
-  --icon-md: 2.2rem;
-  --icon-lg: 2.8rem;
+  --icon-md: 2.4rem;
+  --icon-lg: 3.2rem;
 
   --border-radius: 4px;
   --border-thickness: 1px;
@@ -44,20 +44,20 @@
     rgba(#{$dark}, #{$dark}, #{$dark}, 0.3);
 
   --fade-dark-sm: rgba(#{$dark}, #{$dark}, #{$dark}, 0.1);
-  --fade-dark-md: rgba(#{$dark}, #{$dark}, #{$dark}, 0.2);
-  --fade-dark-lg: rgba(#{$dark}, #{$dark}, #{$dark}, 0.3);
+  --fade-dark-md: rgba(#{$dark}, #{$dark}, #{$dark}, 0.3);
+  --fade-dark-lg: rgba(#{$dark}, #{$dark}, #{$dark}, 0.5);
 
-  --fade-grey-sm: rgba(#{$grey}, #{$grey}, #{$grey}, 0.4);
-  --fade-grey-md: rgba(#{$grey}, #{$grey}, #{$grey}, 0.5);
-  --fade-grey-lg: rgba(#{$grey}, #{$grey}, #{$grey}, 0.6);
+  --fade-grey-sm: rgba(#{$grey}, #{$grey}, #{$grey}, 0.1);
+  --fade-grey-md: rgba(#{$grey}, #{$grey}, #{$grey}, 0.3);
+  --fade-grey-lg: rgba(#{$grey}, #{$grey}, #{$grey}, 0.5);
 
-  --fade-silver-sm: rgba(#{$silver}, #{$silver}, #{$silver}, 0.4);
-  --fade-silver-md: rgba(#{$silver}, #{$silver}, #{$silver}, 0.5);
-  --fade-silver-lg: rgba(#{$silver}, #{$silver}, #{$silver}, 0.6);
+  --fade-silver-sm: rgba(#{$silver}, #{$silver}, #{$silver}, 0.1);
+  --fade-silver-md: rgba(#{$silver}, #{$silver}, #{$silver}, 0.3);
+  --fade-silver-lg: rgba(#{$silver}, #{$silver}, #{$silver}, 0.5);
 
-  --fade-light-sm: rgba(#{$light}, #{$light}, #{$light}, 0.4);
-  --fade-light-md: rgba(#{$light}, #{$light}, #{$light}, 0.5);
-  --fade-light-lg: rgba(#{$light}, #{$light}, #{$light}, 0.6);
+  --fade-light-sm: rgba(#{$light}, #{$light}, #{$light}, 0.1);
+  --fade-light-md: rgba(#{$light}, #{$light}, #{$light}, 0.3);
+  --fade-light-lg: rgba(#{$light}, #{$light}, #{$light}, 0.5);
 }
 
 :root .sc-dark {
