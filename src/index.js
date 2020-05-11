@@ -7,6 +7,7 @@ import "./scss/modules/core.scss";
 import "./scss/modules/typography.scss";
 import "./scss/modules/container.scss";
 import "./scss/modules/flex.scss";
+import "./scss/modules/grid-system.scss";
 import "./scss/modules/grid.scss";
 import "./scss/modules/icon.scss";
 import "./scss/modules/form.scss";

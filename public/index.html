@@ -74,6 +74,10 @@
           </li>
 
           <li>
+            <a href="#doc-grid-system">Grid system</a>
+          </li>
+
+          <li>
             <a href="#doc-grid">Grid</a>
           </li>
 
@@ -255,6 +259,161 @@
         </p>
 
         <a href="#" id="trigger-mode">Change</a>
+
+        <h2 id="doc-grid-system">Grid system</h2>
+
+        <p>
+          Stylecraft uses a classic grid system.
+        </p>
+
+        <p>
+          Default:
+          <span class="sc-highlight">.sc-col-xs-1</span> to
+          <span class="sc-highlight">.sc-col-xs-12</span> and
+          <span class="sc-highlight">.sc-col-xs-offset-1</span> to
+          <span class="sc-highlight">.sc-col-xs-offset-11</span>
+        </p>
+
+        <p>
+          min-width: 600px:
+          <span class="sc-highlight">.sc-col-sm-1</span> to
+          <span class="sc-highlight">.sc-col-sm-12</span> and
+          <span class="sc-highlight">.sc-col-sm-offset-1</span> to
+          <span class="sc-highlight">.sc-col-sm-offset-11</span>
+        </p>
+
+        <p>
+          min-width: 840px:
+          <span class="sc-highlight">.sc-col-md-1</span> to
+          <span class="sc-highlight">.sc-col-md-12</span> and
+          <span class="sc-highlight">.sc-col-md-offset-1</span> to
+          <span class="sc-highlight">.sc-col-md-offset-11</span>
+        </p>
+
+        <p>
+          min-width: 1280px:
+          <span class="sc-highlight">.sc-col-lg-1</span> to
+          <span class="sc-highlight">.sc-col-lg-12</span> and
+          <span class="sc-highlight">.sc-col-lg-offset-1</span> to
+          <span class="sc-highlight">.sc-col-lg-offset-11</span>
+        </p>
+
+        <p>
+          Also, adding <span class="sc-highlight">.sc-reverse</span> to
+          <span class="sc-highlight">.sc-row</span> reverses the direction.
+        </p>
+
+        <h4>Example:</h4>
+
+        <div class="sc-row">
+          <div class="sc-col-xs-1 item">1</div>
+
+          <div class="sc-col-xs-11 item">11</div>
+
+          <div class="sc-col-xs-2 item">2</div>
+
+          <div class="sc-col-xs-10 item">10</div>
+
+          <div class="sc-col-xs-3 item">3</div>
+
+          <div class="sc-col-xs-9 item">9</div>
+
+          <div class="sc-col-xs-4 item">4</div>
+
+          <div class="sc-col-xs-8 item">8</div>
+
+          <div class="sc-col-xs-5 item">5</div>
+
+          <div class="sc-col-xs-7 item">7</div>
+
+          <div class="sc-col-xs-6 item">6</div>
+
+          <div class="sc-col-xs-6 item">6</div>
+        </div>
+
+        <h5>Code:</h5>
+
+        <textarea class="editor-html">
+          <div class="sc-row">
+            <div class="sc-col-xs-1 item">1</div>
+  
+            <div class="sc-col-xs-11 item">11</div>
+  
+            <div class="sc-col-xs-2 item">2</div>
+  
+            <div class="sc-col-xs-10 item">10</div>
+  
+            <div class="sc-col-xs-3 item">3</div>
+  
+            <div class="sc-col-xs-9 item">9</div>
+  
+            <div class="sc-col-xs-4 item">4</div>
+  
+            <div class="sc-col-xs-8 item">8</div>
+  
+            <div class="sc-col-xs-5 item">5</div>
+  
+            <div class="sc-col-xs-7 item">7</div>
+  
+            <div class="sc-col-xs-6 item">6</div>
+  
+            <div class="sc-col-xs-6 item">6</div>
+          </div>
+        </textarea>
+
+        <h4>Example:</h4>
+
+        <div class="sc-row">
+          <div class="sc-col-xs-offset-11 sc-col-xs-1 item">1</div>
+
+          <div class="sc-col-xs-offset-10 sc-col-xs-2 item">2</div>
+
+          <div class="sc-col-xs-offset-9 sc-col-xs-3 item">3</div>
+
+          <div class="sc-col-xs-offset-8 sc-col-xs-4 item">4</div>
+
+          <div class="sc-col-xs-offset-7 sc-col-xs-5 item">5</div>
+
+          <div class="sc-col-xs-offset-6 sc-col-xs-6 item">6</div>
+
+          <div class="sc-col-xs-offset-5 sc-col-xs-7 item">7</div>
+
+          <div class="sc-col-xs-offset-4 sc-col-xs-8 item">8</div>
+
+          <div class="sc-col-xs-offset-3 sc-col-xs-9 item">9</div>
+
+          <div class="sc-col-xs-offset-2 sc-col-xs-10 item">10</div>
+
+          <div class="sc-col-xs-offset-1 sc-col-xs-11 item">11</div>
+        </div>
+
+        <h5>Code:</h5>
+
+        <textarea class="editor-html">
+          <div class="sc-row">
+            <div class="sc-col-xs-offset-11 sc-col-xs-1 item">1</div>
+  
+            <div class="sc-col-xs-offset-10 sc-col-xs-2 item">2</div>
+  
+            <div class="sc-col-xs-offset-9 sc-col-xs-3 item">3</div>
+  
+            <div class="sc-col-xs-offset-8 sc-col-xs-4 item">4</div>
+  
+            <div class="sc-col-xs-offset-7 sc-col-xs-5 item">5</div>
+  
+            <div class="sc-col-xs-offset-6 sc-col-xs-6 item">6</div>
+  
+            <div class="sc-col-xs-offset-5 sc-col-xs-7 item">7</div>
+  
+            <div class="sc-col-xs-offset-4 sc-col-xs-8 item">8</div>
+  
+            <div class="sc-col-xs-offset-3 sc-col-xs-9 item">9</div>
+  
+            <div class="sc-col-xs-offset-2 sc-col-xs-10 item">10</div>
+  
+            <div class="sc-col-xs-offset-1 sc-col-xs-11 item">11</div>
+          </div>
+        </textarea>
 
         <h2 id="doc-grid">Grid</h2>
 
