@@ -31,7 +31,9 @@ import "stylecraft/dist/stylecraft.css"
 
 ## Examples
 
-[Live demo](http://realestate-map-redux.iding.ir) - [Github](https://github.com/iding-ir/realestate-map-redux)
+- [Live demo](http://react-redux-realestate-map.iding.ir) - [Github](https://github.com/iding-ir/react-redux-realestate-map)
+- [Live demo](http://react-redux-maritime-map.iding.ir) - [Github](https://github.com/iding-ir/react-redux-maritime-map)
+- [Live demo](http://stylecraft-redux-form.iding.ir) - [Github](https://github.com/iding-ir/stylecraft-redux-form)
 
 ## Notes
 
