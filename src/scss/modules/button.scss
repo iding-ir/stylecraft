@@ -16,32 +16,6 @@
     cursor: pointer;
     word-break: break-all;
 
-    &:disabled {
-      color: var(--fade-grey-lg);
-      background-color: var(--color-light);
-      border-color: var(--fade-grey-md);
-      cursor: not-allowed;
-
-      i {
-        &::before {
-          background-color: var(--fade-grey-lg);
-        }
-      }
-    }
-
-    &:not(:disabled) {
-      &:hover {
-        background-color: var(--fade-dark-sm);
-        border-color: var(--color-secondary-light);
-
-        i {
-          &::before {
-            background-color: var(--color-secondary-dark);
-          }
-        }
-      }
-    }
-
     span {
       flex-grow: 10;
       text-align: left;
@@ -51,20 +25,47 @@
       flex-shrink: 0;
       position: relative;
       left: calc(-1 * var(--padding-md));
-      background-color: var(--color-transparent);
       border: none;
+      border-right: 1px solid;
       border-radius: 0;
       box-shadow: none;
       transition: all var(--transition-sm);
+    }
 
-      &:hover {
-        background-color: var(--color-transparent);
-        border: none;
-        box-shadow: none;
+    &:disabled {
+      color: var(--fade-grey-lg);
+      border-color: var(--fade-grey-md);
+      cursor: not-allowed;
+
+      i {
+        border-color: var(--fade-grey-md);
+
+        &::before {
+          background-color: var(--fade-grey-md);
+        }
+      }
+    }
+
+    &:not(:disabled) {
+      i {
+        border-color: var(--color-primary-light);
+        background-color: var(--color-lighter);
+
+        &::before {
+          background-color: var(--color-primary-light);
+        }
       }
 
-      &::before {
-        background-color: var(--color-primary-dark);
+      &:hover {
+        border-color: var(--color-secondary-light);
+
+        i {
+          border-color: var(--color-secondary-light);
+
+          &::before {
+            background-color: var(--color-secondary-light);
+          }
+        }
       }
     }
   }
@@ -77,6 +78,7 @@
 
   &.sc-sm {
     button {
+      font-size: 0.8rem;
       line-height: var(--icon-sm);
       height: var(--icon-sm);
 
@@ -93,6 +95,7 @@
 
   &.sc-md {
     button {
+      font-size: 1rem;
       line-height: var(--icon-md);
       height: var(--icon-md);
 
@@ -109,6 +112,7 @@
 
   &.sc-lg {
     button {
+      font-size: 1.2rem;
       line-height: var(--icon-lg);
       height: var(--icon-lg);
 
