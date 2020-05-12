@@ -76,7 +76,7 @@
         @include thumb;
       }
 
-      ~ label {
+      + label {
         color: var(--fade-grey-lg);
       }
     }

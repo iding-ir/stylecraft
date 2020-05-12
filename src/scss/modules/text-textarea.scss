@@ -18,7 +18,7 @@
       border-color: var(--fade-grey-md);
       cursor: not-allowed;
 
-      ~ label {
+      + label {
         color: var(--fade-grey-lg);
         cursor: not-allowed;
       }
@@ -30,7 +30,7 @@
       outline: none;
     }
 
-    ~ label {
+    + label {
       position: relative;
       overflow: hidden;
       cursor: pointer;
@@ -53,13 +53,13 @@
   &.sc-has-label {
     input,
     textarea {
-      ~ label {
+      + label {
         border: var(--border-thickness) solid;
         box-shadow: var(--box-shadow-md);
       }
 
       &:not(:disabled) {
-        ~ label {
+        + label {
           background-color: var(--color-light);
           border-color: var(--color-primary-light);
 
@@ -76,7 +76,7 @@
       }
 
       &:disabled {
-        ~ label {
+        + label {
           background-color: var(--color-light);
           border-color: var(--fade-grey-md);
 
@@ -89,7 +89,7 @@
       }
 
       &:focus {
-        ~ label {
+        + label {
           background-color: var(--fade-dark-sm);
           border-color: var(--color-secondary-light);
 
@@ -111,7 +111,7 @@
       width: calc(100% - var(--icon-md));
       border-radius: 0 var(--border-radius) var(--border-radius) 0;
 
-      ~ label {
+      + label {
         flex-shrink: 0;
         width: var(--icon-md);
         border-right: none;
@@ -133,7 +133,7 @@
     textarea {
       border-radius: 0 0 var(--border-radius) var(--border-radius);
 
-      ~ label {
+      + label {
         height: var(--icon-md);
         line-height: var(--icon-md);
         padding: 0 var(--padding-md);

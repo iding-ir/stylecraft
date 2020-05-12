@@ -3,7 +3,7 @@
   input {
     display: none;
 
-    ~ label {
+    + label {
       display: flex;
       flex-direction: row;
       width: 100%;
@@ -31,7 +31,7 @@
     }
 
     &:not(:disabled) {
-      ~ label {
+      + label {
         &:hover {
           i {
             background-color: var(--color-light);
@@ -44,7 +44,7 @@
       }
 
       &:checked {
-        ~ label {
+        + label {
           i {
             background-color: var(--color-grey-sm);
 
@@ -63,7 +63,7 @@
     }
 
     &:disabled {
-      ~ label {
+      + label {
         color: var(--fade-grey-lg);
         cursor: not-allowed;
 
@@ -77,7 +77,7 @@
       }
 
       &:checked {
-        ~ label {
+        + label {
           i {
             border-color: var(--fade-grey-md);
 
@@ -93,7 +93,7 @@
 
 .sc-form-radio {
   input {
-    ~ label {
+    + label {
       i {
         border-radius: 50%;
       }
@@ -103,7 +103,7 @@
 
 .sc-form-checkbox {
   input {
-    ~ label {
+    + label {
       i {
         border-radius: var(--border-radius);
       }
