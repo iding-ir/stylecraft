@@ -44,7 +44,7 @@
 
       &:hover {
         @mixin thumb {
-          background-color: var(--color-grey-sm);
+          background-color: var(--color-light);
           cursor: pointer;
         }
 
@@ -63,8 +63,8 @@
       cursor: not-allowed;
 
       @mixin thumb {
-        background-color: var(--color-grey-sm);
-        border-color: var(--color-grey-mg);
+        background-color: var(--color-lighter);
+        border-color: var(--fade-grey-md);
         cursor: not-allowed;
       }
 
