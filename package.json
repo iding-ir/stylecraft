@@ -34,7 +34,7 @@
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.5.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.3.1",
@@ -42,13 +42,13 @@
     "svg-url-loader": "^5.0.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.2.1",
+    "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
     "codemirror": "^5.52.2",
     "codemirror-formatting": "^1.0.0",
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.1"
   },
   "postcss": {
     "plugins": {
