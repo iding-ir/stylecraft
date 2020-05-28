@@ -1,7 +1,7 @@
 .sc-form-select {
+  position: relative;
   display: flex;
   flex-direction: row;
-  position: relative;
 
   &::before {
     content: "";
