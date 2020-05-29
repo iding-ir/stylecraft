@@ -48,7 +48,7 @@
   .sc-slide-header {
     position: relative;
     padding: var(--padding-md) 0;
-    border-bottom: var(--border-thickness) solid var(--fade-dark-md);
+    border-bottom: var(--border-thickness) solid var(--fade-dark-sm);
 
     h1,
     h2,
@@ -78,7 +78,7 @@
 
   .sc-slide-footer {
     padding: var(--padding-md) 0;
-    border-top: var(--border-thickness) solid var(--fade-dark-md);
+    border-top: var(--border-thickness) solid var(--fade-dark-sm);
   }
 
   + .sc-overlay {
