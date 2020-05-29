@@ -53,13 +53,13 @@
       display: none;
 
       &:checked {
-        + label {
+        ~ label {
           &::before {
             transform: rotate(90deg) !important;
           }
         }
 
-        + div {
+        ~ div {
           max-height: 100vh;
           padding: var(--padding-md);
         }
