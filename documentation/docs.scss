@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.app {
+.docs {
   display: flex;
   flex-direction: column;
 
@@ -10,17 +10,17 @@ html {
     flex-direction: row;
   }
 
-  .header {
+  .docs-header {
     padding: var(--padding-md);
     order: 1;
 
-    .sticky {
+    .docs-sticky {
       position: sticky;
       top: 0;
       padding: var(--padding-md) 0;
     }
 
-    .logo {
+    .docs-logo {
       width: 5rem;
       height: 5rem;
       mask-size: 100%;
@@ -31,7 +31,7 @@ html {
     }
   }
 
-  .contents {
+  .docs-contents {
     padding: var(--padding-md);
     order: 3;
 
@@ -41,7 +41,7 @@ html {
     }
   }
 
-  .list {
+  .docs-list {
     padding: var(--padding-md);
     order: 2;
 
@@ -64,14 +64,14 @@ html {
   height: auto !important;
 }
 
-.top {
+.docs-top {
   position: fixed;
   right: var(--padding-md);
   bottom: var(--padding-md);
   z-index: 10000;
 }
 
-.item {
+.docs-item {
   padding: var(--padding-sm);
   background-color: var(--fade-dark-sm);
 }
