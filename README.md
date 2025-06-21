@@ -27,11 +27,11 @@ import "stylecraft/dist/stylecraft.css"
 
 ## Documentation
 
-[Documentation](http://stylecraft.iding.ir)
+[Documentation](https://stylecraft.gilak.dev)
 
 ## Examples
 
-- [Live demo](http://react-redux-realestate-map.iding.ir) - [Github](https://github.com/iding-ir/react-redux-realestate-map)
+- [Live demo](https://react-redux-realestate-map.gilak.dev) - [Github](https://github.com/iding-ir/react-redux-realestate-map)
 - [Live demo](http://react-redux-maritime-map.iding.ir) - [Github](https://github.com/iding-ir/react-redux-maritime-map)
 - [Live demo](http://stylecraft-redux-form.iding.ir) - [Github](https://github.com/iding-ir/stylecraft-redux-form)
 - [Live demo](http://event-registration.iding.ir) - [Github](https://github.com/iding-ir/event-registration)
